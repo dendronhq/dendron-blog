@@ -2,7 +2,7 @@
 id: dQIC3e4oEr9f6xrje6Hol
 title: Blog
 desc: ''
-updated: 1624124064325
+updated: 1624487273289
 created: 1624123322073
 has_collection: true
 sort_by: date
@@ -19,6 +19,6 @@ Dendron is a scalable note taking tool that helps **people** organize and refere
 This blog is where we share our learnings and reflections from our journey. 
 
 
----
+<!-- ---
 
-If you like to stay up to date , you can subscribe TODO
+If you like to stay up to date , you can subscribe TODO -->

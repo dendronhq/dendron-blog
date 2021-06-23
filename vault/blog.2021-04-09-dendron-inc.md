@@ -2,8 +2,9 @@
 id: N9VxT7G5SovmncezBAGO2
 title: Dendron Inc
 desc: ''
-updated: 1624123581073
+updated: 1624490362627
 created: 1624123542935
+canonicalUrl: "https://wiki.dendron.so/notes/8d6bb6c6-f2b5-4fb4-a7f0-1930b528051f.html"
 ---
 
 
