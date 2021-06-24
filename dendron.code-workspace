@@ -1,10 +1,6 @@
 {
     "folders": [
         {
-            "path": "seeds/dendron.xkcd/vault",
-            "name": "dendron.xkcd"
-        },
-        {
             "path": "vault"
         },
         {

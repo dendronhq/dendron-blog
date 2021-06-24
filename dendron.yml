@@ -2,10 +2,6 @@ version: 1
 vaults:
     -
         fsPath: vault
-        seed: dendron.xkcd
-        name: dendron.xkcd
-    -
-        fsPath: vault
 useFMTitle: true
 useNoteTitleForLink: true
 noAutoCreateOnDefinition: true
@@ -19,10 +15,6 @@ journal:
     addBehavior: childOfDomain
     firstDayOfWeek: 1
 initializeRemoteVaults: true
-seeds:
-    dendron.xkcd:
-        site:
-            url: 'https://xkcd.dendron.so'
 site:
     previewPort: 8081
     siteHierarchies:
