@@ -18,22 +18,25 @@ journal:
     dateFormat: y.MM.dd
     addBehavior: childOfDomain
     firstDayOfWeek: 1
-site:
-    copyAssets: true
-    siteHierarchies:
-        - blog
-    siteRootDir: docs
-    usePrettyRefs: true
-    title: The Dendron Blog
-    description: Blog for Dendron
-    previewPort: 8081
-    duplicateNoteBehavior:
-        action: useVault
-        payload:
-            - vault
-            - dendron.xkcd
 initializeRemoteVaults: true
 seeds:
     dendron.xkcd:
         site:
             url: 'https://xkcd.dendron.so'
+site:
+    previewPort: 8081
+    siteHierarchies:
+        - blog
+    siteRootDir: docs
+    gh_edit_repository: 'https://github.com/dendronhq/dendron-site'
+    usePrettyRefs: true
+    copyAssets: true
+    # logo: vault/assets/images/logo.png
+    siteUrl: 'https://blog.dendron.so'
+    siteLastModified: true
+    githubCname: blog.dendron.so
+    title: Dendron Blog
+    author: dendronhq
+    twitter: dendronhq
+    description: >-
+        Blog for Dendron
