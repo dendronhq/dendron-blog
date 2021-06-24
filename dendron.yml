@@ -2,6 +2,10 @@ version: 1
 vaults:
     -
         fsPath: vault
+        seed: dendron.xkcd
+        name: dendron.xkcd
+    -
+        fsPath: vault
 useFMTitle: true
 useNoteTitleForLink: true
 noAutoCreateOnDefinition: true
@@ -27,4 +31,9 @@ site:
         action: useVault
         payload:
             - vault
+            - dendron.xkcd
 initializeRemoteVaults: true
+seeds:
+    dendron.xkcd:
+        site:
+            url: 'https://xkcd.dendron.so'

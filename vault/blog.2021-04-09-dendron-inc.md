@@ -2,11 +2,11 @@
 id: N9VxT7G5SovmncezBAGO2
 title: Dendron Inc
 desc: ''
-updated: 1624490362627
+updated: 1624494359839
 created: 1624123542935
+excerpt: "We are launching a company"
 canonicalUrl: "https://wiki.dendron.so/notes/8d6bb6c6-f2b5-4fb4-a7f0-1930b528051f.html"
 ---
-
 
 I read the following anecdote in an Albert Einstein biography back in the day. A reporter asked Einstein about the value of some physical constant and Einstein replied that he didn't know. The reporter was flabbergasted but Einstein replied that he didn't want to bother memorizing something that he could easily look up.
 
