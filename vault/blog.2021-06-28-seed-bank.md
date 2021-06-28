@@ -1,9 +1,10 @@
 ---
 id: qTeL51LFD0Y8uC9ect7QV
-title: The Dendron Seed Bank 
+title: The Dendron Seed Bank
 desc: ''
 updated: 1624569852953
 created: 1624562569744
+date: 2021-06-28
 ---
 
 ![seed bank](https://org-dendron-public-assets.s3.amazonaws.com/images/markus-spiske-4PG6wLlVag4-unsplash.jpg)
@@ -66,4 +67,4 @@ With Dendron, we took elements of programming tools (eg. lookup, refactor, schem
 
 Our mission is to help **people** organize and make sense of any amount of information.  We are doing this by building the [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) for general knowledge.
 
-Please give it a try and let us know what you think on [discord](TODO), [twitter](TODO), or [email](TODO)
+Please give it a try and let us know what you think on [discord](https://discord.gg/AE3NRw9), [twitter](https://twitter.com/dendronhq) or [github](https://github.com/dendronhq/dendron/discussions).
