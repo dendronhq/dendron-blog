@@ -4,7 +4,7 @@ title: The Dendron Seed Bank - A Public Registry for General Knowledge
 desc: ''
 updated: 1624569852953
 created: 1624562569744
-date: 2021-06-28
+date: '2021-06-28'
 ---
 
 ![seed bank](https://org-dendron-public-assets.s3.amazonaws.com/images/markus-spiske-4PG6wLlVag4-unsplash.jpg)

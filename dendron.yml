@@ -17,6 +17,7 @@ journal:
 initializeRemoteVaults: true
 site:
     previewPort: 8081
+    siteIndex: blog
     siteHierarchies:
         - blog
     siteRootDir: docs

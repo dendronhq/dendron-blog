@@ -5,7 +5,7 @@ desc: ''
 updated: 1624490488558
 created: 1598210596673
 stub: false
-layout: single 
+layout: single
 date: '2020-08-24'
 category: pkm
 header:
@@ -15,7 +15,7 @@ toc_sticky: true
 tags:
   - pkm
 excerpt: Taking note of everything that you care about
-canonicalUrl: "https://www.kevinslin.com/notes/3dd58f62-fee5-4f93-b9f1-b0f0f59a9b64.html"
+canonicalUrl: 'https://www.kevinslin.com/notes/3dd58f62-fee5-4f93-b9f1-b0f0f59a9b64.html'
 ---
 
 ![tree](https://www.kevinslin.com/assets/images/tree.jpeg)

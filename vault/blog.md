@@ -1,12 +1,9 @@
 ---
-id: dQIC3e4oEr9f6xrje6Hol
+id: URjjrrJOy0JEJjukmZaaa
 title: Blog
 desc: ''
 updated: 1624487273289
 created: 1624123322073
-has_collection: true
-sort_by: date
-sort_order: reverse
 ---
 
 
