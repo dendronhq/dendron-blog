@@ -1,6 +1,6 @@
 ---
 id: qTeL51LFD0Y8uC9ect7QV
-title: The Dendron Seed Bank
+title: The Dendron Seed Bank - A Public Registry for General Knowledge
 desc: ''
 updated: 1624569852953
 created: 1624562569744
