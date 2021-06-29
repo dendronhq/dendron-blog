@@ -1,13 +1,13 @@
 {
-    "name": "dendron-site",
-    "version": "1.0.0",
-    "main": "index.js",
-    "license": "MIT",
-    "scripts": {
-      "dendron": "dendron"
-    },
-    "dependencies": {
-      "@dendronhq/dendron-cli": "^0.47.2"
-    }
+  "name": "dendron-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dendron": "dendron"
+  },
+  "dependencies": {
+    "@dendronhq/dendron-11ty": "^1.48.0",
+    "@dendronhq/dendron-cli": "^0.48.0"
   }
-  
+}
