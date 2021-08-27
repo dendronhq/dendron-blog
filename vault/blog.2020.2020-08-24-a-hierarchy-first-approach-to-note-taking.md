@@ -1,17 +1,9 @@
 ---
 id: 3dd58f62-fee5-4f93-b9f1-b0f0f59a9b64
 title: A Hierarchy First Approach to Note Taking
-desc: ''
-updated: 1624490488558
+updated: 1630023147443
 created: 1598210596673
-stub: false
-layout: single
 date: '2020-08-24'
-category: pkm
-header:
-  teaser: assets/images/tree.jpeg
-toc: true
-toc_sticky: true
 tags:
   - pkm
 excerpt: Taking note of everything that you care about
@@ -51,7 +43,7 @@ The rest of this post will describe the journey I took to arrive at hierarchical
 
 I spend a lot of time in the command line in Unix-like systems. If you do as well, you might be familiar with the following comic.
 
-![tar bomb](/assets/images/2020-06-09-15-11-27.png)
+![tar bomb](https://kevinslin-images.s3.us-west-2.amazonaws.com/images/2020-06-09-15-11-27.png)
 > Comic from [XKCD](https://xkcd.com/)
 
 I've probably used `tar` a few thousand times in my life but still can't tell you what the arguments mean (it's mostly muscle memory at this point). Unix tools do one thing and one thing well, and on most days, that one thing is making you reach for a [man page](https://en.wikipedia.org/wiki/Man_page). 
@@ -62,7 +54,7 @@ Growing tired of reading man pages and stack overflow threads, I wanted a way to
 
 I created a folder called `notes`. I created a note called `tar.md`. 
 
-![](/assets/images/2020-12-14-09-59-50.png)
+![creating a tar folder](https://kevinslin-images.s3.us-west-2.amazonaws.com/images/2020-12-14-09-59-50.png)
 
 Note that my `tar.md` note doesn't have every option or use case involving `tar`. Instead, it's only the options that I find most useful and use cases that I've had to do. This tends to be my approach to note-taking - I like to capture the bare minimum information I need so that the future me can get value out of the note.
 

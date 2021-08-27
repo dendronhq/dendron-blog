@@ -1,0 +1,7 @@
+version: 1
+imports: []
+schemas:
+  - id: blog
+    children: []
+    title: blog
+    parent: root
