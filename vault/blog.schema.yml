@@ -5,3 +5,7 @@ schemas:
     children: []
     title: blog
     parent: root
+    namespace: true
+    template:
+      id: template.blog
+      type: note
