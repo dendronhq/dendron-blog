@@ -1,12 +1,14 @@
 ---
 id: JzH76BDLaFwJloUFzkGGg
-title: 2021 08 30 Highlights Vscode 159
+title: Highlights from VSCode 1.59
 desc: ''
 updated: 1630272832402
 created: 1630272366498
+date: '2021-08-30'
+image: "https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-release-highlights-159.png"
+excerpt: "Terminal magic tricks, shared view states, and more in the VSCode 1.59 release"
+author: "Derek Ardolf"
 ---
-
-# Highlights from VSCode 1.59
 
 > This blog article makes use of [footnotes](https://wiki.dendron.so/notes/ba97866b-889f-4ac6-86e7-bb2d97f6e376.html#footnotes), which can be useful to [academics using Dendron](https://wiki.dendron.so/notes/77c8f69c-32b8-4331-b1b2-c4211dcb9fb7.html) or for a cleaner blog experience.
 
