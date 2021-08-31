@@ -2,7 +2,7 @@
 id: JzH76BDLaFwJloUFzkGGg
 title: Highlights from VSCode 1.59
 desc: ''
-updated: 1630369870241
+updated: 1630369995292
 created: 1630272366498
 date: '2021-08-30'
 image: "https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-release-highlights-159.png"
@@ -14,7 +14,7 @@ author: "Derek Ardolf"
 
 The open source VSCode project, along with VSCodium[^1], completed their latest monthly release with v1.59[^2]. Let's take a look at some features that the insiders build[^3] had their impatient, bleeding-edge hands on before the August 2021 release is announced.
 
-### Share view state
+## Share view state
 
 VSCode users are often bouncing around different files in their workspaces. By default, if you close out a file tab, VSCode doesn't track where you were in that file. This can be annoying if you didn't mean to close out the file, or because you were playing whack a mole with the new new workspace trust popups.
 
@@ -24,17 +24,17 @@ Say hello to shared view states across editor groups[^4]. Editor groups are the 
 
 > Ah yes, that's right, I left off at the pig people.[^6]
 
-### Terminal magic tricks
+## Terminal magic tricks
 
 By default, a new terminal can be created with `Ctrl+Tilde(~)`, where it pops up in the bottom as an entryway into the powerful, dark underbelly of shells. VSCode 1.59 highlights some wizardry alternatives.
 
-#### Create terminals to the side
+### Create terminals to the side
 
 Are you one of those people who spins a monitor into portrait mode, because of some insatiable love for 90<sup>o</sup> angles? Maybe you simply prefer tall terminals? `Ctrl+Shift+P` and `Terminal: Create Terminal in Editor Area to the Side`[^7], will be exactly what you're looking for.
 
 ![GIF showing the creation of terminals to the side, instead of defaulting to the bottom](https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-side-terminals.gif)
 
-#### Drag and drop terminals across windows
+### Drag and drop terminals across windows
 
 How many VSCode windows are sitting open on your desktop? Are you taking notes in one workspace, while continuing your commands in a separate VSCode window? Make your life easier, retain all your in-shell variables, and drag the active terminal from one window to another.
 
@@ -44,7 +44,7 @@ This can be helpful when improving the documentation in one window as active dev
 
 An excellent bonus: remember when typos were just typos? The worst thing that could happen was other people making fun of your lack of oxford comma's. Now, with terminal editors, your typo can shutdown your production database! Fun!
 
-### Live preview
+## Live preview
 
 The _Live Preview_ extension[^8], originally released in June, has continued along. For users working in JavaScript land, **Live Preview: Show Debug Preview** ensures a built-in JavaScript debugger[^9].
 
@@ -54,7 +54,7 @@ Note that this extensions has the warning:
 
 For the brave javascripters among you all, who want the beautiful reflections of instant-progress within the editor, take it for a test drive. Report any issues to the [microsoft/vscode-livepreview](https://github.com/microsoft/vscode-livepreview) repo.
 
-### Other notables
+## Other notables
 
 > General tip: Wondering what shortcuts are configured in VSCode? One shortcut to rule them all: `Ctrl+K Ctrl+S`
 - Or `Ctrl+Shift+P` -> **Preferences: Open Keyboard Shortcuts**
