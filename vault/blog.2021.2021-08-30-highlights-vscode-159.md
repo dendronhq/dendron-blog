@@ -2,7 +2,7 @@
 id: JzH76BDLaFwJloUFzkGGg
 title: Highlights from VSCode 1.59
 desc: ''
-updated: 1630369995292
+updated: 1630370077907
 created: 1630272366498
 date: '2021-08-30'
 image: "https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-release-highlights-159.png"
@@ -48,7 +48,7 @@ An excellent bonus: remember when typos were just typos? The worst thing that co
 
 The _Live Preview_ extension[^8], originally released in June, has continued along. For users working in JavaScript land, **Live Preview: Show Debug Preview** ensures a built-in JavaScript debugger[^9].
 
-Note that this extensions has the warning:
+Note that this extension has the warning:
 
 > **WARNING: this is extension is still under development!**
 
