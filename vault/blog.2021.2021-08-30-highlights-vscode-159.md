@@ -2,13 +2,15 @@
 id: JzH76BDLaFwJloUFzkGGg
 title: Highlights from VSCode 1.59
 desc: ''
-updated: 1630369434040
+updated: 1630369870241
 created: 1630272366498
 date: '2021-08-30'
 image: "https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-release-highlights-159.png"
 excerpt: "Terminal magic tricks, shared view states, and more in the VSCode 1.59 release"
 author: "Derek Ardolf"
 ---
+
+![vscode 1.59 highlights](https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-release-highlights-159.png)
 
 The open source VSCode project, along with VSCodium[^1], completed their latest monthly release with v1.59[^2]. Let's take a look at some features that the insiders build[^3] had their impatient, bleeding-edge hands on before the August 2021 release is announced.
 
