@@ -28,7 +28,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: .brokdb
-        key: ${{ hashFiles('.github/workflows/url-check.yml') }}-${{ hashFiles('.brokignore') }}-${{ steps.get-date.outputs.date }}
+        key: ${{ hashFiles('.github/workflows/url-auditor.yml') }}-${{ hashFiles('.brokignore') }}-${{ steps.get-date.outputs.date }}
 
     - name: Install brok
       run: |
