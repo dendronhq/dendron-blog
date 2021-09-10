@@ -15,17 +15,27 @@ jobs:
       with:
         fetch-depth: 0
 
+    # Retain Node modules across builds
+    - name: Restore Node modules cache
+      uses: actions/cache@v2
+      id: node-modules-cache
+      with:
+        path: |
+          node_modules
+          .next/node_modules
+        key: node-modules-${{ hashFiles('yarn.lock')}}
+
     - name: Install npm dependencies
-      run: npm install
+      run: yarn
 
     - name: Initialize .next
-      run: npm run dendron -- publish init
+      run: yarn dendron publish init
 
     - name: Install dependencies
       run: cd .next && npm install && cd ..
 
     - name: Export notes
-      run: npm run dendron -- publish build
+      run: yarn dendron publish build
 
     - name: Prep notes for publish
       run: ./publish.sh
