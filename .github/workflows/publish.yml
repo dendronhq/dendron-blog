@@ -32,7 +32,7 @@ jobs:
       run: yarn dendron publish init
 
     - name: Install dependencies
-      run: cd .next && npm install && cd ..
+      run: cd .next && yarn && cd ..
 
     - name: Export notes
       run: yarn dendron publish build
