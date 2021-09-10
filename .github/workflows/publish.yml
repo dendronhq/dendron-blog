@@ -18,8 +18,17 @@ jobs:
     - name: Install npm dependencies
       run: npm install
 
-    - name: Build pod
-      run: npm run dendron -- buildSite --wsRoot .  --stage prod
+    - name: Initialize .next
+      run: npm run dendron -- publish init
+
+    - name: Install dependencies
+      run: cd .next && npm install && cd ..
+
+    - name: Export notes
+      run: dendron publish build
+
+    - name: Prep notes for publish
+      run: ./publish.sh
 
     - name: Deploy site
       uses: peaceiris/actions-gh-pages@v3

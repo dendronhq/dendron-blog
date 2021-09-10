@@ -1,4 +1,5 @@
 version: 1
+maxPreviewsCached: 10
 vaults:
     -
         fsPath: vault
@@ -8,13 +9,25 @@ noAutoCreateOnDefinition: true
 noLegacyNoteRef: true
 noXVaultWikiLink: true
 lookupConfirmVaultOnCreate: false
+mermaid: true
+useKatex: true
+autoFoldFrontmatter: true
+usePrettyRefs: true
+dev:
+    enablePreviewV2: true
+lookup:
+    note:
+        selectionType: selectionExtract
 journal:
     dailyDomain: daily
     name: journal
     dateFormat: y.MM.dd
     addBehavior: childOfDomain
     firstDayOfWeek: 1
-initializeRemoteVaults: true
+scratch:
+    name: scratch
+    dateFormat: y.MM.dd.HHmmss
+    addBehavior: asOwnDomain
 site:
     previewPort: 8081
     siteIndex: blog
@@ -24,12 +37,12 @@ site:
     gh_edit_repository: 'https://github.com/dendronhq/dendron-blog'
     usePrettyRefs: true
     copyAssets: true
-    # logo: vault/assets/images/logo.png
     siteUrl: 'https://blog.dendron.so'
     siteLastModified: true
     githubCname: blog.dendron.so
     title: Dendron Blog
     author: dendronhq
     twitter: dendronhq
-    description: >-
-        Blog for Dendron
+    description: Blog for Dendron
+initializeRemoteVaults: true
+dendronVersion: 0.58.4
