@@ -25,7 +25,7 @@ jobs:
       run: cd .next && npm install && cd ..
 
     - name: Export notes
-      run: dendron publish build
+      run: npm run dendron -- publish build
 
     - name: Prep notes for publish
       run: ./publish.sh
