@@ -4,17 +4,17 @@ frontend:
     preBuild:
       commands:
         - yarn
-    # IMPORTANT - Please verify your build commands
     build:
       commands: 
-        - "echo `ls -a`"
-        - "npx dendron publish init && cd .next && yarn && cd .. && npx dendron publish build" 
-        - "cd .next && yarn export"
+        - "[[ -d .next ]] && (echo 'updating dendron next...' && cd .next && git reset --hard && git clean -f && git pull) || (echo 'init dendron next' && npx dendron publish init)"
+        - "echo 'install deps...' && cd .next && yarn && cd .."
+        - "echo 'build notes...' && npx dendron publish build"
+        - "echo 'export...' && cd .next && yarn export"
   artifacts:
-    # IMPORTANT - Please verify your build output directory
     baseDirectory: .next/out
     files:
       - '**/*'
   cache:
     paths:
       - node_modules/**/*
+      - .next/node_modules/**/*
