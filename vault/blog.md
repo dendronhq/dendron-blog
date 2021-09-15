@@ -15,7 +15,3 @@ Dendron is a scalable note taking tool that helps **people** organize and refere
 
 This blog is where we share our learnings and reflections from our journey. 
 
-
-<!-- ---
-
-If you like to stay up to date , you can subscribe TODO -->
