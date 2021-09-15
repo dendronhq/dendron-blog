@@ -6,7 +6,7 @@ frontend:
         - yarn
     build:
       commands: 
-        - "[[ -d .next ]] && echo "remove .next" && rm -rf .next"
+        - "[[ -d .next ]] && echo 'remove .next' && rm -rf .next"
         - "echo 'init dendron next' && npx dendron publish init"
         - "echo 'install deps...' && cd .next && yarn && cd .."
         - "echo 'build notes...' && npx dendron publish build"
