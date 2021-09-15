@@ -13,5 +13,4 @@ This is the Dendron Blog.
 
 Dendron is a scalable note taking tool that helps **people** organize and reference all the information they care about.  
 
-This blog is where we share our learnings and reflections from our journey. 
-
+This blog is where we share our learnings and reflections from our journey! 
