@@ -30,6 +30,7 @@ scratch:
     addBehavior: asOwnDomain
 site:
     previewPort: 8081
+    ga_tracking: "G-15EVNLBT2H"
     siteIndex: blog
     siteHierarchies:
         - blog
