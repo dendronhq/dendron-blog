@@ -8,7 +8,7 @@ excerpt: An overview of writing VSCode completion providers (intellisense) as an
 image: https://i.imgur.com/Qu2LPJR.png
 ---
 
-![vscode 1.59 highlights](https://org-dendron-public-assets.s3.amazonaws.com/images/pexels-thisisengineering-3861972.jpg)
+![A photo of a developer with a laptop and 2 monitors, from a top-down view. Monitors display Visual Studio Code windows.](https://org-dendron-public-assets.s3.amazonaws.com/images/pexels-thisisengineering-3861972.jpg)
 
 Visual Studio Code (VSCode) provides many powerful features for extension developers. Autocomplete, warnings, tasks, and many more features are included out-of-the-box and are available for extension developers to take advantage of. However, figuring out how you can take advantage of these features as an extension developer can require digging through API documentation to learn the exact behavior. Using the API incorrectly can lead to issues that are hard to debug, as I learned working on the block autocomplete feature for Dendron.
 
@@ -193,3 +193,12 @@ The first part adds a text edit to remove the `^` part the user typed by
 calculating the range from a regex match, then replacing it with `""`. The
 second part adds the ` ^...` part to a block by calculating the range from the
 parsed document.
+
+## Conclusion
+
+Autocomplete is a ubiquitous feature in text editing today, both for writing
+natural languages and coding. It is an incredibly easy-to-use yet powerful
+feature for your users, and it enables unmatched user experiences when done
+right. But when done wrong, it can cause a disconnect and confusion around your
+product. At Dendron, we strive for the former and hope that the learnings from
+our experience will help you do the same.
