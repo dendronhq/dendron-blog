@@ -6,7 +6,7 @@ frontend:
         - yarn
     build:
       commands: 
-        - "[[ -d .next ]] && (rm -rf .next)" 
+        - "[[ -d .next ]] && (echo 'updating dendron next...' && cd .next && git reset --hard && git clean -f && git pull) || (echo 'init dendron next' && npx dendron publish init)"
         - "(echo 'init dendron next' && npx dendron publish init)"
         - "echo 'install deps...' && cd .next && yarn && cd .."
         - "echo 'build notes...' && npx dendron publish build"
@@ -19,3 +19,5 @@ frontend:
     paths:
       - node_modules/**/*
       - .next/node_modules/**/*
+      - .next/.next/**/*
+      - .next/.git/**/*
