@@ -1,7 +1,7 @@
 ---
 id: 3dd58f62-fee5-4f93-b9f1-b0f0f59a9b64
 title: A Hierarchy First Approach to Note Taking
-updated: 1630023147443
+updated: 1634758949439
 created: 1598210596673
 date: '2020-08-24'
 tags:
@@ -10,7 +10,7 @@ excerpt: Taking note of everything that you care about
 canonicalUrl: 'https://www.kevinslin.com/notes/3dd58f62-fee5-4f93-b9f1-b0f0f59a9b64.html'
 ---
 
-![tree](https://www.kevinslin.com/assets/images/tree.jpeg)
+![tree](https://kevinslin-images.s3.us-west-2.amazonaws.com/images/tree.jpeg)
 
 Ten years ago I wrote a note. 
 
