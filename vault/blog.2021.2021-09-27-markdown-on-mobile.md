@@ -2,9 +2,9 @@
 id: fDCVPEo3guCFWPdxokXHU
 title: 'Best Mobile Note-Taking Apps for Markdown'
 desc: ''
-updated: 1634764188863
+updated: 1634821901354
 created: 1632684719327
-date: '2021-10-20'
+date: '2021-10-25'
 image: "https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png"
 excerpt: "An overview of mobile apps that work well with Markdown"
 author: "Derek Ardolf"
@@ -141,7 +141,23 @@ If I had to choose what combinations to use, on Android, I'd recommend **Obsidia
 
 ---
 
-Enjoy this post? [Subscribe to our newsletter!](https://buttondown.email/dendron)
+Enjoy this post? Subscribe to our newsletter!
+
+<form
+  action="https://buttondown.email/api/emails/embed-subscribe/dendron"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/dendron', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" />
+  <p>
+    <i>(Powered by <a href="https://buttondown.email" target="_blank">Buttondown</a>)</i>
+  </p>
+</form>
+
 
 Newsletters not your thing? You can also follow us elsewhere on the interwebs:
 
