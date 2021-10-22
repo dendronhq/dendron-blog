@@ -2,12 +2,13 @@
 id: fDCVPEo3guCFWPdxokXHU
 title: 'Best Mobile Note-Taking Apps for Markdown'
 desc: ''
-updated: 1634853865424
+updated: 1634865416602
 created: 1632684719327
 date: '2021-10-25'
 image: "https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png"
 excerpt: "An overview of mobile apps that work well with Markdown"
 author: "Derek Ardolf"
+published: false
 ---
 
 ![Photo of a phone ontop of a notebook](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png)
