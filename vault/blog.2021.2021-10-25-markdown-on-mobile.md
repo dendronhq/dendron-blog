@@ -10,6 +10,7 @@ author: Derek Ardolf
 image:
   url: https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png
   alt: Mobile phone sitting ontop of a journal
+publish: true
 ---
 
 ![Mobile phone sitting ontop of a journal](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png)
