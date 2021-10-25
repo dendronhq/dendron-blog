@@ -4,8 +4,6 @@ title: Best Mobile Note-Taking Apps for Markdown
 desc: ''
 updated: 1635183157051
 created: 1632684719327
-image: >-
-  https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png
 date: '2021-10-25'
 excerpt: An overview of mobile apps that work well with Markdown
 author: Derek Ardolf
