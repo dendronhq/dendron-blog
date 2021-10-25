@@ -7,6 +7,6 @@
     "dendron": "dendron"
   },
   "dependencies": {
-    "@dendronhq/dendron-cli": "^0.60.1-alpha.2"
+    "@dendronhq/dendron-cli": "*"
   }
 }
