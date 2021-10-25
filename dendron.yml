@@ -1,36 +1,15 @@
-version: 1
-maxPreviewsCached: 10
-vaults:
-    -
-        fsPath: vault
+version: 3
 useFMTitle: true
 useNoteTitleForLink: true
-noAutoCreateOnDefinition: true
 noLegacyNoteRef: true
-noXVaultWikiLink: true
-lookupConfirmVaultOnCreate: false
 mermaid: true
 useKatex: true
-autoFoldFrontmatter: true
 usePrettyRefs: true
 dev:
     enablePreviewV2: true
-lookup:
-    note:
-        selectionType: selectionExtract
-journal:
-    dailyDomain: daily
-    name: journal
-    dateFormat: y.MM.dd
-    addBehavior: childOfDomain
-    firstDayOfWeek: 1
-scratch:
-    name: scratch
-    dateFormat: y.MM.dd.HHmmss
-    addBehavior: asOwnDomain
 site:
     previewPort: 8081
-    ga_tracking: "G-15EVNLBT2H"
+    ga_tracking: G-15EVNLBT2H
     siteIndex: blog
     siteHierarchies:
         - blog
@@ -45,5 +24,41 @@ site:
     author: dendronhq
     twitter: dendronhq
     description: Blog for Dendron
-initializeRemoteVaults: true
-dendronVersion: 0.58.4
+    gh_edit_branch: main
+commands:
+    lookup:
+        note:
+            selectionMode: extract
+            confirmVaultOnCreate: false
+            leaveTrace: false
+    insertNote:
+        initialValue: templates
+    insertNoteLink:
+        aliasMode: none
+        enableMultiSelect: false
+    insertNoteIndex:
+        enableMarker: false
+    randomNote: {}
+workspace:
+    dendronVersion: 0.64.1
+    vaults:
+        -
+            fsPath: vault
+    journal:
+        dailyDomain: daily
+        name: journal
+        dateFormat: y.MM.dd
+        addBehavior: childOfDomain
+    scratch:
+        name: scratch
+        dateFormat: y.MM.dd.HHmmss
+        addBehavior: asOwnDomain
+    graph:
+        zoomSpeed: 1
+    enableAutoCreateOnDefinition: false
+    enableXVaultWikiLink: false
+    enableRemoteVaultInit: true
+    workspaceVaultSyncMode: noCommit
+    enableAutoFoldFrontmatter: true
+    maxPreviewsCached: 10
+    maxNoteLength: 204800
