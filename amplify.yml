@@ -6,7 +6,7 @@ frontend:
         - yarn
     build:
       commands: 
-        - "(test -d .next) && (rm -rf .next) 
+        - "(test -d .next) && (rm -rf .next) "
         - "echo 'version check...' && npx dendron --version"
         - npx dendron publish init
         - "echo 'build and export...' && npx dendron publish export"
