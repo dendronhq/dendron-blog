@@ -2,10 +2,11 @@
 id: IThOx1Oag1r0JAglpiDLp
 title: Writing a Visual Studio Code Completion Provider
 desc: ''
-updated: 1631858724215
+updated: 1635183870834
 created: 1631857825780
+date: '2021-09-20'
 excerpt: An overview of writing VSCode completion providers (intellisense) as an extension developer
-image: 
+image:
   url: https://i.imgur.com/Qu2LPJR.png
   alt: VSCode Auto completion
 ---

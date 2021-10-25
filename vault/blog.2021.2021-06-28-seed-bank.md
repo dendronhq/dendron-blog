@@ -2,15 +2,17 @@
 id: qTeL51LFD0Y8uC9ect7QV
 title: The Dendron Seed Bank - A Public Registry for General Knowledge
 desc: ''
-updated: 1624901178927
+updated: 1635183876023
 created: 1624562569744
 date: '2021-06-28'
-image: "https://org-dendron-public-assets.s3.amazonaws.com/images/markus-spiske-4PG6wLlVag4-unsplash.jpg"
 excerpt: "Github for knowledge"
 author: "Kevin S Lin"
+image:
+  url: https://org-dendron-public-assets.s3.amazonaws.com/images/markus-spiske-4PG6wLlVag4-unsplash.jpg
+  alt: Several plants in various stages of early growth and seedlings
 ---
 
-![seed bank](https://org-dendron-public-assets.s3.amazonaws.com/images/markus-spiske-4PG6wLlVag4-unsplash.jpg)
+![Several plants in various stages of early growth and seedlings](https://org-dendron-public-assets.s3.amazonaws.com/images/markus-spiske-4PG6wLlVag4-unsplash.jpg)
 
 
 ## Summary

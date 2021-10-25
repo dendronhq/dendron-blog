@@ -1,17 +1,20 @@
 ---
 id: fDCVPEo3guCFWPdxokXHU
-title: 'Best Mobile Note-Taking Apps for Markdown'
+title: Best Mobile Note-Taking Apps for Markdown
 desc: ''
-updated: 1635180067476
+updated: 1635183157051
 created: 1632684719327
+image: >-
+  https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png
 date: '2021-10-25'
-image: "https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png"
-excerpt: "An overview of mobile apps that work well with Markdown"
-author: "Derek Ardolf"
-published: true
+excerpt: An overview of mobile apps that work well with Markdown
+author: Derek Ardolf
+image:
+  url: https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png
+  alt: Mobile phone sitting ontop of a journal
 ---
 
-![Photo of a phone ontop of a notebook](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png)
+![Mobile phone sitting ontop of a journal](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png)
 
 On the desktop, markdown-based notes can be taken in any plain-text editor of choice. If you're using [Dendron](https://www.dendron.so/), you can use VSCode/VSCodium as well as a suite of [powerful commands](https://wiki.dendron.so/notes/eea2b078-1acc-4071-a14e-18299fc28f47.html) to manage your notes. Though, what happens when you walk out the door? It turns out that your phone can work with markdown, too!
 
