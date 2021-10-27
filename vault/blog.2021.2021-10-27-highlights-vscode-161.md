@@ -2,17 +2,17 @@
 id: 83fIARBsKRnUlBL433RND
 title: Highlights from VSCode 1.61
 desc: ''
-updated: 1635291207137
+updated: 1635356829391
 created: 1635289711440
 date: '2021-10-27'
 excerpt: "Locked editor groups, doing the splits, and more in the VSCode 1.61 release"
 author: "Derek Ardolf"
 image:
-  url: https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-release-filter-hue-40.png
+  url: https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-filter-hue-40.png
   alt: Visual Studio Code logo
 ---
 
-![vscode 1.61 highlights](https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-release-highlights-159.png)
+![vscode 1.61 highlights](https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-filter-hue-40.png)
 
 The open source VSCode project, along with VSCodium[^1], completed their latest monthly release with v1.61[^2]. For those of us that haven't been using the Insider's Build,[^3] it's time to look at what's new.
 
