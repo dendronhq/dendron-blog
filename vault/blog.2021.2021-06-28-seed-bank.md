@@ -2,7 +2,7 @@
 id: qTeL51LFD0Y8uC9ect7QV
 title: The Dendron Seed Bank - A Public Registry for General Knowledge
 desc: ''
-updated: 1635183876023
+updated: 1635291259259
 created: 1624562569744
 date: '2021-06-28'
 excerpt: "Github for knowledge"
@@ -73,3 +73,7 @@ With Dendron, we took elements of programming tools (eg. lookup, refactor, schem
 Our mission is to help **people** organize and make sense of any amount of information.  We are doing this by building the [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) for general knowledge.
 
 Please give it a try and let us know what you think on [discord](https://discord.gg/AE3NRw9), [twitter](https://twitter.com/dendronhq) or [github](https://github.com/dendronhq/dendron/discussions).
+
+---
+
+![[blog.subscribe]]

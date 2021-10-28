@@ -2,7 +2,7 @@
 id: IThOx1Oag1r0JAglpiDLp
 title: Writing a Visual Studio Code Completion Provider
 desc: ''
-updated: 1635183870834
+updated: 1635291240822
 created: 1631857825780
 date: '2021-09-20'
 excerpt: An overview of writing VSCode completion providers (intellisense) as an extension developer
@@ -205,3 +205,7 @@ feature for your users, and it enables unmatched user experiences when done
 right. But when done wrong, it can cause a disconnect and confusion around your
 product. At Dendron, we strive for the former and hope that the learnings from
 our experience will help you do the same.
+
+---
+
+![[blog.subscribe]]

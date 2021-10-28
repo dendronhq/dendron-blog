@@ -2,7 +2,7 @@
 id: N9VxT7G5SovmncezBAGO2
 title: Dendron Inc
 desc: ''
-updated: 1635183848321
+updated: 1635291264579
 created: 1624123542935
 excerpt: We are launching a company
 canonicalUrl: 'https://wiki.dendron.so/notes/8d6bb6c6-f2b5-4fb4-a7f0-1930b528051f.html'
@@ -34,3 +34,7 @@ From day one, the words of Vannevar Bush, originator of the [memex](https://en.w
 Our goal is to help humans take **command over the inherited knowledge of the ages**. We welcome you to be part of our journey :)
 
 (and we are [hiring](https://wiki.dendron.so/notes/c378b702-7d49-4e91-be6e-b2078103c86e.html))
+
+---
+
+![[blog.subscribe]]

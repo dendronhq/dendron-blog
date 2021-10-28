@@ -288,3 +288,7 @@ If this mission statement resonates, I hope you join me on the journey! There ar
 - you can star and watch us on [github](https://github.com/dendronhq/dendron)
 
 Whatever path you take, safe travels and hope you take note of the journey!
+
+---
+
+![[blog.subscribe]]

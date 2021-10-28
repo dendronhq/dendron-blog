@@ -2,7 +2,7 @@
 id: JzH76BDLaFwJloUFzkGGg
 title: Highlights from VSCode 1.59
 desc: ''
-updated: 1635183873316
+updated: 1635399887891
 created: 1630272366498
 date: '2021-08-30'
 excerpt: "Terminal magic tricks, shared view states, and more in the VSCode 1.59 release"
@@ -18,7 +18,7 @@ The open source VSCode project, along with VSCodium[^1], completed their latest 
 
 ## Share view state
 
-VSCode users are often bouncing around different files in their workspaces. By default, if you close out a file tab, VSCode doesn't track where you were in that file. This can be annoying if you didn't mean to close out the file, or because you were playing whack a mole with the new new workspace trust popups.
+VSCode users are often bouncing around different files in their workspaces. By default, if you close out a file tab, VSCode doesn't track where you were in that file. This can be annoying if you didn't mean to close out the file, or because you were playing whack-a-mole with the new workspace trust popups.
 
 Say hello to shared view states across editor groups[^4]. Editor groups are the windows of tab collections within the VSCode editor[^5] that grow whenever **Split Editor/Open to the Side** commands are used. These groups can remember your past so that your rampant mind doesn't need to.
 
@@ -32,7 +32,7 @@ By default, a new terminal can be created with `Ctrl+Tilde(~)`, where it pops up
 
 ### Create terminals to the side
 
-Are you one of those people who spins a monitor into portrait mode, because of some insatiable love for 90<sup>o</sup> angles? Maybe you simply prefer tall terminals? `Ctrl+Shift+P` and `Terminal: Create Terminal in Editor Area to the Side`[^7], will be exactly what you're looking for.
+Are you one of those people that spins a monitor into portrait mode, because of some insatiable love for 90<sup>o</sup> angles? Maybe you simply prefer tall terminals? `Ctrl+Shift+P` and `Terminal: Create Terminal in Editor Area to the Side`[^7], will be exactly what you're looking for.
 
 ![GIF showing the creation of terminals to the side, instead of defaulting to the bottom](https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-side-terminals.gif)
 
@@ -62,7 +62,11 @@ For the brave javascripters among you all, who want the beautiful reflections of
 - Or `Ctrl+Shift+P` -> **Preferences: Open Keyboard Shortcuts**
 
 - If you're using an M1 Mac, you should get the latest VSCode 1.59.1[^10] point release, as it addresses a bug where VSCode may crash.
-- A _preview feature_[^11] has been added for automatic language detection in unsaved/untitled files. `experimentalLanguageDetection`[^12] (search against settings via `Ctrl+Comma`) can be set to `true`, which uses an ML model from `yoeo/Guesslang`[^13] with the open-source ML library `Tensorflow.js`[^14]. VSCode is planning for this feature to be `true` by default in the future, so that code is recognized out-of-box, instead of always relying on the file extension or force **Change Language Mode** (`Ctrl+K M`).
+- A _preview feature_[^11] has been added for automatic language detection in unsaved/untitled files. `experimentalLanguageDetection`[^12] (search against settings via `Ctrl+Comma`) can be set to `true`, which uses an ML model from `yoeo/Guesslang`[^13] with the open-source ML library `TensorFlow.js`[^14]. VSCode is planning for this feature to be `true` by default in the future, so that code is recognized out-of-box, instead of always relying on the file extension or force **Change Language Mode** (`Ctrl+K M`).
+
+---
+
+![[blog.subscribe]]
 
 [^1]: [Checkout VSCodium](https://vscodium.com/), for the truly MIT-licensed version of the VSCode IDE (with telemetry/tracking disabled).
 [^2]: [VSCode release notes for 1.59](https://code.visualstudio.com/updates/v1_59), along with release notes for previous monthly releases.
@@ -77,4 +81,4 @@ For the brave javascripters among you all, who want the beautiful reflections of
 [^11]: Normally, release notes include this snippet about [preview features and what they are](https://code.visualstudio.com/updates/v1_41#_preview-features): _"**Preview features** are not ready for release but are functional enough to use. We welcome your early feedback while they are under development."_
 [^12]: Read about [Automatic Language Detection of Untitled Files](https://code.visualstudio.com/updates/v1_59#_automatic-language-detection-of-untitled-files) in the release notes.
 [^13]: [Guesslang](https://github.com/yoeo/guesslang), by GitHub user [yoeo](https://github.com/yoeo), is an MIT-licensed ML model and Python package that can help detect the programming language of source code. It's been trained on over a million source code files.
-[^14]: [Tensorflow.js](https://www.tensorflow.org/js/) makes development and useage of ML available within the browser or [Node.js](https://nodejs.org/en/). For more about Tensorflow, checkout the [_Why TensorFlow_ page](https://www.tensorflow.org/about).
+[^14]: [TensorFlow.js](https://www.tensorflow.org/js/) makes development and usage of ML available within the browser or [Node.js](https://nodejs.org/en/). For more about TensorFlow, checkout the [_Why TensorFlow_ page](https://www.tensorflow.org/about).
