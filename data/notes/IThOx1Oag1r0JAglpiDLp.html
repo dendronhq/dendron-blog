@@ -1,0 +1,174 @@
+<h1 id="writing-a-visual-studio-code-completion-provider"><a aria-hidden="true" class="anchor-heading" href="#writing-a-visual-studio-code-completion-provider"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Writing a Visual Studio Code Completion Provider</h1>
+<p><img src="https://org-dendron-public-assets.s3.amazonaws.com/images/pexels-thisisengineering-3861972.jpg" alt="A photo of a developer with a laptop and 2 monitors, from a top-down view. Monitors display Visual Studio Code windows."></p>
+<p>Visual Studio Code (VSCode) provides many powerful features for extension developers. Autocomplete, warnings, tasks, and many more features are included out-of-the-box and are available for extension developers to take advantage of. However, figuring out how you can take advantage of these features as an extension developer can require digging through API documentation to learn the exact behavior. Using the API incorrectly can lead to issues that are hard to debug, as I learned working on the block autocomplete feature for Dendron.</p>
+<p>This post is an overview of VSCode autocomplete —also called intellisense— feature from the viewpoint of an extension developer. I especially want to highlight a few pitfalls: VSCode provides defaults for many of the options around autocomplete, but the behavior of these defaults can be confusing if you don't know what they are.</p>
+<h3 id="entry-point"><a aria-hidden="true" class="anchor-heading" href="#entry-point"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Entry point</h3>
+<p>Your entry point into adding an autocomplete feature is <code>languages.registerCompletionItemProvider</code>. This allows you to attach a function that will generate the options when requested.</p>
+<pre class="language-ts"><code class="language-ts">languages<span class="token punctuation">.</span><span class="token method function property-access">registerCompletionItemProvider</span><span class="token punctuation">(</span>
+  <span class="token string">"markdown"</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    provideCompletionItems<span class="token operator">:</span> provideBlockCompletionItems<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">"#"</span><span class="token punctuation">,</span>
+  <span class="token string">"^"</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Above is how Dendron attaches the completion provider for blocks. This part is straightforward, although note the symbols at the end. These are the symbols that when written will trigger your completion provider automatically. While you can define multiple symbols, each symbol has to be a single character. If An overview &#x26; tutorial of writing VSCode completion providers (intellisense) as an extension developer</p>
+<p>Next, let's take a look at the completion function. Here is the function signature for Dendron:</p>
+<pre class="language-ts"><code class="language-ts"><span class="token keyword module">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">provideBlockCompletionItems</span><span class="token punctuation">(</span>
+  <span class="token dom variable">document</span><span class="token operator">:</span> <span class="token maybe-class-name">TextDocument</span><span class="token punctuation">,</span>
+  position<span class="token operator">:</span> <span class="token maybe-class-name">Position</span><span class="token punctuation">,</span>
+  token<span class="token operator">?</span><span class="token operator">:</span> <span class="token maybe-class-name">CancellationToken</span>
+<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token known-class-name class-name">Promise</span><span class="token operator">&#x3C;</span><span class="token maybe-class-name">CompletionItem</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">|</span> <span class="token keyword nil">undefined</span><span class="token operator">></span> <span class="token punctuation">{</span>
+</code></pre>
+<p><code>document</code> and <code>position</code> are straightforward. <code>token</code> is used to cancel completions, for example if the user hits cancel while waiting for the completions. Key thing about the token is to remember that javascript is single-threaded: the token won't suddenly get cancelled in the middle of your function. The only point where it can become cancelled is if you <code>await</code> for something and yield the execution. This means you don't have to check if the token is cancelled everywhere in your code, just check after any <code>await</code>ed operation that might take a significant amount of time. Checking the token is easy, <code>if (token?.isCancellationRequested) return;</code> is enough.</p>
+<p>The more important thing here is how the function gets called. One way the function will get called is if the user types one of the trigger symbols you registered. Another way is if the user hits the key for "Trigger Suggest" (<code>Ctrl+Space</code> by default), <em>all</em> registered completion providers for this language will run. Crucially, this means your completion provider may be activated at any point in the document, with or without your trigger key.
+It's up to your implementation to check if the current <code>position</code> is somewhere that this completion is appropriate for, and <code>return;</code> if not. Let's look at a simplified version of how Dendron handles this for the autocomplete:</p>
+<pre class="language-ts"><code class="language-ts"><span class="token keyword">let</span> found<span class="token operator">:</span> <span class="token maybe-class-name">RegExpMatchArray</span> <span class="token operator">|</span> <span class="token keyword nil">undefined</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> line <span class="token operator">=</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">lineAt</span><span class="token punctuation">(</span>position<span class="token punctuation">.</span><span class="token property-access">line</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// There may be multiple links within this line</span>
+<span class="token keyword">const</span> matches <span class="token operator">=</span> line<span class="token punctuation">.</span><span class="token property-access">text</span><span class="token punctuation">.</span><span class="token method function property-access">matchAll</span><span class="token punctuation">(</span><span class="token constant">LINK_WITH_BLOCK_REGEX</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword control-flow">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> match <span class="token keyword">of</span> matches<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>_<span class="token punctuation">.</span><span class="token method function property-access">isUndefined</span><span class="token punctuation">(</span>match<span class="token punctuation">.</span><span class="token property-access">groups</span><span class="token punctuation">)</span> <span class="token operator">||</span> _<span class="token punctuation">.</span><span class="token method function property-access">isUndefined</span><span class="token punctuation">(</span>match<span class="token punctuation">.</span><span class="token property-access">index</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword control-flow">continue</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> entireLink <span class="token punctuation">}</span> <span class="token operator">=</span> match<span class="token punctuation">.</span><span class="token property-access">groups</span><span class="token punctuation">;</span>
+  <span class="token comment">// If the current position is within this link, then we are trying to complete it</span>
+  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>
+      match<span class="token punctuation">.</span><span class="token property-access">index</span> <span class="token operator">&#x3C;=</span> position<span class="token punctuation">.</span><span class="token property-access">character</span> <span class="token operator">&#x26;&#x26;</span>
+      position<span class="token punctuation">.</span><span class="token property-access">character</span> <span class="token operator">&#x3C;=</span> match<span class="token punctuation">.</span><span class="token property-access">index</span> <span class="token operator">+</span> entireLink<span class="token punctuation">.</span><span class="token property-access">length</span>
+  <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      found <span class="token operator">=</span> match<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>_<span class="token punctuation">.</span><span class="token method function property-access">isUndefined</span><span class="token punctuation">(</span>found<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword control-flow">return</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The gist of it is that we get the text for the current line, and check if the current position is inside a link with a block that we can complete.</p>
+<h3 id="completionitem"><a aria-hidden="true" class="anchor-heading" href="#completionitem"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><code>CompletionItem</code></h3>
+<h4 id="label"><a aria-hidden="true" class="anchor-heading" href="#label"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><code>label</code></h4>
+<p>A key part of the completion item is the label. The label is not only displayed for the completion items, but it's also used as a default for many of the options in a <code>CompletionItem</code>. The text that gets inserted when the user selects something, deciding the order in which these items are displayed, and how these options are narrowed when the user types are all based on the label by default.</p>
+<p><img src="https://i.imgur.com/Qu2LPJR.png" alt="A screen shot displaying several completion items. &#x22;journal.2021.06&#x22; is written within brackets, which is also highlighted in all completion items."></p>
+<h4 id="range"><a aria-hidden="true" class="anchor-heading" href="#range"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><code>range</code></h4>
+<p>The range is the most confusing part of the <code>CompletionItem</code> in my opinion. The range determines 2 things: where the selected item will be inserted, and also what counts as "stuff that the user typed to narrow the items".</p>
+<p>For the first use of range, whatever range you provide will be replaced with the <code>insertText</code> (or missing that, <code>label</code>) of the completion item. If you have nothing to replace, the range can have <code>start === end</code> in which case the text is just inserted at that point.</p>
+<p>The second use of range makes things a bit more tricky. Because the range determines what counts as "stuff the user typed", you have to be careful about what you include in the range. For example, Dendron's autocomplete allows users to type <code>[[^</code> to get all blocks within a text as autocomplete options.</p>
+<p>The problem? The user needs to type <code>^</code> to activate the completion, but <code>^</code> is not part of any completion item, and also <code>^</code> needs to be removed once an item is selected because the text is supposed to look like <code>[[#^something]]</code> after the completion. </p>
+<p>While it would be convenient to just set the range to anything within the brackets, this will result in all completion items being narrowed out because <code>^</code> will also count as "stuff the user typed to narrow the items".</p>
+<p>Something important to bring up here is the default for <code>range</code>. If you look
+into the docs, you'll see that the default is the "range of the current word",
+effectively the output of <code>TextDocument.getWordRangeAtPosition</code> function.
+<code>getWordRangeAtPosition</code> allows you to set a custom regex to select what
+"current word" means, so this might sound like a good way to calculate the
+range. While this would work in some cases, I found that
+<code>getWordRangeAtPosition</code> is extremely inefficient if your regex is more complex
+than <code>[...]+</code>. Especially using lookaheads or lookbehinds causes VSCode to
+completely hang. I'd recommend avoiding this function unless the default mostly
+works for you.</p>
+<h4 id="sorttext"><a aria-hidden="true" class="anchor-heading" href="#sorttext"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><code>sortText</code></h4>
+<p>This field is used to determine in what order the completion items are <em>initially</em> ordered. Initially is important here, as VSCode may move the items around once the user starts typing if it decides some items match the text better.</p>
+<p>The annoying part about <code>sortText</code>: it simply sorts the items using basic string sorting. Issue here being that if you have a loop to generate your completion items, you can't just use the index to sort the items.</p>
+<pre class="language-ts"><code class="language-ts">blocks<span class="token punctuation">.</span><span class="token method function property-access">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>block<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// These won't sort right, because "11" &#x3C; "9" in string sort</span>
+  <span class="token keyword control-flow">return</span> <span class="token punctuation">{</span>
+    label<span class="token operator">:</span> block<span class="token punctuation">.</span><span class="token property-access">text</span><span class="token punctuation">,</span>
+    sortText<span class="token operator">:</span> <span class="token known-class-name class-name">String</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The fix is to pad your <code>sortText</code>.</p>
+<pre class="language-ts"><code class="language-ts">sortText<span class="token operator">:</span> <span class="token known-class-name class-name">String</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">padStart</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token string">'0'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code></pre>
+<p>This is not a perfect fix of course, but it's unlikely that you'll have over 99999 completion items.</p>
+<h4 id="inserttext"><a aria-hidden="true" class="anchor-heading" href="#inserttext"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><code>insertText</code></h4>
+<p>This is the text to be inserted when the user selects a completion. By default
+it's set to the label, but you'll want to set this if you are using the label to
+display something more informative to the user. For example, when completing
+blocks, Dendron uses the label to display the actual line the user is selecting.
+But the text we need to insert into the wikilink is not the same as the line
+itself, so we set this to get it to link to the right place.</p>
+<pre class="language-ts"><code class="language-ts">insertText<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">#</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token maybe-class-name">AnchorUtils</span><span class="token punctuation">.</span><span class="token method function property-access">anchor2string</span><span class="token punctuation">(</span>anchor<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+</code></pre>
+<h4 id="additionaltextedits"><a aria-hidden="true" class="anchor-heading" href="#additionaltextedits"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><code>additionalTextEdits</code></h4>
+<p><code>insertText</code> replaces the part of the text that is selected by the <code>range</code>. This
+is actually quite limiting: As I mentioned before, <code>range</code> not only selects the
+what will be replaced but also what VSCode considers "typed by the user to
+narrow options". What if you want something to be replaced along with what the
+user typed, but you don't want it to be used in narrowing?</p>
+<p>For example, when autocompleting for blocks in Dendron the user might type
+<code>[[^some-header</code>, but the resulting link will look like
+<code>[[#some-header-text-here]]</code>. We need to remove <code>^</code> along with whatever the user
+typed, but if we set the <code>range</code> to include it then the narrowing would be
+thrown off because it would look for options where the label includes <code>^</code>.
+To get around this, we use the <code>additionalTextEdits</code> to automatically remove the
+<code>^</code> part.</p>
+<p>Another use for <code>additionalTextEdits</code> is to insert text somewhere completely
+different in the document. Think of auto-imports for some languages, where you
+type something and the language automatically adds <code>import ...</code>. Or in Dendron,
+if the user selects a block that doesn't already have a block anchor when
+completing blocks, we need to insert a block anchor there. <code>additionalTextEdits</code>
+have no limits to where they can put the text, as long as it's within the same
+document. In any case, let's see what this code looks like:</p>
+<pre class="language-ts"><code class="language-ts"><span class="token keyword">const</span> edits<span class="token operator">:</span> <span class="token maybe-class-name">TextEdit</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>found<span class="token punctuation">.</span><span class="token property-access">groups</span><span class="token punctuation">.</span><span class="token property-access">trigger</span><span class="token punctuation">)</span> edits<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span>
+  <span class="token keyword">new</span> <span class="token class-name"><span class="token maybe-class-name">TextEdit</span></span><span class="token punctuation">(</span>
+    <span class="token keyword">new</span> <span class="token class-name"><span class="token maybe-class-name">Range</span></span><span class="token punctuation">(</span>
+      position<span class="token punctuation">.</span><span class="token property-access">line</span><span class="token punctuation">,</span> found<span class="token punctuation">.</span><span class="token property-access">index</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      position<span class="token punctuation">.</span><span class="token property-access">line</span><span class="token punctuation">,</span> found<span class="token punctuation">.</span><span class="token property-access">index</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">+</span> found<span class="token punctuation">.</span><span class="token property-access">groups</span><span class="token punctuation">.</span><span class="token property-access">trigger</span><span class="token punctuation">.</span><span class="token property-access">length</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">""</span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>_<span class="token punctuation">.</span><span class="token method function property-access">isUndefined</span><span class="token punctuation">(</span>anchor<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  anchor <span class="token operator">=</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token string">"block"</span><span class="token punctuation">,</span>
+    value<span class="token operator">:</span> <span class="token function">genUUIDInsecure</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> blockPosition <span class="token operator">=</span> <span class="token maybe-class-name">VSCodeUtils</span><span class="token punctuation">.</span><span class="token method function property-access">point2VSCodePosition</span><span class="token punctuation">(</span>
+    block<span class="token punctuation">.</span><span class="token property-access">position</span><span class="token punctuation">.</span><span class="token property-access">end</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  edits<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span>
+    <span class="token keyword">new</span> <span class="token class-name"><span class="token maybe-class-name">TextEdit</span></span><span class="token punctuation">(</span>
+      <span class="token keyword">new</span> <span class="token class-name"><span class="token maybe-class-name">Range</span></span><span class="token punctuation">(</span>blockPosition<span class="token punctuation">,</span> blockPosition<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token maybe-class-name">AnchorUtils</span><span class="token punctuation">.</span><span class="token method function property-access">anchor2string</span><span class="token punctuation">(</span>anchor<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The first part adds a text edit to remove the <code>^</code> part the user typed by
+calculating the range from a regex match, then replacing it with <code>""</code>. The
+second part adds the <code> ^...</code> part to a block by calculating the range from the
+parsed document.</p>
+<h2 id="conclusion"><a aria-hidden="true" class="anchor-heading" href="#conclusion"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Conclusion</h2>
+<p>Autocomplete is a ubiquitous feature in text editing today, both for writing
+natural languages and coding. It is an incredibly easy-to-use yet powerful
+feature for your users, and it enables unmatched user experiences when done
+right. But when done wrong, it can cause a disconnect and confusion around your
+product. At Dendron, we strive for the former and hope that the learnings from
+our experience will help you do the same.</p>
+<hr>
+<p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Subscribe</span></div>
+<a href="/notes/jCoayBWmLrfn2W4WrOR9x" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><p>Enjoy the blog? Subscribe to our newsletter!</p>
+<form action="https://buttondown.email/api/emails/embed-subscribe/dendron" method="post" target="popupwindow" onsubmit="window.open(&#x27;https://buttondown.email/dendron&#x27;, &#x27;popupwindow&#x27;)" class="embeddable-buttondown-form">
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email">
+  <input type="submit" value="Subscribe">
+  <p></p>
+</form>
+<p>Newsletters not your thing? You can also follow us elsewhere on the interwebs:</p>
+<ul>
+<li>Join <a href="https://discord.com/invite/xrKTUStHNZ">Dendron on Discord</a></li>
+<li>Follow <a href="https://twitter.com/dendronhq">Dendron on Twitter</a></li>
+<li>Checkout <a href="https://github.com/dendronhq">Dendron on GitHub</a></li>
+</ul>
+<hr>
+<p>Interested in creating your own knowledge base using markdown, git, and VSCode? Get started with <a href="https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1/">Dendron</a> today.</p>
+</div></div><p></p><p></p>

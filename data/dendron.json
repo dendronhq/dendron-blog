@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "useFMTitle": true,
+  "useNoteTitleForLink": true,
+  "noLegacyNoteRef": true,
+  "mermaid": true,
+  "useKatex": true,
+  "usePrettyRefs": true,
+  "dev": {
+    "enablePreviewV2": true
+  },
+  "site": {
+    "previewPort": 8081,
+    "ga_tracking": "G-15EVNLBT2H",
+    "siteIndex": "blog",
+    "siteHierarchies": [
+      "blog"
+    ],
+    "siteRootDir": "docs",
+    "gh_edit_repository": "https://github.com/dendronhq/dendron-blog",
+    "usePrettyRefs": true,
+    "copyAssets": true,
+    "siteUrl": "https://blog.dendron.so",
+    "siteLastModified": true,
+    "githubCname": "blog.dendron.so",
+    "title": "Dendron Blog",
+    "author": "dendronhq",
+    "twitter": "dendronhq",
+    "description": "Blog for Dendron",
+    "gh_edit_branch": "main",
+    "usePrettyLinks": true,
+    "siteNotesDir": "notes",
+    "siteFaviconPath": "favicon.ico",
+    "gh_edit_link": true,
+    "gh_edit_link_text": "Edit this page on GitHub",
+    "gh_root": "docs/",
+    "gh_edit_view_mode": "edit",
+    "writeStubs": true
+  },
+  "commands": {
+    "lookup": {
+      "note": {
+        "selectionMode": "extract",
+        "confirmVaultOnCreate": false,
+        "leaveTrace": false
+      }
+    },
+    "insertNote": {
+      "initialValue": "templates"
+    },
+    "insertNoteLink": {
+      "aliasMode": "none",
+      "enableMultiSelect": false
+    },
+    "insertNoteIndex": {
+      "enableMarker": false
+    },
+    "randomNote": {}
+  },
+  "workspace": {
+    "dendronVersion": "0.64.1",
+    "vaults": [
+      {
+        "fsPath": "vault"
+      }
+    ],
+    "journal": {
+      "dailyDomain": "daily",
+      "name": "journal",
+      "dateFormat": "y.MM.dd",
+      "addBehavior": "childOfDomain"
+    },
+    "scratch": {
+      "name": "scratch",
+      "dateFormat": "y.MM.dd.HHmmss",
+      "addBehavior": "asOwnDomain"
+    },
+    "graph": {
+      "zoomSpeed": 1
+    },
+    "enableAutoCreateOnDefinition": false,
+    "enableXVaultWikiLink": false,
+    "enableRemoteVaultInit": true,
+    "workspaceVaultSyncMode": "noCommit",
+    "enableAutoFoldFrontmatter": true,
+    "maxPreviewsCached": 10,
+    "maxNoteLength": 204800,
+    "enableUserTags": true,
+    "enableHashTags": true
+  }
+}

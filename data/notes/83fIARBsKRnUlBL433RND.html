@@ -1,0 +1,76 @@
+<h1 id="highlights-from-vscode-161"><a aria-hidden="true" class="anchor-heading" href="#highlights-from-vscode-161"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Highlights from VSCode 1.61</h1>
+<p><img src="https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-filter-hue-40.png" alt="vscode 1.61 highlights"></p>
+<p>The open source VSCode project, along with VSCodium<a id="fnref-1" class="fnref" href="#fn-1">1</a>, completed their latest monthly release with v1.61<a id="fnref-2" class="fnref" href="#fn-2">2</a>. For those of us that haven't been using the Insider's Build,<a id="fnref-3" class="fnref" href="#fn-3">3</a> it's time to look at what's new.</p>
+<p>As a bonus for this release, Microsoft held a little <a href="https://www.youtube.com/watch?v=G4jjCN8uQAg">VSCode 1.61 Release Party</a> on YouTube. Watch the recording, see the devs show off features, and feel like you were actually invited to a party!</p>
+<h2 id="locked-editor-groups"><a aria-hidden="true" class="anchor-heading" href="#locked-editor-groups"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Locked editor groups</h2>
+<p><img src="https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-lock-groups.gif" alt="Locked editor groups in Visual Studio Code"></p>
+<blockquote>
+<p>Note: this is an <strong>experimental feature</strong>.</p>
+</blockquote>
+<p>Don't lose track of a file or terminal you are bouncing back-and-forth between in your gigantic list of editor tabs: use <a href="https://code.visualstudio.com/updates/v1_61#_locked-editor-groups">locked editor groups</a>. These prevent VSCode from opening more editor tabs in a group (a collection of tabs).</p>
+<p>I like this feature, as I'm often opening new files in the wrong area of the screen. I want those side-by-side, computer!</p>
+<ul>
+<li>Release Party: <a href="https://www.youtube.com/watch?v=G4jjCN8uQAg&#x26;t=1985s">Editor and workspace improvements demo</a></li>
+</ul>
+<h2 id="split-an-editor-without-creating-a-new-group"><a aria-hidden="true" class="anchor-heading" href="#split-an-editor-without-creating-a-new-group"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Split an editor without creating a new group</h2>
+<p><img src="https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-split-in-group.gif" alt="Split editors in groups in Visual Studio Code"></p>
+<p>Do you find yourself looking at large files, and wish you could scroll down while staying in place elsewhere? Now you can, by doing the splits <a href="https://code.visualstudio.com/updates/v1_61#_split-an-editor-without-creating-a-new-group">without creating a new group</a>. Test it out with <code>View: Split Editor in Group</code> in the command palette (<code>Ctrl+Shift+P</code>) or with the keybinding shortcut: <code>Ctrl+K Ctrl+Shift+\</code>. This is useful when converting pieces of code into functions, trimming fat, copy/pasting comment blocks, and whatever else your heart desires.</p>
+<p>No new group means not having yet another tab open in your editor!</p>
+<ul>
+<li>Release Party: <a href="https://www.youtube.com/watch?v=G4jjCN8uQAg&#x26;t=1985s">Editor and workspace improvements demo</a></li>
+</ul>
+<h2 id="webview-ui-toolkit-for-visual-studio-code"><a aria-hidden="true" class="anchor-heading" href="#webview-ui-toolkit-for-visual-studio-code"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Webview UI Toolkit for Visual Studio Code</h2>
+<p>For extension authors making use of the <a href="https://code.visualstudio.com/api/extension-guides/webview">webview API</a> for customizable views in the editor, life is about to become easier: say hello to the <a href="https://code.visualstudio.com/updates/v1_61#_webview-ui-toolkit-for-visual-studio-code">Webview UI Toolkit</a>. This is an open-source component library, providing Visual Studio Code design language, which matches the look and feel of VSCode/VSCodium. This is compatible with your tech stack of choice, bet it React, Vue, or OMGNewJSFramework!</p>
+<ul>
+<li><a href="https://code.visualstudio.com/api/extension-guides/webview">Webview UI Toolkit Documentation</a></li>
+<li><a href="https://github.com/microsoft/vscode-webview-ui-toolkit">Webview UI Toolkit repo</a></li>
+<li>Release Party: <a href="https://www.youtube.com/watch?v=G4jjCN8uQAg&#x26;t=858s">Webview UI Toolkit Demo</a></li>
+</ul>
+<h2 id="other-notables"><a aria-hidden="true" class="anchor-heading" href="#other-notables"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Other notables</h2>
+<blockquote>
+<p>General tip: Wondering what shortcuts are configured in VSCode? One shortcut to rule them all: <code>Ctrl+K Ctrl+S</code></p>
+<ul>
+<li>Or <code>Ctrl+Shift+P</code> -> <strong>Preferences: Open Keyboard Shortcuts</strong></li>
+</ul>
+</blockquote>
+<ul>
+<li>Confusion was caused by a new telemetry config option, <code>telemetry.telemetryLevel</code>, which would display that telemetry was enabled (even if it was previously disabled). The <a href="https://github.com/microsoft/vscode/issues/134660">full discussion can be found on GitHub</a>, which led to improvements being implemented in the <code>1.61.1</code> update.</li>
+<li><a href="https://www.youtube.com/watch?v=G4jjCN8uQAg&#x26;t=170s">Platform-specific extensions</a>: no longer try installing a MacOS-only extension on your Windows system, or vice-versa. That is, if the extension developer specifies the supported OS targets. This was previewed at the release party.</li>
+<li>I often came back to my laptop to find that <a href="https://github.com/microsoft/vscode/issues/69665">my terminal was having a stroke in the VSCode editor</a>. This seems to be resolved!</li>
+<li>The latest point releases<a id="fnref-4" class="fnref" href="#fn-4">4</a> include fixes for other problems, such as <a href="https://github.com/microsoft/vscode/issues/134757">high CPU consumption</a>. Make sure to keep up-to-date!</li>
+</ul>
+<p>I can't forget: want to take a look at VSCode in your web browser, without installing a thing? These are called <em>Virtual Workspaces</em>, such as <a href="https://vscode.dev/">vscode.dev</a> and <a href="https://github.dev/">github.dev</a>. Reference the <a href="https://code.visualstudio.com/blogs/2021/10/20/vscode-dev">VSCode Blog Post on vscode.dev</a> for a full rundown on bringing VSCode to the browser.</p>
+<hr>
+<p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Subscribe</span></div>
+<a href="/notes/jCoayBWmLrfn2W4WrOR9x" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><p>Enjoy the blog? Subscribe to our newsletter!</p>
+<form action="https://buttondown.email/api/emails/embed-subscribe/dendron" method="post" target="popupwindow" onsubmit="window.open(&#x27;https://buttondown.email/dendron&#x27;, &#x27;popupwindow&#x27;)" class="embeddable-buttondown-form">
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email">
+  <input type="submit" value="Subscribe">
+  <p></p>
+</form>
+<p>Newsletters not your thing? You can also follow us elsewhere on the interwebs:</p>
+<ul>
+<li>Join <a href="https://discord.com/invite/xrKTUStHNZ">Dendron on Discord</a></li>
+<li>Follow <a href="https://twitter.com/dendronhq">Dendron on Twitter</a></li>
+<li>Checkout <a href="https://github.com/dendronhq">Dendron on GitHub</a></li>
+</ul>
+<hr>
+<p>Interested in creating your own knowledge base using markdown, git, and VSCode? Get started with <a href="https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1/">Dendron</a> today.</p>
+</div></div><p></p><p></p>
+<hr>
+<h2 id="footnotes"><a aria-hidden="true" class="anchor-heading" href="#footnotes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Footnotes</h2>
+<ol>
+<li><span id="fn-1" style="width: 0; height: 0;"></span><p><a href="https://vscodium.com/">Checkout VSCodium</a><a class="fn" href="#fnref-1">˄</a>, for the truly MIT-licensed version of the VSCode IDE (with telemetry/tracking disabled).</p></li>
+<li><span id="fn-2" style="width: 0; height: 0;"></span><p><a href="https://code.visualstudio.com/updates/v1_61">VSCode release notes for 1.61</a><a class="fn" href="#fnref-2">˄</a>, along with release notes for previous monthly releases.</p></li>
+<li><span id="fn-3" style="width: 0; height: 0;"></span><p>The <a href="https://code.visualstudio.com/insiders">VSCode Insiders Build</a><a class="fn" href="#fnref-3">˄</a> allows users to get VSCode with new features as soon as they are available, rather than at the monthly cadence.</p></li>
+<li><span id="fn-4" style="width: 0; height: 0;"></span><p>Issues resolved in point releases, referred to as "Recovery" releases, can be found on GitHub: <a href="https://github.com/microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22September+2021+Recovery%22+is%3Aclosed"><code>1.61.1</code></a> and <a href="https://github.com/microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22September+2021+Recovery+2%22+is%3Aclosed"><code>1.61.2</code></a><a class="fn" href="#fnref-4">˄</a>.</p></li>
+</ol>

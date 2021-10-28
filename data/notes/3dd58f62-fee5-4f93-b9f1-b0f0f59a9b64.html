@@ -1,0 +1,233 @@
+<h1 id="a-hierarchy-first-approach-to-note-taking"><a aria-hidden="true" class="anchor-heading" href="#a-hierarchy-first-approach-to-note-taking"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A Hierarchy First Approach to Note Taking</h1>
+<p><img src="https://kevinslin-images.s3.us-west-2.amazonaws.com/images/tree.jpeg" alt="A tree with many branches in full bloom"></p>
+<p>Ten years ago I wrote a note. </p>
+<p>That led to <strong>another</strong>, and then <strong>another</strong>, and soon enough, I had a <strong>few thousand</strong> of them and an increasingly unhappy dropbox client that refused to sync it all.</p>
+<p>The reason for all these notes is because of technology. </p>
+<p>I worked at AWS and tried to keep on top of <strong>cloud stuff</strong>. I programmed in three different languages and kept notes to help me context switch between different <strong>programming languages</strong>. I also did full-stack development on the side and that, well, it required referencing <strong><a href="https://www.reddit.com/r/webdev/comments/747hfu/does_everybody_find_the_modern_fullstack_learning/">everything</a></strong>. </p>
+<p>My primary use for notes is as a <a href="https://en.wikipedia.org/wiki/Cache_(computing)">cache</a>. Think <a href="https://redis.io/">Redis</a>, but for humans. </p>
+<p>If I spent <strong>more than 5 minutes</strong> figuring something out, those are five minutes I <strong>never</strong> want to spend again figuring out the <strong>same problem</strong>.</p>
+<p>But this is difficult to do in practice. </p>
+<p>Sometimes you run into a thing that only pops up on some specific version of a cli command on an outdated bash shell on a specific Linux distro. How do you document this sort of thing when you might encounter a dozen of them a day?</p>
+<p>My solution is something I call <strong>hierarchical note taking</strong>. It's a system I've developed over the past ten years that has allowed me to amass a corpus of +10k notes. </p>
+<p>This system has some awesome properties that I haven't been able to replicate with anything else:</p>
+<ul>
+<li>it lets me <strong>find any specific note within seconds</strong> even with thousands of existing notes</li>
+<li>it helps me build a <strong>comprehensive mental model</strong> around a domain through the act of organizing my notes</li>
+<li>it <strong>can be used on any note-taking tool that supports markdown notes</strong> </li>
+<li>it's compatible with existing note-taking methodologies like <a href="https://fortelabs.co/blog/para/">PARA</a></li>
+</ul>
+<p>The rest of this post will describe the journey I took to arrive at hierarchical note-taking and the problems that they help me solve.</p>
+<h2 id="the-problem-with-clis"><a aria-hidden="true" class="anchor-heading" href="#the-problem-with-clis"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>The Problem with CLIs</h2>
+<p>I spend a lot of time in the command line in Unix-like systems. If you do as well, you might be familiar with the following comic.</p>
+<p><img src="https://kevinslin-images.s3.us-west-2.amazonaws.com/images/2020-06-09-15-11-27.png" alt="tar bomb"></p>
+<blockquote>
+<p>Comic from <a href="https://xkcd.com/">XKCD</a></p>
+</blockquote>
+<p>I've probably used <code>tar</code> a few thousand times in my life but still can't tell you what the arguments mean (it's mostly muscle memory at this point). Unix tools do one thing and one thing well, and on most days, that one thing is making you reach for a <a href="https://en.wikipedia.org/wiki/Man_page">man page</a>. </p>
+<p>This is because every command has many dozen options, many of which are invoked with obscure single character letters in a specific order for specific inputs (I'm looking at you <code>rsync</code>).</p>
+<p>Growing tired of reading man pages and stack overflow threads, I wanted a way to capture and reference commands that I've run in the past. And so I started taking notes. </p>
+<p>I created a folder called <code>notes</code>. I created a note called <code>tar.md</code>. </p>
+<p><img src="https://kevinslin-images.s3.us-west-2.amazonaws.com/images/2020-12-14-09-59-50.png" alt="creating a tar folder"></p>
+<p>Note that my <code>tar.md</code> note doesn't have every option or use case involving <code>tar</code>. Instead, it's only the options that I find most useful and use cases that I've had to do. This tends to be my approach to note-taking - I like to capture the bare minimum information I need so that the future me can get value out of the note.</p>
+<p>What started as a single markdown file quickly spawned a few hundred more. It was exhilarating - instead of turning to google every time I ran into a dusty corner of Linux, I could just reference my notes. 95% of the time, there would be a nicely summarized note waiting for me :) </p>
+<h2 id="the-problem-with-languages"><a aria-hidden="true" class="anchor-heading" href="#the-problem-with-languages"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>The Problem with Languages</h2>
+<p>While the above approach worked for cli commands, things got more complicated as I needed notes on additional domains. Most commonly with my work, it was programming languages. </p>
+<p>Take <a href="https://www.python.org/">python</a> as an example. Python is both a <strong>programming language</strong> as well as a <strong>cli command</strong>. Without changing the name of one of the notes or introducing folders, there would be no way to create notes on both. </p>
+<p>But I didn't want folders. Folders were messy and besides, weren't supported in <a href="http://notational.net/">notational velocity</a>, my primary note-taking tool at the time. So instead of folders, I decided to create a hierarchy using the <code>.</code> symbol as my delimiter. </p>
+<p>Now I could represent the language and the cli as two different <code>.</code> delimited hierarchies.</p>
+<pre><code>cli.python.md
+lang.python.md
+</code></pre>
+<p>Though on the surface, this seems like a simple change and not all that different from a traditional folder hierarchy, I found that it equal to the difference between using a <a href="https://en.wikipedia.org/wiki/Commodore_64">commodore 64</a> and the latest (non-<a href="https://www.theverge.com/2020/5/4/21246223/macbook-keyboard-butterfly-magic-pro-apple-design">butterfly keyboard</a>) Macbook. </p>
+<p>For starters, files now had the ability to both contain data and have children. They could act as both files and folders. </p>
+<p>And whereas folders were traditionally used to <strong>organize</strong> information, there was no straightforward way to use a folder hierarchy to quickly <strong>find</strong> information. Having the hierarchy in the filename made it easy to <strong>find</strong> information using the <strong>hierarchy</strong>. </p>
+<p><img src="https://foundation-prod-assetspublic53c57cce-8cpvgjldwysl.s3-us-west-2.amazonaws.com/assets/images/lookup-cli.gif" alt="cli lookup"></p>
+<h2 id="finding-the-truth"><a aria-hidden="true" class="anchor-heading" href="#finding-the-truth"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Finding the Truth</h2>
+<p>There's the joke in computer science that there are only 3 meaningful quantities in the field: 0, 1 or infinite. If you can create a thing more than once, there is nothing in theory that should stop you from creating an infinite amount of said thing. </p>
+<p>Once I realized I had a system of making two-level hierarchies, I realized I didn't need to stop there. This soon led to deeper hierarchies like the one below.</p>
+<pre><code>.
+└── lang
+    └── python
+        ├── data
+        │   ├── boolean
+        │   ├── array
+        │   ├── string
+        │   └── flow
+        ├── flow
+        │   ├── for
+        │   ├── while
+        │   └── if
+        └── operator
+            ├── comment
+            ├── compare
+            ├── scope
+            ├── inspect
+            ├── format
+            ├── iterate
+            └── destructure
+</code></pre>
+<p>The above hierarchy was stored as simple plain text files inside my <code>notes</code> folder.</p>
+<pre><code>lang.python.data.boolean.md
+lang.python.data.array.md
+lang.python.data.string.md
+lang.python.flow.md
+lang.python.flow.for.md
+lang.python.flow.while.md
+lang.python.flow.if.md
+lang.python.operator.md
+lang.python.operator.comment.md
+lang.python.operator.compare.md
+lang.python.operator.scope.md
+lang.python.operator.inspect.md
+lang.python.operator.format.md
+lang.python.operator.iterate.md
+lang.python.operator.destructure.md
+</code></pre>
+<p>With this hierarchy, I could quickly reference anything I needed from a programming language. </p>
+<p><img src="https://foundation-prod-assetspublic53c57cce-8cpvgjldwysl.s3-us-west-2.amazonaws.com/assets/images/blog.python.lookup.gif" alt="python data structure lookup"></p>
+<blockquote>
+<p>Looking up different data structures in python</p>
+</blockquote>
+<p>Once I built out my hierarchy on <code>python</code>, I found that I could also apply it to any other language. This made context switching between languages much easier. </p>
+<p>As an example, I can never remember what counts as <code>truthy</code> in dynamic languages. But now I don't have to. </p>
+<p><img src="https://foundation-prod-assetspublic53c57cce-8cpvgjldwysl.s3-us-west-2.amazonaws.com/assets/images/blog.lookup.bool.gif" alt="finding the truth"></p>
+<blockquote>
+<p>Finding the truth</p>
+</blockquote>
+<p>The cool thing about this approach is that the implementation details of any particular language became less important as I build out my hierarchies. Instead of thinking in terms of "how well do I understand <strong>python</strong>", I think in terms of how well I understand <strong>programming languages</strong>.</p>
+<h2 id="externalizing-mental-models"><a aria-hidden="true" class="anchor-heading" href="#externalizing-mental-models"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Externalizing Mental Models</h2>
+<p>As I started building hierarchies across more and more domains, I found that it became useful to document what they were. I called these <em>externalized hierarchies</em> <strong>schemas</strong>. They were a table of contents for a particular hierarchy. I started adding a special <code>schema</code> file directly underneath the root of each hierarchy. </p>
+<pre><code>lang.schema.md
+cli.schema.md
+aws.schema.md
+...
+</code></pre>
+<p>Inside each <code>schema</code> note, I would have something like the following</p>
+<pre><code>- lang (namespace) # indicates that there are any number of languages underneath here
+    - data: data structures
+    - flow: control flow
+    - oo: object-oriented programming
+    - ...
+</code></pre>
+<p>I would use schemas as a common source of truth when building out a hierarchy and use them to make sure that each hierarchy was internally consistent. As I began to use this system day by day, I realized that I had stumbled upon a radically more effective way of learning.</p>
+<h2 id="hierarchical-notes"><a aria-hidden="true" class="anchor-heading" href="#hierarchical-notes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Hierarchical Notes</h2>
+<p>By associating every note I took to a hierarchy, I found that looking up information no longer felt like an <strong>tax on my time</strong>, but instead, a <strong>path to self augmentation</strong>. </p>
+<p>Whereas before I would look up a thing only to forget it a few weeks later, I could now quickly incorporate it into my notes and <strong>know with certainty</strong> that I will be able to <strong>reference this again</strong> at a later date. </p>
+<p>Better yet, when I found something that didn't fit any of my existing hierarchies, I could use it as a chance to update my schemas on said hierarchies. This would slowly expand my conceptual understanding of the entire domain. </p>
+<p>A concrete example: earlier this year, I ended up making use of the <a href="https://en.wikipedia.org/wiki/Null_coalescing_operator">null coalescing operator</a> in javascript. This is a convenient way of assigning values when dealing with <code>null</code></p>
+<p>In the following example, <code>a</code> will be assigned the value of <code>b</code> if the value of <code>b</code> is not <code>null</code> or <code>undefined</code>, otherwise, it will be assigned 3.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> b <span class="token operator">??</span> <span class="token number">3</span><span class="token punctuation">;</span>
+</code></pre>
+<p>After learning about it, I added it to my language schema under <code>operators</code>.</p>
+<pre><code>- lang (namespace)
+    - {specific language}
+        - operator (alias: op)
+            - add
+            - subtract
+            - ...
+            - null # null coalescing operator
+</code></pre>
+<p>Not only did this expand my vocabulary of language operators, but it also let me note down how the equivalent functionality can be expressed in languages that did not natively support it.</p>
+<pre class="language-py"><code class="language-py">other <span class="token operator">=</span> s <span class="token keyword">or</span> <span class="token string">"some default value"</span>
+</code></pre>
+<blockquote>
+<p>Python example of "null coalescing"</p>
+</blockquote>
+<p>What is nice about this approach is that I have completely divorced the concept of "null coalescing" with the implementation detail of any particular language. The next time I'm using python and want to do <code>null coalescing</code>, I can simply look up <code>python.op.null</code> and be reminded of the implementation.</p>
+<p>There are dozens of <strong>main stream</strong> programming languages. There are hundreds of additional domain-specific languages. In a prior life, there would have been no way for me to <strong>know</strong> even a tiny fraction of them. But a hierarchical first approach to note-taking changes the game - instead of having to know the details of <strong>every</strong> language, I can collapse it all down to my <strong>one language schema</strong>. This schema can capture the points of interest of <strong>every language</strong> and in this way, I can claim to <strong>know</strong> something of all programming languages. </p>
+<h2 id="the-present-day"><a aria-hidden="true" class="anchor-heading" href="#the-present-day"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>The Present Day</h2>
+<p>Today, my knowledge base encompasses over a dozen different hierarchies that span 10K+ notes. I've expanded my use cases of note-taking beyond caching to also include journaling, task management, creating writing, keeping track of interactions, and lots more. </p>
+<p><img src="https://pbs.twimg.com/media/EffzLiXVoAAjE5F?format=png&#x26;name=medium" alt="journal notes"></p>
+<blockquote>
+<p>My journal notes for the last five years.</p>
+</blockquote>
+<p>I've also expanded my schemas and have migrated from free form bullets to a structured <code>YAML</code> syntax. </p>
+<pre class="language-yml"><code class="language-yml"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token number">1</span>
+<span class="token key atrule">schemas</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> l
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> language
+  <span class="token key atrule">desc</span><span class="token punctuation">:</span> programming language
+  <span class="token key atrule">parent</span><span class="token punctuation">:</span> root
+  <span class="token key atrule">data</span><span class="token punctuation">:</span>
+    <span class="token key atrule">namespace</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">children</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> operator
+    <span class="token punctuation">-</span> d
+    <span class="token punctuation">-</span> flow
+    <span class="token punctuation">-</span> lib
+    <span class="token punctuation">-</span> dev
+    <span class="token punctuation">-</span> t
+    <span class="token punctuation">-</span> files
+    <span class="token punctuation">-</span> oo
+    <span class="token punctuation">-</span> func
+    <span class="token punctuation">-</span> types
+<span class="token comment"># --- operator</span>
+<span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> operator
+  <span class="token key atrule">children</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> comment
+    <span class="token punctuation">-</span> create
+    <span class="token punctuation">-</span> compare
+    <span class="token punctuation">-</span> equal
+    <span class="token punctuation">-</span> scope
+    <span class="token punctuation">-</span> inspect
+    <span class="token punctuation">-</span> format
+    <span class="token punctuation">-</span> iterate
+    <span class="token punctuation">-</span> destructure
+<span class="token punctuation">...</span>
+</code></pre>
+<p><img src="https://foundation-prod-assetspublic53c57cce-8cpvgjldwysl.s3-us-west-2.amazonaws.com/assets/images/lang.schema.jpg"></p>
+<blockquote>
+<p>My programming language schema</p>
+</blockquote>
+<p>Hierarchical note-taking has been the most valuable investment I've made in the last decade. My notes, in turn, have helped me learn, grow, and be better in all areas of my life.</p>
+<p>One thing that has puzzled me over the years is why no one else was doing this. Most of my peers did no kind of note-taking, and the ones that did were constantly switching between different tools and methodologies to try to manage it all. </p>
+<p>A little over a year ago, I left my job at Amazon to work on a note-taking tool built around the concept of hierarchical notes. Hierarchical note-taking is a system that I spent the greater part of a decade iterating on, and it is now a system that I want to share with the world. </p>
+<h2 id="dendron"><a aria-hidden="true" class="anchor-heading" href="#dendron"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Dendron</h2>
+<p>About a month ago, I launched the preview for <a href="https://dendron.so/">Dendron</a>. Dendron is the first-ever note-taking tool built from the ground up to support hierarchical note-taking. Dendron is open source, local first, Markdown-based, and runs as a collection of extension on top of VSCode.</p>
+<p>Dendron lives inside VSCode because I wanted to move fast and focus on the truly novel parts of hierarchical notes without also building all the scaffolding that comes from creating an editor. Living inside VSCode means that users also have access to the thousands of existing extensions that provide everything from <a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">vim keybindings</a> to <a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">realtime collaboration editing</a>. </p>
+<p>Over 50 years ago, <a href="https://en.wikipedia.org/wiki/Vannevar_Bush">Vannevar Bush</a>, an early visionary in information science, said something about the field that strikes a deep chord with me.</p>
+<blockquote>
+<p>"We are overwhelmed with information and we don't have the tools to properly index and filter through it. [The development of these tools, which] will give society access to and command over the inherited knowledge of the ages [should] be the first objective of our scientist" - Vannevar Bush, 1945</p>
+</blockquote>
+<p>50 years later, this statement is just as true. The tools haven't changed but the information has only become more overwhelming.</p>
+<p>Dendron is my attempt at building a tool that will give humans <strong>access to</strong> and <strong>command over</strong> the <strong>inherited knowledge of the ages</strong>.</p>
+<p>If this mission statement resonates, I hope you join me on the journey! There are many ways to be involved:</p>
+<ul>
+<li>you can <a href="https://marketplace.visualstudio.com/items?itemName=dendron.dendron">download dendron</a> and start/continue a note-taking habit</li>
+<li>you can take a look at our <a href="https://github.com/orgs/dendronhq/projects/1">open road map</a> and leave comments and thoughts</li>
+<li>you can join our <a href="https://discord.gg/AE3NRw9">discord</a> community of fellow note-takers </li>
+<li>you can follow us on twitter at <a href="https://twitter.com/dendronhq">@dendronhq</a></li>
+<li>you can star and watch us on <a href="https://github.com/dendronhq/dendron">github</a></li>
+</ul>
+<p>Whatever path you take, safe travels and hope you take note of the journey!</p>
+<hr>
+<p></p><p></p><div class="portal-container">
+<div class="portal-head">
+<div class="portal-backlink">
+<div class="portal-title">From <span class="portal-text-title">Subscribe</span></div>
+<a href="/notes/jCoayBWmLrfn2W4WrOR9x" class="portal-arrow">Go to text <span class="right-arrow">→</span></a>
+</div>
+</div>
+<div id="portal-parent-anchor" class="portal-parent" markdown="1">
+<div class="portal-parent-fader-top"></div>
+<div class="portal-parent-fader-bottom"></div><p>Enjoy the blog? Subscribe to our newsletter!</p>
+<form action="https://buttondown.email/api/emails/embed-subscribe/dendron" method="post" target="popupwindow" onsubmit="window.open(&#x27;https://buttondown.email/dendron&#x27;, &#x27;popupwindow&#x27;)" class="embeddable-buttondown-form">
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email">
+  <input type="submit" value="Subscribe">
+  <p></p>
+</form>
+<p>Newsletters not your thing? You can also follow us elsewhere on the interwebs:</p>
+<ul>
+<li>Join <a href="https://discord.com/invite/xrKTUStHNZ">Dendron on Discord</a></li>
+<li>Follow <a href="https://twitter.com/dendronhq">Dendron on Twitter</a></li>
+<li>Checkout <a href="https://github.com/dendronhq">Dendron on GitHub</a></li>
+</ul>
+<hr>
+<p>Interested in creating your own knowledge base using markdown, git, and VSCode? Get started with <a href="https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1/">Dendron</a> today.</p>
+</div></div><p></p><p></p>
+<hr>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
+<ol>
+<li><a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">pkm (Private)</a></li>
+</ol>
