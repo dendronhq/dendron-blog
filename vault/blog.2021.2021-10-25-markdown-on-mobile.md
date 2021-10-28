@@ -2,7 +2,7 @@
 id: fDCVPEo3guCFWPdxokXHU
 title: Best Mobile Note-Taking Apps for Markdown
 desc: ''
-updated: 1635183157051
+updated: 1635399661676
 created: 1632684719327
 date: '2021-10-25'
 excerpt: An overview of mobile apps that work well with Markdown
@@ -13,9 +13,9 @@ image:
 publish: true
 ---
 
-![Mobile phone sitting ontop of a journal](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png)
+![Mobile phone sitting on top of a journal](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-mobile-editor-header.png)
 
-On the desktop, markdown-based notes can be taken in any plain-text editor of choice. If you're using [Dendron](https://www.dendron.so/), you can use VSCode/VSCodium as well as a suite of [powerful commands](https://wiki.dendron.so/notes/eea2b078-1acc-4071-a14e-18299fc28f47.html) to manage your notes. Though, what happens when you walk out the door? It turns out that your phone can work with markdown, too!
+On the desktop, Markdown notes can be taken in any plain-text editor of choice. If you're using [Dendron](https://www.dendron.so/), you can use VSCode/VSCodium as well as a suite of [powerful commands](https://wiki.dendron.so/notes/eea2b078-1acc-4071-a14e-18299fc28f47.html) to manage your notes. Though, what happens when you walk out the door? It turns out that your phone can work with Markdown, too!
 
 What we're looking at today:
 
@@ -62,7 +62,7 @@ GitJournal also supports wikilinks and can therefore be used with Dendron and Ob
 
 I'm really interested in seeing where GitJournal goes. I couldn't find other mobile apps that covered both notes in Markdown and git-integration, without needing to juggle multiple apps. With my [Dendron vaults](https://wiki.dendron.so/notes/6682fca0-65ed-402c-8634-94cd51463cc4.html), I mostly take [scratch notes](https://wiki.dendron.so/notes/5c213aa6-e4ba-49e8-85c5-1bdcb33ce202.html#scratch-note) or edit already-existing notes when using my phone. For more extensive usage, I hop on the laptop.
 
-I will say, though, that I ran into so many problems in trying to get my first demo repository setup that I stopped using GitJournal. Other users are running into issues at the moment having to do with syncing and setup, some of which might be tied to [a hardcoded expectation of branch names](https://github.com/GitJournal/GitJournal/issues/546) (such as `master`). I now use `mgit` for managing my repos, and Obsidian for managing notes.
+I will say, though, that I ran into so many problems in trying to get my first demo repository setup that I stopped using GitJournal. Other users are running into issues at the moment having to do with syncing and setup, some of which might be tied to [a hard-coded expectation of branch names](https://github.com/GitJournal/GitJournal/issues/546) (such as `master`). I now use `mgit` for managing my repos, and Obsidian for managing notes.
 
 ## iA Writer
 
@@ -100,11 +100,11 @@ Being a feature-full piece of software, including:
 
 I liked both the _editor_ and _preview_ rendering in Markor more than the other apps I tried. Syntax highlighting is a nice touch while editing, and the previews look cleaner than both iA Writer and GitJournal.
 
-Though, the cons here are that Markor only works on Android and needs another app to handle git integration. Outside of that, I can quickly see why thousands of ratings have led to nearly a 5/5 on the Google Play.
+Though, the cons here are that Markor only works on Android and needs another app to handle git integration. Outside that, I can quickly see why thousands of ratings have led to nearly a 5/5 on Google Play.
 
 ## Other apps of interest
 
-There are many mobile note-taking solutions that work with Markdown. Below are some additional tools that [Dendrologists](https://wiki.dendron.so/notes/7c00d606-7b75-4d28-b563-d75f33f8e0d7.html#dendrologist) have used for markdown on the go.
+There are many mobile note-taking solutions that work with Markdown. Below are some additional tools that [Dendrologists](https://wiki.dendron.so/notes/7c00d606-7b75-4d28-b563-d75f33f8e0d7.html#dendrologist) have used for Markdown on the go.
 
 ### Markdown notes
 
@@ -144,28 +144,4 @@ If I had to choose what combinations to use, on Android, I'd recommend **Obsidia
 
 ---
 
-Enjoy the blog? Subscribe to our newsletter!
-
-<form
-  action="https://buttondown.email/api/emails/embed-subscribe/dendron"
-  method="post"
-  target="popupwindow"
-  onsubmit="window.open('https://buttondown.email/dendron', 'popupwindow')"
-  class="embeddable-buttondown-form"
->
-  <label for="bd-email">Enter your email</label>
-  <input type="email" name="email" id="bd-email" />
-  <input type="submit" value="Subscribe" />
-  <p></p>
-</form>
-
-
-Newsletters not your thing? You can also follow us elsewhere on the interwebs:
-
-* Join [Dendron on Discord](https://discord.com/invite/xrKTUStHNZ)
-* Follow [Dendron on Twitter](https://twitter.com/dendronhq)
-* Checkout [Dendron on GitHub](https://github.com/dendronhq)
-
----
-
-Interested in creating your own knowledge base using markdown, git, and VSCode? Get started with [Dendron](https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1/) today.
+![[blog.subscribe]]

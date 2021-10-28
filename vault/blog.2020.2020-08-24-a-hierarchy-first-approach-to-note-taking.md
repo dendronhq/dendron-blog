@@ -1,7 +1,7 @@
 ---
 id: 3dd58f62-fee5-4f93-b9f1-b0f0f59a9b64
 title: A Hierarchy First Approach to Note Taking
-updated: 1635183881081
+updated: 1635400128807
 created: 1598210596673
 date: '2020-08-24'
 tags:
@@ -288,3 +288,7 @@ If this mission statement resonates, I hope you join me on the journey! There ar
 - you can star and watch us on [github](https://github.com/dendronhq/dendron)
 
 Whatever path you take, safe travels and hope you take note of the journey!
+
+---
+
+![[blog.subscribe]]

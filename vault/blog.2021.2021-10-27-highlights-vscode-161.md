@@ -2,7 +2,7 @@
 id: 83fIARBsKRnUlBL433RND
 title: Highlights from VSCode 1.61
 desc: ''
-updated: 1635356829391
+updated: 1635399267646
 created: 1635289711440
 date: '2021-10-27'
 excerpt: "Locked editor groups, doing the splits, and more in the VSCode 1.61 release"
@@ -34,7 +34,7 @@ I like this feature, as I'm often opening new files in the wrong area of the scr
 
 ![Split editors in groups in Visual Studio Code](https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-split-in-group.gif)
 
-Do you find yourself looking at large files, and wish you could scroll down while staying in place elsewhere? Now you can, by doing the splits [without creating a new group](https://code.visualstudio.com/updates/v1_61#_split-an-editor-without-creating-a-new-group). Test it out with `View: Split Editor in Group` in the command pallete (`Ctrl+Shift+P`) or with the keybinding shortcut: `Ctrl+K Ctrl+Shift+\`. This is useful when converting pieces of code into functions, trimming fat, copy/pasting comment blocks, and whatever else your heart desires.
+Do you find yourself looking at large files, and wish you could scroll down while staying in place elsewhere? Now you can, by doing the splits [without creating a new group](https://code.visualstudio.com/updates/v1_61#_split-an-editor-without-creating-a-new-group). Test it out with `View: Split Editor in Group` in the command palette (`Ctrl+Shift+P`) or with the keybinding shortcut: `Ctrl+K Ctrl+Shift+\`. This is useful when converting pieces of code into functions, trimming fat, copy/pasting comment blocks, and whatever else your heart desires.
 
 No new group means not having yet another tab open in your editor!
 
@@ -53,12 +53,12 @@ For extension authors making use of the [webview API](https://code.visualstudio.
 > General tip: Wondering what shortcuts are configured in VSCode? One shortcut to rule them all: `Ctrl+K Ctrl+S`
 - Or `Ctrl+Shift+P` -> **Preferences: Open Keyboard Shortcuts**
 
-- Confusion was caused with a new telemetry config option, `telemetry.telemetryLevel`, which would display that telemetry was enabled (even if it was previously disabled). The [full discussion can be found on GitHub](https://github.com/microsoft/vscode/issues/134660), which led to improvements being implemented in the `1.61.1` update.
-- [Platform-specific extensions](https://www.youtube.com/watch?v=G4jjCN8uQAg&t=170s): no longer try installing a MacOS-only extension to your Windows system, or vice-versa. That is, if the extension developer specifies the supported OS targets. This was previewed in the release party.
-- I often came back to laptop to find that [my terminal was having a stroke in the VSCode editor](https://github.com/microsoft/vscode/issues/69665). This looks to be resolved!
+- Confusion was caused by a new telemetry config option, `telemetry.telemetryLevel`, which would display that telemetry was enabled (even if it was previously disabled). The [full discussion can be found on GitHub](https://github.com/microsoft/vscode/issues/134660), which led to improvements being implemented in the `1.61.1` update.
+- [Platform-specific extensions](https://www.youtube.com/watch?v=G4jjCN8uQAg&t=170s): no longer try installing a MacOS-only extension on your Windows system, or vice-versa. That is, if the extension developer specifies the supported OS targets. This was previewed at the release party.
+- I often came back to my laptop to find that [my terminal was having a stroke in the VSCode editor](https://github.com/microsoft/vscode/issues/69665). This seems to be resolved!
 - The latest point releases[^4] include fixes for other problems, such as [high CPU consumption](https://github.com/microsoft/vscode/issues/134757). Make sure to keep up-to-date!
 
-I can't forget: want to take a look at VSCode in your webbrowser, without installing a thing? These are called _Virtual Workspaces_, such as [vscode.dev](https://vscode.dev/) and [github.dev](https://github.dev/). Reference the [VSCode Blog Post on vscode.dev](https://code.visualstudio.com/blogs/2021/10/20/vscode-dev) for a full rundown on brining VSCode to the browser.
+I can't forget: want to take a look at VSCode in your web browser, without installing a thing? These are called _Virtual Workspaces_, such as [vscode.dev](https://vscode.dev/) and [github.dev](https://github.dev/). Reference the [VSCode Blog Post on vscode.dev](https://code.visualstudio.com/blogs/2021/10/20/vscode-dev) for a full rundown on bringing VSCode to the browser.
 
 ---
 
