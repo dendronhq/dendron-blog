@@ -1,7 +1,11 @@
-name: Dendron
+name: Dendron site build
 
 on:
   push:
+    branches:
+    - master
+    - main
+  pull_request:
     branches:
     - master
     - main
@@ -39,12 +43,3 @@ jobs:
 
     - name: Prep notes for publish
       run: ./publish.sh
-
-    - name: Deploy site
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: pages
-        publish_dir: docs/
-        force_orphan: true
-        cname: "blog.dendron.so"
