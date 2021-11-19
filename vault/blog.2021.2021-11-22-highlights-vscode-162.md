@@ -2,7 +2,7 @@
 id: V2Cjla9vzM69Z280j5bXB
 title: Highlights from VSCode 1.62
 desc: ''
-updated: 1637336337350
+updated: 1637336629042
 created: 1637336177637
 image:
   url: >-
@@ -13,6 +13,7 @@ excerpt: >-
   Liveshare collaborations, beautiful bracket pairs, verified publishers, and
   more in the VSCode 1.62 release
 author: Derek Ardolf
+published: false
 ---
 
 ![vscode 1.62 highlights](https://org-dendron-public-assets.s3.amazonaws.com/images/vscode-filter-hue-150.png)
