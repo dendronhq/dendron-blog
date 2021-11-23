@@ -2,7 +2,7 @@
 id: V2Cjla9vzM69Z280j5bXB
 title: Highlights from VSCode 1.62
 desc: ''
-updated: 1637693583012
+updated: 1637693736991
 created: 1637336177637
 image:
   url: >-
@@ -22,7 +22,7 @@ The open source VSCode project, along with VSCodium[^1], completed their latest 
 
 Make sure to checkout the [VSCode 1.62 Release Party](https://www.youtube.com/watch?v=IKvtYHfzE3g) on YouTube!
 
-## Live Share
+## Live Share session sharing in Virtual Workspaces
 
 ![Live Share in Visual Studio Code](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-vscode-liveshare.gif)
 
