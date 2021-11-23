@@ -2,7 +2,7 @@
 id: V2Cjla9vzM69Z280j5bXB
 title: Highlights from VSCode 1.62
 desc: ''
-updated: 1637336629042
+updated: 1637693583012
 created: 1637336177637
 image:
   url: >-
@@ -10,7 +10,7 @@ image:
   alt: Visual Studio Code logo
 date: '2021-11-22'
 excerpt: >-
-  Liveshare collaborations, beautiful bracket pairs, verified publishers, and
+  Live Share session sharing in Virtual Workspaces, beautiful bracket pairs, verified publishers, and
   more in the VSCode 1.62 release
 author: Derek Ardolf
 published: true
@@ -22,17 +22,17 @@ The open source VSCode project, along with VSCodium[^1], completed their latest 
 
 Make sure to checkout the [VSCode 1.62 Release Party](https://www.youtube.com/watch?v=IKvtYHfzE3g) on YouTube!
 
-## Liveshare
+## Live Share
 
-![Live share in Visual Studio Code](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-vscode-liveshare.gif)
+![Live Share in Visual Studio Code](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-vscode-liveshare.gif)
 
-Many people are attracted to Google Docs due to how easy it is to collaborate, comment, and highlight sections in order to give each other scathing reviews. Introducing [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack): now, instead of waiting for the PR review, you can provide non-constructive feedback to your peers!
+_Virtual Workspaces_[^4], such as [vscode.dev](https://vscode.dev/) and [github.dev](https://github.dev/), now support this superpower: sharing a session directly from the browser.
 
-_Virtual Workspaces_[^4], such as [vscode.dev](https://vscode.dev/) and [github.dev](https://github.dev/), now support this superpower.
+Haven't used Live Share before? Many people are attracted to Google Docs due to how easy it is to collaborate, comment, and highlight sections in order to give each other scathing reviews. Introducing [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack): instead of waiting for the PR review, you can provide non-constructive feedback to your peers!
 
-Take note: if you are a VSCodium user, this might not work! I learned this after spending too much time confused. Be aware of the [live-share license agreement](https://marketplace.visualstudio.com/items/MS-vsliveshare.vsliveshare/license), including the information about data collection, which may be part of the incompatibility with VSCodium. There are alternatives, though, such as [CodeTogether](https://www.codetogether.com/).
+Take note: if you are a VSCodium user, sharing/joining sessions won't work. I learned this after spending too much time confused. Be aware of the [live-share license agreement](https://marketplace.visualstudio.com/items/MS-vsliveshare.vsliveshare/license), including the information about data collection, which may be part of the incompatibility with VSCodium. There are alternatives, though, such as [CodeTogether](https://www.codetogether.com/).
 
-> Release Party: [Liveshare (in vscode.dev)](https://youtu.be/IKvtYHfzE3g?t=170)
+> Release Party: [Live Share (in vscode.dev)](https://youtu.be/IKvtYHfzE3g?t=170)
 
 ## Bracket pairs
 
