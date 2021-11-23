@@ -2,7 +2,7 @@
 id: V2Cjla9vzM69Z280j5bXB
 title: Highlights from VSCode 1.62
 desc: ''
-updated: 1637693736991
+updated: 1637694156768
 created: 1637336177637
 image:
   url: >-
@@ -74,6 +74,6 @@ Found a duplicate extension? Check whether one is from a verified publisher by j
 ![[blog.subscribe]]
 
 [^1]: [Checkout VSCodium](https://vscodium.com/), for the truly MIT-licensed version of the VSCode IDE (with telemetry/tracking disabled).
-[^2]: [VSCode release notes for 1.61](https://code.visualstudio.com/updates/v1_61), along with release notes for previous monthly releases.
+[^2]: [VSCode release notes for 1.62](https://code.visualstudio.com/updates/v1_62), along with release notes for previous monthly releases.
 [^3]: The [VSCode Insiders Build](https://code.visualstudio.com/insiders) allows users to get VSCode with new features as soon as they are available, rather than at the monthly cadence.
 [^4]: Reference the [VSCode Blog Post on vscode.dev](https://code.visualstudio.com/blogs/2021/10/20/vscode-dev) for a full rundown on Virtual Workspaces and bringing VSCode to the browser. Last month, there was a livestream all about it! Watch [VS Code for the Web: vscode.dev on YouTube](https://www.youtube.com/watch?v=sy3TUb_iVJM).
