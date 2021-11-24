@@ -2,7 +2,7 @@
 id: jCoayBWmLrfn2W4WrOR9x
 title: Subscribe
 desc: ''
-updated: 1634853707725
+updated: 1637789071431
 created: 1634853707725
 ---
 
@@ -25,6 +25,7 @@ Enjoy the blog? Subscribe to our newsletter!
 Newsletters not your thing? You can also follow us elsewhere on the interwebs:
 
 * Join [Dendron on Discord](https://discord.com/invite/xrKTUStHNZ)
+* Register for [Dendron Events on Luma](https://lu.ma/community/com-lTfMsAZEWSwLJJL/calendar)
 * Follow [Dendron on Twitter](https://twitter.com/dendronhq)
 * Checkout [Dendron on GitHub](https://github.com/dendronhq)
 
