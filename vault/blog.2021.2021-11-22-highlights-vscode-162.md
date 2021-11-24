@@ -2,7 +2,7 @@
 id: V2Cjla9vzM69Z280j5bXB
 title: Highlights from VSCode 1.62
 desc: ''
-updated: 1637694156768
+updated: 1637788979079
 created: 1637336177637
 image:
   url: >-
@@ -36,7 +36,7 @@ Take note: if you are a VSCodium user, sharing/joining sessions won't work. I le
 
 ## Bracket pairs
 
-I enjoy whenever features lessen confusion for my eyeballs. I never bought a pair of Google Glass, even as men everywhere were accidentally taking photos while using urinals in pubic restrooms. [Bracket pair highlighting](https://code.visualstudio.com/updates/v1_62#_improved-bracket-pair-guides), though, to show where I am in the russian dolls of nested loops? Yes, please.
+I enjoy whenever features lessen confusion for my eyeballs. I never bought a pair of Google Glass eyewear, even as men everywhere were [accidentally taking photos while using urinals](https://bits.blogs.nytimes.com/2013/05/17/at-google-conference-even-cameras-in-the-bathroom/) in public restrooms. [Bracket pair highlighting](https://code.visualstudio.com/updates/v1_62#_improved-bracket-pair-guides), though, to show where I am in the russian dolls of nested loops? Yes, please.
 
 Settings of interest:
 - `"editor.guides.bracketPairs": "active"`: Only show guides for **only the active** bracket pair.
