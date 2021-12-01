@@ -2,7 +2,7 @@
 id: 7h7zZkjF4Yqz8XSrHS1je
 title: "Share Your Notes Online: Publish Dendron with Netlify and GitHub"
 desc: ''
-updated: 1638395542181
+updated: 1638395819536
 created: 1638387034460
 image:
   url: >-
@@ -17,9 +17,9 @@ published: false
 
 ![Logos for GitHub, Netlify, and Dendron](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-header-dendron-netlify.png)
 
-[Dendron](https://www.dendron.so/) helps people and products organize with notes, docs, and knowledge of all the things. Let's so how easy it is to publish, and have a static site hosted on [Netlify](https://www.netlify.com/)!
+[Dendron](https://www.dendron.so/) helps people and products organize with notes, docs, and knowledge of all the things. Let's see how easy it is to publish and have a static site hosted on [Netlify](https://www.netlify.com/)!
 
-You'll learn how to publish your Dendron notes using Netlify and GitHub, [looking like this demo website](https://dendron-example.netlify.app/). This tutorial assumes that you have basic knowledge of GitHub and Visual Studio Code (VSCode).
+You'll learn how to publish your Dendron notes using Netlify and GitHub, which looks like [this demo website](https://dendron-example.netlify.app/). This tutorial assumes that you have basic knowledge of GitHub and Visual Studio Code (VSCode).
 
 - [Join GitHub](https://github.com/join)
   - [Learn: Git and GitHub](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub)
@@ -30,7 +30,7 @@ You'll learn how to publish your Dendron notes using Netlify and GitHub, [lookin
 
 ## Part 1: GitHub
 
-When logged into GitHub, [click here](https://github.com/dendronhq/template.publish.netlify/generate) to generate a new Dendron Workspace pre-configured to publish to Netlify. If you're wondering, we're using [this template](https://github.com/dendronhq/template.publish.netlify) on GitHub.
+When logged into GitHub, [click here](https://github.com/dendronhq/template.publish.netlify/generate) to generate a new Dendron Workspace pre-configured for Netlify publishing. If you're wondering, we're using [this template](https://github.com/dendronhq/template.publish.netlify) on GitHub.
 
 ![Generating a new GitHub repo from the Dendron Netlify template](https://org-dendron-public-assets.s3.amazonaws.com/images/github-create-workspace-netlify.gif)
 
@@ -48,7 +48,7 @@ When logged into Netlify, you start on your `Team Overview` page.
 
 - Click `New site from Git`
 - Under `Connect to Git provider`, select `GitHub`
-  - You'll be asked configure Dendron for permissions. It's best practice to go with `Only select repositories`, and selecting the repository you made from the template.
+  - You'll be asked configure Dendron for permissions. It's best practice to go with `Only select repositories`, and selecting the repository you made from the template
 
 Once permissions are configured, select the repository in Netlify. There is no need to change any of default values, since the GitHub template is providing them from [`netlify.toml`](https://github.com/dendronhq/template.publish.netlify/blob/main/netlify.toml). Scroll to the bottom, and click `Deploy site`.
 
