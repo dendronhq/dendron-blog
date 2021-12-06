@@ -2,7 +2,7 @@
 id: 7h7zZkjF4Yqz8XSrHS1je
 title: "Share Your Notes Online: Publish Dendron with Netlify and GitHub"
 desc: ''
-updated: 1638755776711
+updated: 1638833392156
 created: 1638387034460
 image:
   url: >-
@@ -17,7 +17,7 @@ published: false
 
 ![Logos for GitHub, Netlify, and Dendron](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-header-dendron-netlify.png)
 
-[Dendron](https://link.dendron.so/home) helps people and products organize with notes, docs, and knowledge of all the things. Let's see how easy it is to publish and have a static site hosted on [Netlify](https://www.netlify.com/)!
+[Dendron](https://dendron.so) helps people and products organize with notes, docs, and knowledge of all the things. Let's see how easy it is to publish and have a static site hosted on [Netlify](https://www.netlify.com/)!
 
 You'll learn how to publish your Dendron notes using Netlify and GitHub, which looks like [this demo website](https://link.dendron.so/netlify-demo). This tutorial assumes that you have basic knowledge of GitHub and Visual Studio Code (VSCode).
 
@@ -26,7 +26,7 @@ You'll learn how to publish your Dendron notes using Netlify and GitHub, which l
 - [Join Netlify](https://app.netlify.com/signup)
 - [Download Visual Studio Code](https://code.visualstudio.com/)
 
-> This uses a brand new Dendron Workspace you can later configure to work with your own vaults. Do you already have a workspace you'd prefer using? Reference the Dendron docs for in-depth details on how the template, and other workspaces, can publish to Netlify: [Publishing with Netlify](https://link.dendron.so/6WuK).
+> This uses a brand new Dendron Workspace you can later configure to work with your own vaults. Do you already have a workspace you'd prefer using? Reference the Dendron docs for in-depth details on how the template, and other workspaces, can publish to Netlify: [Publishing with Netlify](https://wiki.dendron.so/notes/yg3EL1x9fEe4NMqxUC3jP/).
 
 ## Part 1: GitHub
 
@@ -91,8 +91,8 @@ In this tutorial, you learned how to:
 
 Now what? Publishing is set, but Dendron isn't just for what you want to share with the world. It's an open source, local-first knowledge management solution that scales as you do.
 
-* [Dendron Getting Started Guide](https://link.dendron.so/get-started)
-* [Dendron Publishing Guide](https://link.dendron.so/6WuT)
-* [Dendron FAQ](https://link.dendron.so/faq)
-* [Dendron Concepts](https://link.dendron.so/concepts)
+* [Dendron Getting Started Guide](https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1/)
+* [Dendron Publishing Guide](https://wiki.dendron.so/notes/4ushYTDoX0TYQ1FDtGQSg/)
+* [Dendron FAQ](https://wiki.dendron.so/notes/683740e3-70ce-4a47-a1f4-1f140e80b558/)
+* [Dendron Concepts](https://wiki.dendron.so/notes/c6fd6bc4-7f75-4cbb-8f34-f7b99bfe2d50/)
 * [Netlify Docs Home Page](https://docs.netlify.com/)
