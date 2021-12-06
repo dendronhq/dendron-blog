@@ -1,7 +1,7 @@
 ---
 id: 3dd58f62-fee5-4f93-b9f1-b0f0f59a9b64
 title: A Hierarchy First Approach to Note Taking
-updated: 1635400128807
+updated: 1638758312714
 created: 1598210596673
 date: '2020-08-24'
 tags:
@@ -267,7 +267,7 @@ A little over a year ago, I left my job at Amazon to work on a note-taking tool 
 
 ## Dendron
 
-About a month ago, I launched the preview for [Dendron](https://dendron.so/). Dendron is the first-ever note-taking tool built from the ground up to support hierarchical note-taking. Dendron is open source, local first, Markdown-based, and runs as a collection of extension on top of VSCode.
+About a month ago, I launched the preview for [Dendron](https://link.dendron.so/home). Dendron is the first-ever note-taking tool built from the ground up to support hierarchical note-taking. Dendron is open source, local first, Markdown-based, and runs as a collection of extension on top of VSCode.
 
 Dendron lives inside VSCode because I wanted to move fast and focus on the truly novel parts of hierarchical notes without also building all the scaffolding that comes from creating an editor. Living inside VSCode means that users also have access to the thousands of existing extensions that provide everything from [vim keybindings](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) to [realtime collaboration editing](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare). 
 

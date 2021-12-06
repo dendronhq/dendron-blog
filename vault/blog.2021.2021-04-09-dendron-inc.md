@@ -2,7 +2,7 @@
 id: N9VxT7G5SovmncezBAGO2
 title: Dendron Inc
 desc: ''
-updated: 1635291264579
+updated: 1638758273288
 created: 1624123542935
 excerpt: We are launching a company
 canonicalUrl: 'https://wiki.dendron.so/notes/8d6bb6c6-f2b5-4fb4-a7f0-1930b528051f.html'
@@ -17,7 +17,7 @@ It was trying to answer these questions that led me to experiment and ultimately
 
 A year ago, I launched [Dendron](https://wiki.dendron.so/) to see if this system I developed would work for anyone else - now 3000 commits and 27,000 downloads later, I'm happy to say that it does. I get a thrill every time someone messages me about how they're using Dendron - whether it's planning out their next Dungeons and Dragons game or it's using Dendron as the central knowledge base for both work and home.
 
-What makes Dendron powerful is our ability to let users organize their information in a way that's most useful to them. Dendron takes many of the affordances developers are used to in code, like abstractions ([note references](https://wiki.dendron.so/notes/f1af56bb-db27-47ae-8406-61a98de6c78c.html)), [refactoring](https://wiki.dendron.so/notes/eea2b078-1acc-4071-a14e-18299fc28f47.html#refactor-hierarchy), and [symbol lookup](https://wiki.dendron.so/notes/a7c3a810-28c8-4b47-96a6-8156b1524af3.html) and applying it to general knowledge.
+What makes Dendron powerful is our ability to let users organize their information in a way that's most useful to them. Dendron takes many of the affordances developers are used to in code, like abstractions ([note references](https://link.dendron.so/6WvT)), [refactoring](https://link.dendron.so/6WvW), and [symbol lookup](https://link.dendron.so/6WvY) and applying it to general knowledge.
 
 These capabilities combined with our model of working over plaintext markdown and our open source license means that your knowledge is always yours, available instantly and in any way you want it.
 
@@ -25,7 +25,7 @@ Moving forward, we will further expand on Dendron's capabilities to make it a fu
 
 Rest assured that nothing is changing about the way we do things - Dendron will remain open source and the client will always be local first and free. We plan to make money by charging teams and enterprises who want access to additional features like single sign-on, private registries and fine-grained access control.
 
-As part of our growth from a project to a company, we are also publishing the [Dendron Handbook](https://handbook.dendron.so/). This is **heavily inspired** from the [Gitlab Handbook](https://about.gitlab.com/handbook/) and will document our mission, values, and roadmap as a company.
+As part of our growth from a project to a company, we are also publishing the [Dendron Handbook](https://link.dendron.so/handbook). This is **heavily inspired** from the [Gitlab Handbook](https://about.gitlab.com/handbook/) and will document our mission, values, and roadmap as a company.
 
 From day one, the words of Vannevar Bush, originator of the [memex](https://en.wikipedia.org/wiki/Memex), has been our north star
 
@@ -33,7 +33,7 @@ From day one, the words of Vannevar Bush, originator of the [memex](https://en.w
 
 Our goal is to help humans take **command over the inherited knowledge of the ages**. We welcome you to be part of our journey :)
 
-(and we are [hiring](https://wiki.dendron.so/notes/c378b702-7d49-4e91-be6e-b2078103c86e.html))
+(and we are [hiring](https://link.dendron.so/careers))
 
 ---
 
