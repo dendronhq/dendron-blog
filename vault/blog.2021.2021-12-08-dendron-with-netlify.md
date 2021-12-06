@@ -2,12 +2,12 @@
 id: 7h7zZkjF4Yqz8XSrHS1je
 title: "Share Your Notes Online: Publish Dendron with Netlify and GitHub"
 desc: ''
-updated: 1638755391949
+updated: 1638755776711
 created: 1638387034460
 image:
   url: >-
     https://org-dendron-public-assets.s3.amazonaws.com/images/blog-header-dendron-netlify.png
-  alt: Visual Studio Code logo
+  alt: Logos for Dendron, GitHub, and Netlify
 date: '2021-12-08'
 excerpt: >-
   Publishing Dendron notes, using Netlify and GitHub, can be done quickly with the Dendron publishing template!
