@@ -12,7 +12,7 @@ date: '2021-12-08'
 excerpt: >-
   Publishing Dendron notes, using Netlify and GitHub, can be done quickly with the Dendron publishing template!
 author: Derek Ardolf
-published: false
+published: true
 ---
 
 ![Logos for GitHub, Netlify, and Dendron](https://org-dendron-public-assets.s3.amazonaws.com/images/blog-header-dendron-netlify.png)
