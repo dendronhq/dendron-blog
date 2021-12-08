@@ -2,7 +2,7 @@
 id: 7h7zZkjF4Yqz8XSrHS1je
 title: "Share Your Notes Online: Publish Dendron with Netlify and GitHub"
 desc: ''
-updated: 1638833392156
+updated: 1639005598136
 created: 1638387034460
 image:
   url: >-
@@ -26,7 +26,7 @@ You'll learn how to publish your Dendron notes using Netlify and GitHub, which l
 - [Join Netlify](https://app.netlify.com/signup)
 - [Download Visual Studio Code](https://code.visualstudio.com/)
 
-> This uses a brand new Dendron Workspace you can later configure to work with your own vaults. Do you already have a workspace you'd prefer using? Reference the Dendron docs for in-depth details on how the template, and other workspaces, can publish to Netlify: [Publishing with Netlify](https://wiki.dendron.so/notes/yg3EL1x9fEe4NMqxUC3jP/).
+> This uses a brand new Dendron Workspace you can later configure to work with your own vaults. Do you already have a workspace you'd prefer using? Reference the Dendron docs for in-depth details on how the template, and other workspaces, can publish to Netlify: [Publishing with Netlify](https://wiki.dendron.so/notes/yetuum6o9wZi6eVJQBbQb/).
 
 ## Part 1: GitHub
 
