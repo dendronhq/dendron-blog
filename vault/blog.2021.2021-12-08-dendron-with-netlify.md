@@ -96,3 +96,7 @@ Now what? Publishing is set, but Dendron isn't just for what you want to share w
 * [Dendron FAQ](https://wiki.dendron.so/notes/683740e3-70ce-4a47-a1f4-1f140e80b558/)
 * [Dendron Concepts](https://wiki.dendron.so/notes/c6fd6bc4-7f75-4cbb-8f34-f7b99bfe2d50/)
 * [Netlify Docs Home Page](https://docs.netlify.com/)
+
+---
+
+![[blog.subscribe]]
