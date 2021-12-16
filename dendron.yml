@@ -30,6 +30,7 @@ commands:
             confirmVaultOnCreate: false
             leaveTrace: false
             bubbleUpCreateNew: true
+            fuzzThreshold: 0.2
     insertNote:
         initialValue: templates
     insertNoteLink:
@@ -83,6 +84,7 @@ workspace:
         createTaskSelectionType: selection2link
     enableUserTags: true
     enableHashTags: true
+    enableEditorDecorations: true
 preview:
     enableFMTitle: true
     enableNoteTitleForLink: true

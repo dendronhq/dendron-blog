@@ -2,7 +2,7 @@
 id: fDCVPEo3guCFWPdxokXHU
 title: Best Mobile Note-Taking Apps for Markdown
 desc: ''
-updated: 1638833233894
+updated: 1639617530929
 created: 1632684719327
 date: '2021-10-25'
 excerpt: An overview of mobile apps that work well with Markdown
@@ -121,6 +121,8 @@ There are many mobile note-taking solutions that work with Markdown. Below are s
   - iPad + iPhone + Mac, free (or paid option has perks, such as Javascript-supported actions)
 - [Textastic (iOS)](https://www.textasticapp.com/)
   - iPad + iPhone + Mac, paid, code-highlighting, ssh/FTP/SFTP/Dropbox/Google Drive support
+
+> For a wider comparison of text editors, with a focus on iOS devices, also take a look at [this iOS Text Editor roundup by Brett Terpstra](https://brettterpstra.com/ios-text-editors/).
 
 ### Git clients
 
