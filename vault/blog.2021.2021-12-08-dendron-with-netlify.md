@@ -78,7 +78,7 @@ This is a great way to check whether build have failed, or are still in progress
 
 ## Summary
 
-You're done! From now on, all new commits you make to your repository on GitHub will trigger a new publihing update to your website.
+You're done! From now on, all new commits you make to your repository on GitHub will trigger a new publishing update to your website.
 
 In this tutorial, you learned how to:
 
