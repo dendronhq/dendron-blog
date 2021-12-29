@@ -5,7 +5,7 @@ desc: >-
   Start your day, and end your day, with a simple journal method. The Five
   Minute Journal (5MJ) helps you express gratitude, make your days better, and
   focus on mindfulness.
-updated: 1640794243772
+updated: 1640794445327
 created: 1640790736919
 date: '2021-10-25'
 excerpt: >-
@@ -30,7 +30,7 @@ publish: false
 
 One of the most common ways of note taking is in the form of a journal. Let's make it easier for daily use with a template based off of a popular journaling format: [_The Five Minute Journal_](https://www.intelligentchange.com/pages/customers#journal), by [Intelligent Change](https://www.intelligentchange.com/pages/our-story).
 
-The Five Minute Journal helps you express gratitude, make your days better, and focus on mindfulness. For an example of journaling with this method, Tim Ferriss uploaded a video in 2020 all about his approach with _physical notebooks_: [How I Journal and Take Notes: Brainstorming + Focusing + Reducing Anxiety](https://youtu.be/UFdR8w_R1HA).
+The Five Minute Journal (5MJ) helps you express gratitude, make your days better, and focus on mindfulness. For an example of journaling with this method, Tim Ferriss uploaded a video in 2020 all about his approach with _physical notebooks_: [How I Journal and Take Notes: Brainstorming + Focusing + Reducing Anxiety](https://youtu.be/UFdR8w_R1HA).
 
 > For a companion guide to that video, take a look at _[How Tim Ferriss Uses The Five Minute Journal - 6 Tips For New Journalers](https://www.intelligentchange.com/blogs/read/how-tim-ferriss-uses-the-five-minute-journal-6-tips-for-new-journalers)._
 
@@ -42,9 +42,7 @@ This post expects that you've at least gone through the [Dendron Getting Started
 
 ## Templates in Dendron
 
-This blog post will walk through the ease of using **templates**.
- 
-- [**Dendron Templates**](https://wiki.dendron.so/notes/861cbdf8-102e-4633-9933-1f3d74df53d2/): Markdown files with pre-outlined content meant for reuse. Why copy and paste from previous notes, when you can have an outline ready and waiting with templates?
+Dendron [**templates**](https://wiki.dendron.so/notes/861cbdf8-102e-4633-9933-1f3d74df53d2/) are Markdown files with pre-outlined content meant for reuse. Why copy and paste from previous notes, when you can have an outline ready and waiting with templates?
 
 ## Create the 5MJ Template
 
@@ -133,10 +131,10 @@ In this blog post, you learned how to do the following in Dendron:
 Now what? You have daily journals using templates, but Dendron can do much more. It's an open source, local-first knowledge management solution that scales as you do.
 
 - Learn more about [templates in Dendron](https://wiki.dendron.so/notes/861cbdf8-102e-4633-9933-1f3d74df53d2/)
-- [Learn to use the 5MJ template with schemas]() #todo
-  - [**Dendron Schemas**](https://wiki.dendron.so/notes/c5e5adde-5459-409b-b34d-a0d75cbb1052/): Configuration files that tell Dendron when a template should _automatically_ pre-populate a new note. What's cool about this: a new note, following the naming scheme of choice, will automatically import a template of your choosing. This is perfect for a daily journal, and can be used for any other type of documentation.
-* [Learn more about Lookup](https://wiki.dendron.so/notes/a7c3a810-28c8-4b47-96a6-8156b1524af3/)
-* [Learn more about Special Notes like Daily Journal](https://wiki.dendron.so/notes/5c213aa6-e4ba-49e8-85c5-1bdcb33ce202/)
+- [Learn to use 5MJ template with schemas]() #todo
+  - Dendron [**schemas**](https://wiki.dendron.so/notes/c5e5adde-5459-409b-b34d-a0d75cbb1052/) are configuration files that tell Dendron when a template should _automatically_ pre-populate a new note. What's cool about this: a new note, following the naming scheme of choice, will automatically import a template of your choosing. This is perfect for a daily journal, and can be used for any other type of documentation.
+* Learn more about [Special Notes like Daily Journal in Dendron](https://wiki.dendron.so/notes/5c213aa6-e4ba-49e8-85c5-1bdcb33ce202/)
+* Learn more about [Lookup in Dendron](https://wiki.dendron.so/notes/a7c3a810-28c8-4b47-96a6-8156b1524af3/)
 * [Dendron FAQ](https://wiki.dendron.so/notes/683740e3-70ce-4a47-a1f4-1f140e80b558/)
 * [Dendron Concepts](https://wiki.dendron.so/notes/c6fd6bc4-7f75-4cbb-8f34-f7b99bfe2d50/)
 
