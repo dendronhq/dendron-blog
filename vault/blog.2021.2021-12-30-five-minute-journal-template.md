@@ -5,7 +5,7 @@ desc: >-
   Start your day, and end your day, with a simple journal method. The Five
   Minute Journal (5MJ) helps you express gratitude, make your days better, and
   focus on mindfulness.
-updated: 1640793363102
+updated: 1640794243772
 created: 1640790736919
 date: '2021-10-25'
 excerpt: >-
@@ -20,20 +20,19 @@ publish: false
 ---
 
 > Banner image #todo
-> - Ref https://www.intelligentchange.com/pages/press
-> - Five Minute Journal images: https://drive.google.com/drive/folders/1D8KtyXDvsyL7BTqmZ336Lukzxwx1jeDr
 
 [Dendron](https://dendron.so) helps people and products organize with notes, docs, and knowledge of all the things. A way to make life easier is to use templates. But where to start?
 
 ## The Five Minute Journal
 
+> Add image of journal #todo
+> - Five Minute Journal images: https://drive.google.com/drive/folders/1D8KtyXDvsyL7BTqmZ336Lukzxwx1jeDr
+
 One of the most common ways of note taking is in the form of a journal. Let's make it easier for daily use with a template based off of a popular journaling format: [_The Five Minute Journal_](https://www.intelligentchange.com/pages/customers#journal), by [Intelligent Change](https://www.intelligentchange.com/pages/our-story).
 
-The Five Minute Journal helps you express gratitude, make your days better, and focus on mindfulness. For an example of journaling with this method, Tim Ferriss talks uploaded a video in 2020 all about his approach.
+The Five Minute Journal helps you express gratitude, make your days better, and focus on mindfulness. For an example of journaling with this method, Tim Ferriss uploaded a video in 2020 all about his approach with _physical notebooks_: [How I Journal and Take Notes: Brainstorming + Focusing + Reducing Anxiety](https://youtu.be/UFdR8w_R1HA).
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UFdR8w_R1HA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-> For a related blog post, take a look at _[How Tim Ferriss Uses The Five Minute Journal - 6 Tips For New Journalers](https://www.intelligentchange.com/blogs/read/how-tim-ferriss-uses-the-five-minute-journal-6-tips-for-new-journalers)._
+> For a companion guide to that video, take a look at _[How Tim Ferriss Uses The Five Minute Journal - 6 Tips For New Journalers](https://www.intelligentchange.com/blogs/read/how-tim-ferriss-uses-the-five-minute-journal-6-tips-for-new-journalers)._
 
 Five minutes a day, that's all we need to start. We'll be going the digital route with Dendron.
 
