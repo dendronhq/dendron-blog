@@ -5,7 +5,7 @@ desc: >-
   Start your day, and end your day, with a simple journal method. The Five
   Minute Journal (5MJ) helps you express gratitude, make your days better, and
   focus on mindfulness.
-updated: 1640794445327
+updated: 1640814353154
 created: 1640790736919
 date: '2021-10-25'
 excerpt: >-
@@ -32,7 +32,7 @@ One of the most common ways of note taking is in the form of a journal. Let's ma
 
 The Five Minute Journal (5MJ) helps you express gratitude, make your days better, and focus on mindfulness. For an example of journaling with this method, Tim Ferriss uploaded a video in 2020 all about his approach with _physical notebooks_: [How I Journal and Take Notes: Brainstorming + Focusing + Reducing Anxiety](https://youtu.be/UFdR8w_R1HA).
 
-> For a companion guide to that video, take a look at _[How Tim Ferriss Uses The Five Minute Journal - 6 Tips For New Journalers](https://www.intelligentchange.com/blogs/read/how-tim-ferriss-uses-the-five-minute-journal-6-tips-for-new-journalers)._
+> For a companion guide to that video, take a look at _[How Tim Ferriss Uses The Five Minute Journal: 6 Tips For New Journalers](https://www.intelligentchange.com/blogs/read/how-tim-ferriss-uses-the-five-minute-journal-6-tips-for-new-journalers)._
 
 Five minutes a day, that's all we need to start. We'll be going the digital route with Dendron.
 
@@ -44,10 +44,10 @@ This post expects that you've at least gone through the [Dendron Getting Started
 
 Dendron [**templates**](https://wiki.dendron.so/notes/861cbdf8-102e-4633-9933-1f3d74df53d2/) are Markdown files with pre-outlined content meant for reuse. Why copy and paste from previous notes, when you can have an outline ready and waiting with templates?
 
-## Create the 5MJ Template
+### Create the 5MJ Template
 
 - Open Lookup (`Ctrl+L` on Windows/Linux, or `Cmd+L` on MacOS)
-- Enter `templates.daily.journal.5mj`
+- Enter `templates.daily-5mj`
 
 This should create a new note. Add the following Markdown:
 
@@ -97,24 +97,32 @@ I could have made today better by
 
 You now have a 5MJ template! In any note, you can now run `Dendron: Insert Note` to insert the 5MJ template contents.
 
-## Create a Daily Journal Note
+## Daily Journal notes in Dendron
+
+Dendron [**Daily Journal notes**](https://wiki.dendron.so/notes/861cbdf8-102e-4633-9933-1f3d74df53d2/) are Markdown files with pre-outlined content meant for reuse. Why copy and paste from previous notes, when you can have an outline ready and waiting with templates?
+
+Dendron has built-in support for a variety of special note formats, one of them being [**Daily Journal notes**](https://wiki.dendron.so/notes/861cbdf8-102e-4633-9933-1f3d74df53d2/). These notes can be created using regular lookup with convenient shortcuts.
+
+By default, daily journal notes are created under `daily.journal.yyyy.mm.dd`.
+
+![Create Daily Journal](https://org-dendron-public-assets.s3.amazonaws.com/images/create-daily-journal.gif)
+
+### Creating a Daily Journal with 5MJ
 
 Let's create a new 5MJ for today.
-
-> Add gif/screenshot #todo
 
 - Run `Create Daily Journal Note` (`Ctrl+Shift+I` on Windows/Linux, or `Cmd+Shift+I` on MacOS)
 - Open the command palette (`Ctrl+Shift+P` on Windows/Linux, or `Cmd+Shift+P` on MacOS)
 - Enter `Dendron: Insert Note`
-- Enter `templates.journal.daily.5mj`
+- Enter `templates.daily-5mj`
 
 You should see your daily journal now populated with the 5MJ template.
 
-### Calendar View
+#### Calendar View
 
-Daily journals can also be navigated to, and created, within the Calendar View.
+Daily journals can also be navigated to, and created, within [Dendron's Calendar View](https://wiki.dendron.so/notes/25287595-96bb-410b-ab46-eb9a26b0e259/#calendar-view).
 
-> Add gif/screenshot #todo
+![Create Daily Journal from Calendar](https://org-dendron-public-assets.s3.amazonaws.com/images/create-daily-journal-calendar.gif)
 
 ## Summary
 
@@ -130,13 +138,13 @@ In this blog post, you learned how to do the following in Dendron:
 
 Now what? You have daily journals using templates, but Dendron can do much more. It's an open source, local-first knowledge management solution that scales as you do.
 
-- Learn more about [templates in Dendron](https://wiki.dendron.so/notes/861cbdf8-102e-4633-9933-1f3d74df53d2/)
-- [Learn to use 5MJ template with schemas]() #todo
+- Learn to [automatically use the 5MJ template with all new daily journal notes, using schemas](https://wiki.dendron.so/notes/5U4eAiqshI67VxIL40KWH/)
   - Dendron [**schemas**](https://wiki.dendron.so/notes/c5e5adde-5459-409b-b34d-a0d75cbb1052/) are configuration files that tell Dendron when a template should _automatically_ pre-populate a new note. What's cool about this: a new note, following the naming scheme of choice, will automatically import a template of your choosing. This is perfect for a daily journal, and can be used for any other type of documentation.
-* Learn more about [Special Notes like Daily Journal in Dendron](https://wiki.dendron.so/notes/5c213aa6-e4ba-49e8-85c5-1bdcb33ce202/)
-* Learn more about [Lookup in Dendron](https://wiki.dendron.so/notes/a7c3a810-28c8-4b47-96a6-8156b1524af3/)
-* [Dendron FAQ](https://wiki.dendron.so/notes/683740e3-70ce-4a47-a1f4-1f140e80b558/)
-* [Dendron Concepts](https://wiki.dendron.so/notes/c6fd6bc4-7f75-4cbb-8f34-f7b99bfe2d50/)
+- Learn more about [templates in Dendron](https://wiki.dendron.so/notes/861cbdf8-102e-4633-9933-1f3d74df53d2/)
+- Learn more about [Special Notes like Daily Journal in Dendron](https://wiki.dendron.so/notes/5c213aa6-e4ba-49e8-85c5-1bdcb33ce202/)
+- Learn more about [Lookup in Dendron](https://wiki.dendron.so/notes/a7c3a810-28c8-4b47-96a6-8156b1524af3/)
+- [Dendron FAQ](https://wiki.dendron.so/notes/683740e3-70ce-4a47-a1f4-1f140e80b558/)
+- [Dendron Concepts](https://wiki.dendron.so/notes/c6fd6bc4-7f75-4cbb-8f34-f7b99bfe2d50/)
 
 ---
 
