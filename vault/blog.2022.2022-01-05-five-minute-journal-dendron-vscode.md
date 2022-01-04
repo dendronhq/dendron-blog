@@ -5,12 +5,13 @@ desc: >-
   The five minute journal (5MJ) is a simple but effective way to get started
   with note taking. We'll go over a daily template that you can use to add some
   structure to your days.
-updated: 1641333675088
+updated: 1641335453412
 created: 1640790736919
 image:
-  url: https://org-dendron-public-assets.s3.amazonaws.com/images/journal-with-laptop.png
+  url: >-
+    https://org-dendron-public-assets.s3.amazonaws.com/images/journal-with-laptop.png
   alt: Journal sitting up against a laptop
-date: '2022-01-04'
+date: '2022-01-05'
 excerpt: >-
   The five minute journal (5MJ) is a simple but effective way to get started
   with note taking. We'll go over a daily template that you can use to add some
