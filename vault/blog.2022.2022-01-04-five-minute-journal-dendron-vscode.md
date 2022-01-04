@@ -5,7 +5,7 @@ desc: >-
   The five minute journal (5MJ) is a simple but effective way to get started
   with note taking. We'll go over a daily template that you can use to add some
   structure to your days.
-updated: 1641266888817
+updated: 1641267149335
 created: 1640790736919
 image:
   url: https://org-dendron-public-assets.s3.amazonaws.com/images/journal-with-laptop.png
@@ -197,7 +197,7 @@ Now what? You have daily journals using templates, but Dendron can do much more.
 - Learn to [swiftly create schema targeting existing note hierarchies](https://wiki.dendron.so/notes/gHERCRoEXzASfXorBgZN0.html)
 - Learn to level-up your daily life with [the bullet journaling workflow](https://wiki.dendron.so/notes/e65dfe53-41f7-4b16-b870-dadec1775497.html)
 - Learn to explore your schema visually using the [schema graph](https://wiki.dendron.so/notes/587e6d62-3c5b-49b0-aedc-02f62f0448e6.html#schema-graph)
-- Check out an end-to-end workstyle, managing 20k notes, using schemas and daily journals from [A Day in Dendron](community.greenhouse.2021-07-23-using-dendron-with-20k-notes)
+- Check out an end-to-end workstyle, managing 20k notes, using schemas and daily journals from [A Day in Dendron](https://wiki.dendron.so/notes/fzHazEFWTpUVexmv/)
 - [Dendron FAQ](https://wiki.dendron.so/notes/683740e3-70ce-4a47-a1f4-1f140e80b558/)
 - [Dendron Concepts](https://wiki.dendron.so/notes/c6fd6bc4-7f75-4cbb-8f34-f7b99bfe2d50/)
 
