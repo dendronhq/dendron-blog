@@ -5,7 +5,7 @@ desc: >-
   The five minute journal (5MJ) is a simple but effective way to get started
   with note taking. We'll go over a daily template that you can use to add some
   structure to your days.
-updated: 1641333403811
+updated: 1641333675088
 created: 1640790736919
 image:
   url: https://org-dendron-public-assets.s3.amazonaws.com/images/journal-with-laptop.png
@@ -25,7 +25,7 @@ It's 2022 and you're looking to start off the year right by keeping a journal. W
 
 ## The Five Minute Journal
 
-Tim Ferriss,[^2] world-famous entrepreneur and author of books such as _Tribe of Mentors_,[^3] uploaded a video in 2020 all about his approach to note taking with physical notebooks.[^4] 5MJ helps him express gratitude, make your days better, and focus on mindfulness.
+Tim Ferriss,[^2] world-famous entrepreneur and author of books such as _Tribe of Mentors_,[^3] uploaded a video in 2020 all about his approach to note taking with physical notebooks.[^4] 5MJ helps him express gratitude, make days better, and focus on mindfulness.
 
 In this post, we'll be going over how to create your own 5MJ using [Dendron](https://www.dendron.so/). Dendron is a structured note taking tool for developers that is open source, local first, and integrated with Visual Studio Code (VS Code).
 
