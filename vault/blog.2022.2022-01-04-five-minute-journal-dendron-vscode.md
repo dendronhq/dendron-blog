@@ -5,7 +5,7 @@ desc: >-
   The five minute journal (5MJ) is a simple but effective way to get started
   with note taking. We'll go over a daily template that you can use to add some
   structure to your days.
-updated: 1641267149335
+updated: 1641333254374
 created: 1640790736919
 image:
   url: https://org-dendron-public-assets.s3.amazonaws.com/images/journal-with-laptop.png
@@ -21,17 +21,17 @@ publish: false
 
 ![Journal sitting up against a laptop](https://org-dendron-public-assets.s3.amazonaws.com/images/journal-with-laptop.png)
 
-It's 2022 and you're looking to start off the year right by keeping a journal. But where to start? _The Five Minute Journal_ (5MJ)[^1] is a simple but effective way to get started with note taking. It helps you express gratitude, make your days better, and focus on mindfulness.
+It's 2022 and you're looking to start off the year right by keeping a journal. Where to start? _The Five Minute Journal_ (5MJ)[^1] is a simple but effective way to get started with note taking.
 
 ## The Five Minute Journal
 
-Tim Ferriss,[^2] world-famous entrepreneur and author of books such as _Tribe of Mentors_,[^3] uploaded a video in 2020 all about his approach to note taking with physical notebooks.[^4] 5MJ is a part of his daily workflow.
+Tim Ferriss,[^2] world-famous entrepreneur and author of books such as _Tribe of Mentors_,[^3] uploaded a video in 2020 all about his approach to note taking with physical notebooks.[^4] 5MJ helps him express gratitude, make your days better, and focus on mindfulness.
 
 In this post, we'll be going over how to create your own 5MJ using [Dendron](https://www.dendron.so/). Dendron is a structured note taking tool for developers that is open source, local first, and integrated with Visual Studio Code (VS Code).
 
 ## Prerequisites
 
-This post expects that you've at least gone through the [Dendron Getting Started Guide](https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1/), and have a workspace opened to work with. If you're new to Dendron, make sure to take a look.
+This post expects that you've gone through the [Dendron Getting Started Guide](https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1/) and have a workspace opened to work with. If you're new to Dendron, make sure to take a look.
 
 ## Concepts
 
@@ -107,7 +107,7 @@ You now have a new template with the 5MJ outline.
 
 ### Create 5MJ schema
 
-> Templates can be used with or without schemas. Run [Insert Note](https://wiki.dendron.so/notes/eea2b078-1acc-4071-a14e-18299fc28f47.html#insert-note) to insert a template into the currently opened note.
+> Templates can be used with or without schemas. Run [Insert Note](https://wiki.dendron.so/notes/eea2b078-1acc-4071-a14e-18299fc28f47.html#insert-note) to insert a template into a currently opened note.
 
 - Open [schema lookup](https://wiki.dendron.so/notes/60c03500-98e4-4a02-a31e-2702b4068a88.html) (`Ctrl+Shift+L` / `Cmd+Shift+L`)
 - Type `5mj` in the text prompt and hit enter to create the schema, which should look like the following:
@@ -125,7 +125,7 @@ schemas:
 
 ### Update 5MJ schema contents
 
-We are going to use [Inline Schema](https://wiki.dendron.so/notes/c5e5adde-5459-409b-b34d-a0d75cbb1052.html#inline-schema-anatomy), which is a simpler form of schema taking less configuration lines while using indentation for visual understanding.
+We are going to use [Inline Schema](https://wiki.dendron.so/notes/c5e5adde-5459-409b-b34d-a0d75cbb1052.html#inline-schema-anatomy), a simpler schema format that takes less lines and uses indentation for visual understanding.
 
 - Replace the content of `5mj.schema.yml` with the following:
 
@@ -168,11 +168,11 @@ To match with the daily journal structure:
   - Month: `[0-1][0-9]` means match the range `00 - 19`
   - Day: `[0-3][0-9]` means match the range `00 - 39`
 
-This means all new daily journal notes are the pattern ranges.
+This means all new daily journal notes are within pattern ranges.
 
 ### Create a new daily journal
 
-Creating a daily journal entry should result in the `templates.daily-5mj` template automatically inserted.
+Creating a daily journal entry results in the `templates.daily-5mj` template automatically inserted.
 
 - Run `Create Daily Journal Note` (`Ctrl+Shift+I` / `Cmd+Shift+I`)
 
@@ -206,6 +206,6 @@ Now what? You have daily journals using templates, but Dendron can do much more.
 ![[blog.subscribe]]
 
 [^1]: [_The Five Minute Journal_](https://www.intelligentchange.com/pages/customers#journal), by [Intelligent Change](https://www.intelligentchange.com/pages/our-story)
-[^2]: It's hard to use on sentence to describe all the things Tim Ferris does. He has one of the most popular podcasts in the world, and has authored several books from all of his notes and interview content. He seems shorter in person. Anyway, learn more [at his website](https://tim.blog/)!
-[^3]: For a list of his books, see the [Books by Tim Ferriss](https://tim.blog/tim-ferriss-books) section of his website.
+[^2]: It's hard to use one sentence to describe all the things Tim Ferris does. He has one of the most popular podcasts in the world, and has authored several books from all of his notes and interview content. He seems shorter in person. Anyway, learn more [at his website](https://tim.blog/)!
+[^3]: For a list of books, see [Books by Tim Ferriss](https://tim.blog/tim-ferriss-books).
 [^4]: The video: [How I Journal and Take Notes: Brainstorming + Focusing + Reducing Anxiety](https://youtu.be/UFdR8w_R1HA). For a companion guide to the video, take a look at _[How Tim Ferriss Uses The Five Minute Journal: 6 Tips For New Journalers](https://www.intelligentchange.com/blogs/read/how-tim-ferriss-uses-the-five-minute-journal-6-tips-for-new-journalers)._
