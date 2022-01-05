@@ -7,5 +7,5 @@ schemas:
     parent: root
     namespace: true
     template:
-      id: template.blog
+      id: templates.blog
       type: note
