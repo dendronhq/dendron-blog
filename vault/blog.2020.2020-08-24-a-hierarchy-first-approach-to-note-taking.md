@@ -1,7 +1,7 @@
 ---
 id: 3dd58f62-fee5-4f93-b9f1-b0f0f59a9b64
 title: A Hierarchy First Approach to Note Taking
-updated: 1638832947589
+updated: 1642722212139
 created: 1598210596673
 date: '2020-08-24'
 tags:
@@ -282,7 +282,7 @@ Dendron is my attempt at building a tool that will give humans **access to** and
 If this mission statement resonates, I hope you join me on the journey! There are many ways to be involved:
 
 - you can [download dendron](https://marketplace.visualstudio.com/items?itemName=dendron.dendron) and start/continue a note-taking habit
-- you can take a look at our [open road map](https://github.com/orgs/dendronhq/projects/1) and leave comments and thoughts
+- you can join the [GitHub Discussions](https://github.com/dendronhq/dendron/discussions), and also take a look at the [Dendron Public Roadmap](https://wiki.dendron.so/notes/6e4c4f61-80a3-46fa-9ad3-04b99d9e9695.html) docs.
 - you can join our [discord](https://discord.gg/AE3NRw9) community of fellow note-takers 
 - you can follow us on twitter at [@dendronhq](https://twitter.com/dendronhq)
 - you can star and watch us on [github](https://github.com/dendronhq/dendron)
