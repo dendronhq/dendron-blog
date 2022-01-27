@@ -3,17 +3,17 @@ id: AitIUzlK955P5EFojPjxz
 title: 2021 Dendron New User Survey Results
 desc: >-
   The new user survey was open for several months in 2021, where we were prompting new Dendron users within VS Code itself. We had few thousand  respondents take that opportunity to give us feedback.
-updated: 1643045877983
+updated: 1643261806569
 created: 1642630788714
 image:
   url: >-
     https://org-dendron-public-assets.s3.amazonaws.com/images/2021-survey-banner.png
   alt: Computer sitting on a desk with plants
-date: '2022-01-20'
+date: '2022-01-27'
 excerpt: >-
   The new user survey was open for several months in 2021, where we were prompting new Dendron users within VS Code itself. We had a few thousand respondents take that opportunity to give us feedback.
 author: Derek Ardolf
-published: true
+published: false
 ---
 
 ![Computer sitting on a desk with plants](https://org-dendron-public-assets.s3.amazonaws.com/images/2021-survey-banner.png)
@@ -24,7 +24,7 @@ The new user survey was open for several months in 2021, where we were prompting
 
 ![Bar graph displaying different backgrounds of users](https://org-dendron-public-assets.s3.amazonaws.com/images/2021-survey-primary-background.png)
 
-New users were only able to select a single, primary background. Just over half of respondents had a background as **Software Developers** (53%), while the next largest group were primarily **Students** (14%).
+Users were asked about their career field backgrounds. Just over half of respondents had a background as **Software Developers** (53%), while the next largest group were **Students** (14%).
 
 Approximations of remaining background options:
 
@@ -33,18 +33,20 @@ Approximations of remaining background options:
 - **DevOps** (7%)
 - **Technical Writer** (4%)
 
-The **Other** (8%) group was spread across a variety of results. We were able to generalize the respondents into additional groups.
+The **Other** (8%) were spread across the following groups:
 
-- Systems/Infrastructure/IT/InfoSec Administrators/Engineers (1%)
+> The percentages are in relation to the total respondents in **Other**
+
+- Systems/Infrastructure/IT/InfoSec Administrators/Engineers (13%)
   - Solutions Architects
   - InfoSec / CyberSecurity
   - Systems Engineers/Administrators
   - etc.
-- General Hobbyist/Multipotentialite/Polymath (<1%)
-- Data Scientist (<1%)
-- Artist (Designer/Musician/etc.) (<1%)
-- Author/Writer/Blogger (<1%)
-- Teacher/Professor (<1%)
+- General Hobbyist/Multipotentialite/Polymath (8%)
+- Data Scientist (6%)
+- Artist (Designer/Musician/etc.) (5%)
+- Author/Writer/Blogger (3%)
+- Teacher/Professor (3%)
 
 There were some smaller groups that stood out in the **Other** category, having one to three respondents:
 
@@ -70,9 +72,9 @@ Approximations of remaining uses:
 - **Team knowledge base** (29%)
 - **Publishing** (22%)
 
-18% of respondents provided additional information under **Other**. Users want to use Dendron for so many things that it was rather difficult to create good categories for them.
+The **Other** (18%) included the following groups:
 
-> The percentages are in relation to the respondents in **Other**
+> The percentages are in relation to the total respondents in **Other**
 
 - Student/Learning/Class/Academia Notes (4%)
 - Journaling (4%)
@@ -110,7 +112,7 @@ Approximations of remaining previous (or parallel) tools:
 
 15% of respondents provided additional information under **Other**, providing a total of over **70 different tools and workflows.** Here are the top **Other** tools listed.
 
-> The percentages are in relation to the respondents in **Other**
+> The percentages are in relation to the total respondents in **Other**
 
 - Joplin (9%)
 - org-mode / org-roam / emacs (6%)
@@ -121,6 +123,8 @@ Approximations of remaining previous (or parallel) tools:
 - Typora (3%)
 - Physical notes (2%)
 
+No popopular static site generators (SSGs), such as Sphinx, Hugo, Jekyll, etc. were submitted in the tool list.
+
 ## Do users have plans on publishing their notes?
 
 ![Bar graph displaying levels of interest in publishing with Dendron](https://org-dendron-public-assets.s3.amazonaws.com/images/2021-survey-publishing-interest.png)
@@ -129,42 +133,60 @@ New users were only able to select a single response, if they were to respond to
 
 ## Takeaways
 
-Users are drawn to Dendron for Personal Knowledge Management (PKM), task management, research, and more.
+The Dendron team has been acting on user feedback and shipped several features.
 
-With that in mind, Dendron and the Dendron community have been introducing more features and enhancements that continue to develop:
+### PKM and Task Management
 
-- [Task Notes](https://wiki.dendron.so/notes/SEASewZSteDK7ry1AshNG/)
-  - [Contribute to the GitHub Discussion](https://github.com/dendronhq/dendron/discussions/1358)
-- [Note Traits](https://wiki.dendron.so/notes/EQoaBI8A0ZcswKQC3UMpO/)
-- [The Open PKM Catalogue](https://pkm.dendron.so): This work-in-progress is meant to be a reference of all things PKM.
-- Improvements to [importing existing Markdown](https://wiki.dendron.so/notes/f23a6290-2dec-45dc-b616-c218ee53db6b/)
-- Better workflows, such as using [multiple vaults with private and public notes](https://wiki.dendron.so/notes/6DZiBObwhZNYRjnokQ422/)
+Most users are drawn to Dendron for Personal Knowledge Management (PKM) and task management.
 
-Though half of respondents said they were developers, the other half of new users came from tech and non-tech backgrounds. This includes many users where Dendron is their introduction to [VS Code](https://code.visualstudio.com/), [git, and GitHub](https://wiki.dendron.so/notes/vsAxYld4zsbD2XjKoh7OP/).
+The Dendron team has been acting on user feedback and shipped some of the following features:
 
-Here are a few areas where we've taken action:
+- On PKM
+  - [The Open PKM Catalogue](https://pkm.dendron.so): This work-in-progress is meant to be a reference of all things PKM.
+  - Improvements to [importing existing Markdown](https://wiki.dendron.so/notes/f23a6290-2dec-45dc-b616-c218ee53db6b/).
+  - Better workflows, such as using [multiple vaults with private and public notes](https://wiki.dendron.so/notes/6DZiBObwhZNYRjnokQ422/).
+- On Task Management
+  - [Task Notes](https://wiki.dendron.so/notes/SEASewZSteDK7ry1AshNG/) were introduced, a special note type created specifically for tracking the status, ownership, and other details of tasks.
+    - This feature continues to evolve based on community feedback, and [users contributing to the GitHub Discussion](https://github.com/dendronhq/dendron/discussions/1358).
+  - [Note Traits](https://wiki.dendron.so/notes/EQoaBI8A0ZcswKQC3UMpO/) were introduced: these are what power the different types of notes, including task notes.
+    - Read the [RFC](https://docs.dendron.so/notes/E8ZUvTzJ7cVOyZtqHiIKX/) for more information, such as ideas around [task note enhancements](https://docs.dendron.so/notes/E8ZUvTzJ7cVOyZtqHiIKX/#a-to-do-note-type). This feature continues to evolve based on community feedback, and [users contributing to the GitHub Discussion](https://github.com/dendronhq/dendron/discussions/1876).
 
-- [Refreshed Getting Started Guide](https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1/)
-- GitHub Templates for easier, more automated publishing
-  - [Publish with Netlify](https://wiki.dendron.so/notes/yetuum6o9wZi6eVJQBbQb/)
-  - [Publish with GitHub Pages and GitHub Actions](https://wiki.dendron.so/notes/FnK2ws6w1uaS1YzBUY3BR/)
-- Improved `Change Workspace` and `Initialize Workspace` UX
+### Ease of use
 
-Many of our new users are coming to Dendron as their first tool for personal knowledge management than from any other tool. Even then, the amount of different workflows and tooling that people come from (or are using in parallel) is a massive list.
+Half of respondents said they were developers, but the other half is a mix of tech and non-tech backgrounds. This includes users for whom Dendron is their first introduction to [VS Code](https://code.visualstudio.com/), [git, and GitHub](https://wiki.dendron.so/notes/vsAxYld4zsbD2XjKoh7OP/).
 
-We have a [migration guide](https://wiki.dendron.so/notes/f9b4fc21-7613-4c8a-9257-cec4c06b67f9/) that can be referenced for people wanting to import their existing notes into Dendron. With so many tools out there, we are open to [any docs contributions and improvements](https://github.com/dendronhq/dendron-site/blob/master/vault/dendron.guides.migration.md) whenever someone transforms into a dendronite.
+Based on this, we've shipped some of the following features to make it easier for these users to get started with Dendron:
 
-Within the Dendron Discord, users have mentioned their interest in _interoperability_: they want a single source that they export/import their notes to/from. Our users do this with pods or their own tooling. Different tools co-exist in workflows and can be used concurrently, which further strengthens our belief [that pods are important](https://wiki.dendron.so/notes/66727a39-d0a7-449b-a10d-f6c438185d7f/).
+- [Refreshed Getting Started Guide](https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1/): This was a complete redesign of our getting started tutorial. We've added links to all concepts as well as step by step instructions on each option (instead of assuming prior knowledge on the user).
+- Improvements to `Change Workspace` and `Initialize Workspace` now make navigation easier for users to select workspaces via a file explorer.
+- [[The Five Minute Journal with Dendron and Visual Studio Code|blog.2022.2022-01-05-five-minute-journal-dendron-vscode]]: This blog post was made due to interest in [schemas](https://wiki.dendron.so/notes/c5e5adde-5459-409b-b34d-a0d75cbb1052/) and [templates](https://wiki.dendron.so/notes/861cbdf8-102e-4633-9933-1f3d74df53d2/). We created the blog post and updated the documentation to create a better introduction to the power of these features.
+- Users are now prompted when running [`Delete Node`](https://wiki.dendron.so/notes/eea2b078-1acc-4071-a14e-18299fc28f47/#delete-node), and shown what links will break throughout documentation _before_ confirming deletion.
+  - [`Dendron Doctor`](https://wiki.dendron.so/notes/ZeC74FYVECsf9bpyngVMU/) has also had similar improvements, such as [`findBrokenLinks`](https://wiki.dendron.so/notes/ZeC74FYVECsf9bpyngVMU/#findbrokenlinks), to make it easier to see where documentation improvements can be made
 
-- The Dendron team reflects this. For example, we make use of Airtable every day and will be releasing an Airtable pod in the near future.
+Many of our new users are coming to Dendron as their first tool for personal knowledge management. For users coming in with prior experience, there was no single tool that folks were migrating from. Instead, we had a massive list of previous tools. For those coming from existing tools, we have a [migration guide](https://wiki.dendron.so/notes/f9b4fc21-7613-4c8a-9257-cec4c06b67f9/) that continues to grow.
 
-Dendron also stands out compared to other static site generator (SSG) tools due to our UX/DX in managing and taking notes. The quarter of respondents expressing no interest in publishing may also reflect the absence of popular SSGs (Sphinx, Hugo, Jekyll, etc.) in response to tools our users are familiar with.
+> We are looking to the community to [help us improve and expand the source documentation](https://github.com/dendronhq/dendron-site/blob/master/vault/dendron.guides.migration.md)!
 
-We, ourselves, have had a journey of publishing within the Dendron toolchain. We've gone from [Jekyll](https://jekyllrb.com/), to [11ty](https://www.11ty.dev/), and eventually to [Next.js](https://nextjs.org/) (a story for another time!). Using Dendron's built-in publishing provides the best experience, but users can make use of other SSGs with their favorite themes by [exporting Dendron notes](https://wiki.dendron.so/notes/ccab31c4-e9ca-4ee8-b754-f786a3f3be6e/) and tweaking where needed.
+### Interoperability
+
+Within the Dendron Discord, users have mentioned their interest in _interoperability_: they want a single source that they export/import their notes to/from. Different tools co-exist in workflows and can be used concurrently.
+
+Our users continue to integrate information managed by Dendron with **pods** or their own tooling. In Dendron, [pods](https://wiki.dendron.so/notes/66727a39-d0a7-449b-a10d-f6c438185d7f/) refer to any tool or location that contains information and how Dendron manages that information: [Markdown files](https://wiki.dendron.so/notes/13c4a608-0a32-4c62-9c7e-2b7f9f2d18bf/), [GitHub issues](https://wiki.dendron.so/notes/PuDUEyUAPmvpBvaFWHDOS/), [Notion](https://wiki.dendron.so/notes/eOw3TC9KgdbBvhyU7pyGl/), and social media (Twitter, Facebook, etc.) are pod examples.
+
+Internally, the Dendron team makes extensive use of pods. For example, all tasks are [exported with the Airtable Pod](https://wiki.dendron.so/notes/c8ljkYY3eVkkmTNumc0C7/) so we can utilize alternative views such as Kanban and better task querying (eg. all bugs that have had no updates in the last 7 days).
+
+### Publishing
+
+Dendron stands out compared to other SSGs due to our UX/DX in _creating and managing_ notes, in addition to the actual _publishing_ of notes. With 36% of users planning to publish, and another 39% curious about it, we maintain GitHub Templates for easier, more automated publishing on popular platforms:
+
+- [Dendron publishing with Netlify](https://wiki.dendron.so/notes/yetuum6o9wZi6eVJQBbQb/)
+- [Dendron publishing with GitHub Pages and GitHub Actions](https://wiki.dendron.so/notes/FnK2ws6w1uaS1YzBUY3BR/)
+
+We, ourselves, have had a journey of publishing within the Dendron toolchain. We've gone from [Jekyll](https://jekyllrb.com/), to [11ty](https://www.11ty.dev/), and eventually to [Next.js](https://nextjs.org/) (a story for another time!). Using Dendron's built-in publishing provides the best experience, publishing our blogging and documentation sites, but users can make use of other SSGs with their favorite themes by [exporting Dendron notes](https://wiki.dendron.so/notes/ccab31c4-e9ca-4ee8-b754-f786a3f3be6e/).
 
 ## Last words
 
-Again, to all the new users that took our survey: thank you! Without you, we wouldn't have the insight we do into who is trying out Dendron and what features people find most valuable.
+We've set aside the majority of this quarter to iterate on the feedback you've given us and are comitted to making Dendron the absolute best tool (and community) for thought for 2022 and beyond!
 
 ![[blog.community#details,1]]
 
