@@ -3,7 +3,7 @@ id: AitIUzlK955P5EFojPjxz
 title: 2021 Dendron New User Survey Results
 desc: >-
   The new user survey was open for several months in 2021, where we were prompting new Dendron users within VS Code itself. We had few thousand  respondents take that opportunity to give us feedback.
-updated: 1643262253796
+updated: 1643263018724
 created: 1642630788714
 image:
   url: >-
@@ -177,7 +177,7 @@ Internally, the Dendron team makes extensive use of pods. For example, all tasks
 
 ### Publishing
 
-Dendron stands out compared to other SSGs due to our UX/DX in _creating and managing_ notes, in addition to the actual _publishing_ of notes. With 36% of users planning to publish, and another 39% curious about it, we maintain GitHub Templates for easier, more automated publishing on popular platforms:
+Dendron stands out compared to other SSGs due to our UX/DX in _creating and managing_ notes, in addition to the actual _publishing_ of notes. For the 75% of users curious about or interested in publishing: we maintain GitHub Templates for easier, more automated publishing on popular platforms:
 
 - [Dendron publishing with Netlify](https://wiki.dendron.so/notes/yetuum6o9wZi6eVJQBbQb/)
 - [Dendron publishing with GitHub Pages and GitHub Actions](https://wiki.dendron.so/notes/FnK2ws6w1uaS1YzBUY3BR/)
