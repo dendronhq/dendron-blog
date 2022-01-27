@@ -3,7 +3,7 @@ id: AitIUzlK955P5EFojPjxz
 title: 2021 Dendron New User Survey Results
 desc: >-
   The new user survey was open for several months in 2021, where we were prompting new Dendron users within VS Code itself. We had few thousand  respondents take that opportunity to give us feedback.
-updated: 1643261806569
+updated: 1643262253796
 created: 1642630788714
 image:
   url: >-
@@ -146,7 +146,7 @@ The Dendron team has been acting on user feedback and shipped some of the follow
   - Improvements to [importing existing Markdown](https://wiki.dendron.so/notes/f23a6290-2dec-45dc-b616-c218ee53db6b/).
   - Better workflows, such as using [multiple vaults with private and public notes](https://wiki.dendron.so/notes/6DZiBObwhZNYRjnokQ422/).
 - On Task Management
-  - [Task Notes](https://wiki.dendron.so/notes/SEASewZSteDK7ry1AshNG/) were introduced, a special note type created specifically for tracking the status, ownership, and other details of tasks.
+  - [Task Notes](https://wiki.dendron.so/notes/SEASewZSteDK7ry1AshNG/) were introduced: a special note type created specifically for tracking the status, ownership, and other details of tasks.
     - This feature continues to evolve based on community feedback, and [users contributing to the GitHub Discussion](https://github.com/dendronhq/dendron/discussions/1358).
   - [Note Traits](https://wiki.dendron.so/notes/EQoaBI8A0ZcswKQC3UMpO/) were introduced: these are what power the different types of notes, including task notes.
     - Read the [RFC](https://docs.dendron.so/notes/E8ZUvTzJ7cVOyZtqHiIKX/) for more information, such as ideas around [task note enhancements](https://docs.dendron.so/notes/E8ZUvTzJ7cVOyZtqHiIKX/#a-to-do-note-type). This feature continues to evolve based on community feedback, and [users contributing to the GitHub Discussion](https://github.com/dendronhq/dendron/discussions/1876).
