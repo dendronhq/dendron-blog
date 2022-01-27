@@ -3,7 +3,7 @@ id: AitIUzlK955P5EFojPjxz
 title: 2021 Dendron New User Survey Results
 desc: >-
   The new user survey was open for several months in 2021, where we were prompting new Dendron users within VS Code itself. We had few thousand  respondents take that opportunity to give us feedback.
-updated: 1643263364695
+updated: 1643263623778
 created: 1642630788714
 image:
   url: >-
@@ -161,7 +161,7 @@ Based on this, we've shipped some of the following features to make it easier fo
 - Improvements to `Change Workspace` and `Initialize Workspace` now make navigation easier for users to select workspaces via a file explorer.
 - [[The Five Minute Journal with Dendron and Visual Studio Code|blog.2022.2022-01-05-five-minute-journal-dendron-vscode]]: This blog post was made due to interest in [schemas](https://wiki.dendron.so/notes/c5e5adde-5459-409b-b34d-a0d75cbb1052/) and [templates](https://wiki.dendron.so/notes/861cbdf8-102e-4633-9933-1f3d74df53d2/). We created the blog post and updated the documentation to create a better introduction to the power of these features.
 - Users are now prompted when running [`Delete Node`](https://wiki.dendron.so/notes/eea2b078-1acc-4071-a14e-18299fc28f47/#delete-node), and shown what links will break throughout documentation _before_ confirming deletion.
-  - [`Dendron Doctor`](https://wiki.dendron.so/notes/ZeC74FYVECsf9bpyngVMU/) has also had similar improvements, such as [`findBrokenLinks`](https://wiki.dendron.so/notes/ZeC74FYVECsf9bpyngVMU/#findbrokenlinks), to make it easier to see where documentation improvements can be made
+  - [`Dendron Doctor`](https://wiki.dendron.so/notes/ZeC74FYVECsf9bpyngVMU/) has also had similar improvements, such as [`findBrokenLinks`](https://wiki.dendron.so/notes/ZeC74FYVECsf9bpyngVMU/#findbrokenlinks), to make it easier to see where documentation improvements can be made.
 
 Many of our new users are coming to Dendron as their first tool for personal knowledge management. For users coming in with prior experience, there was no single tool that folks were migrating from. Instead, we had a massive list of previous tools. For those coming from existing tools, we have a [migration guide](https://wiki.dendron.so/notes/f9b4fc21-7613-4c8a-9257-cec4c06b67f9/) that continues to grow.
 
