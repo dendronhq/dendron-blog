@@ -3,7 +3,7 @@ id: AitIUzlK955P5EFojPjxz
 title: 2021 Dendron New User Survey Results
 desc: >-
   The new user survey was open for several months in 2021, where we were prompting new Dendron users within VS Code itself. We had few thousand  respondents take that opportunity to give us feedback.
-updated: 1644254879784
+updated: 1644255447479
 created: 1642630788714
 image:
   url: >-
@@ -13,7 +13,7 @@ date: '2022-02-07'
 excerpt: >-
   The new user survey was open for several months in 2021, where we were prompting new Dendron users within VS Code itself. We had a few thousand respondents take that opportunity to give us feedback.
 author: Derek Ardolf
-published: false
+published: true
 ---
 
 ![Computer sitting on a desk with plants](https://org-dendron-public-assets.s3.amazonaws.com/images/2021-survey-banner.png)
