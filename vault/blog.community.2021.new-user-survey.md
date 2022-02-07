@@ -3,13 +3,13 @@ id: AitIUzlK955P5EFojPjxz
 title: 2021 Dendron New User Survey Results
 desc: >-
   The new user survey was open for several months in 2021, where we were prompting new Dendron users within VS Code itself. We had few thousand  respondents take that opportunity to give us feedback.
-updated: 1643860352842
+updated: 1644254879784
 created: 1642630788714
 image:
   url: >-
     https://org-dendron-public-assets.s3.amazonaws.com/images/2021-survey-banner.png
   alt: Computer sitting on a desk with plants
-date: '2022-02-03'
+date: '2022-02-07'
 excerpt: >-
   The new user survey was open for several months in 2021, where we were prompting new Dendron users within VS Code itself. We had a few thousand respondents take that opportunity to give us feedback.
 author: Derek Ardolf
@@ -129,11 +129,12 @@ Approximations of remaining previous (or parallel) tools:
 
 New users were only able to select a single response, if they were to respond to this question at all. A majority of users were **Curious** (39%) about publishing, or otherwise already saying **Yes** (36%) to planning publishing. The remaining respondents said **No** (25%) and were not interested.
 
-## Last words
+## What's Next
 
-We've set aside the majority of this quarter to iterate on the feedback you've given us. Together we can make Dendron the absolute best tool (and community) for thought in 2022 and beyond!
+We've set aside the majority of this quarter, and the last, to iterate on the feedback you've given us (specific details to come in a future blog post).
+We are committed to making Dendron the absolute best tool and community for thought in 2022 and beyond!
 
-![[blog.community#details,1]]
+If you like to be part of the effort, please take part in the [2022 Dendron User Survey](https://link.dendron.so/74EI) and help us build a better tool for thought 🌱
 
 ---
 
