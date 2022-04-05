@@ -1,28 +1,6 @@
-version: 4
-useFMTitle: true
-useNoteTitleForLink: true
-mermaid: true
-useKatex: true
+version: 5
 dev:
     enablePreviewV2: true
-site:
-    previewPort: 8081
-    ga_tracking: G-15EVNLBT2H
-    siteIndex: blog
-    siteHierarchies:
-        - blog
-    siteRootDir: docs
-    gh_edit_repository: 'https://github.com/dendronhq/dendron-blog'
-    usePrettyRefs: true
-    copyAssets: true
-    siteUrl: 'https://blog.dendron.so'
-    siteLastModified: true
-    githubCname: blog.dendron.so
-    title: Dendron Blog
-    author: dendronhq
-    twitter: dendronhq
-    description: Blog for Dendron
-    gh_edit_branch: main
 commands:
     lookup:
         note:
@@ -31,6 +9,7 @@ commands:
             leaveTrace: false
             bubbleUpCreateNew: true
             fuzzThreshold: 0.2
+            vaultSelectionModeOnCreate: smart
     insertNote:
         initialValue: templates
     insertNoteLink:
@@ -39,8 +18,9 @@ commands:
     insertNoteIndex:
         enableMarker: false
     randomNote: {}
+    copyNoteLink: {}
 workspace:
-    dendronVersion: 0.70.0
+    dendronVersion: 0.86.1
     vaults:
         -
             fsPath: vault
@@ -59,7 +39,7 @@ workspace:
     enableXVaultWikiLink: false
     enableRemoteVaultInit: true
     workspaceVaultSyncMode: noCommit
-    enableAutoFoldFrontmatter: true
+    enableAutoFoldFrontmatter: false
     maxPreviewsCached: 10
     maxNoteLength: 204800
     task:
@@ -91,3 +71,38 @@ preview:
     enableMermaid: true
     enablePrettyRefs: true
     enableKatex: true
+    enableFrontmatterTags: true
+    enableHashesForFMTags: false
+    automaticallyShowPreview: false
+publishing:
+    enableFMTitle: true
+    enableNoteTitleForLink: true
+    enableMermaid: true
+    enablePrettyRefs: true
+    enableKatex: true
+    copyAssets: true
+    ga:
+        tracking: G-15EVNLBT2H
+    siteIndex: blog
+    siteHierarchies:
+        - blog
+    enableSiteLastModified: true
+    siteRootDir: docs
+    siteUrl: https://blog.dendron.so
+    enableFrontmatterTags: true
+    enableHashesForFMTags: false
+    enableRandomlyColoredTags: true
+    writeStubs: false
+    seo:
+        title: Dendron Blog
+        description: Blog for Dendron
+        author: dendronhq
+        twitter: dendronhq
+    github:
+        cname: blog.dendron.so
+        enableEditLink: true
+        editLinkText: Edit this page on GitHub
+        editBranch: main
+        editViewMode: tree
+        editRepository: https://github.com/dendronhq/dendron-blog
+    enablePrettyLinks: true
