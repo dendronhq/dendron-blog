@@ -47,7 +47,7 @@ Let’s explore an example of how we might apply the Amoeba pattern to add new i
 
 Let’s also suppose we already have information about programming in our knowledge base, like the knowledge base shown in A Hierarchy First Approach to Note Taking, reproduced below. 
 
-[[ IMAGE? ]]
+[[ IMAGE previous.hierachy ]]
 
 This top-down form allows us to sort information into different *levels of specificity*, while also giving us an *externalized mental model* of our domain. 
 
@@ -117,11 +117,9 @@ Aha! We commonly implement search algorithms using tree data structures. Using t
 
 After creating the note `lang.python.data.tree`, we may even decide that we have obvious groupings, like Binary Search Trees, AVL Trees, and B-trees, and create sub-notes for these. 
 
-[[ IMAGE ]]
+[[ IMAGE -> tag.to.hierarchy]]
 
-Tags are a common bottom-up structure in knowledge bases that allow us to build distributed groups. If we navigate to the note for `#tree`, we find backlinks to the tagged chapters arranged in a group. 
-
-[[ IMAGE ]]
+Tags are a common bottom-up structure in knowledge bases that allow us to build distributed groups. 
 
 As we move to integrate these tags into our knowledge base, we return to the problem at hand: we want to implement a search algorithm in Python. We realize the binary search tree is exactly what we need. We create a note with the implementation that we end up using.
 
@@ -167,6 +165,10 @@ Trees are ...
 
 This allows us to connect our specific Python implementation with the general knowledge we are accumulating about trees. If we navigate to the `tag.tree` note, we also can access everywhere the tag is used in our knowledge base through [backlinks](https://pkm.dendron.so/notes/0486be25-19e4-4fc6-98f6-e5c9908d1161/).
 
+[[ IMAGE tags.backlinks ]]
+
 With tags, we can work up from our informational units, forming clusters of content as we go. We form groups, then we define categories. In doing so, we extend our top-down structure using bottom-up structures. 
 
 Peanut Butter, meet Jelly.
+
+![[blog.subscribe]]
