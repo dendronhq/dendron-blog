@@ -2,7 +2,7 @@
 id: 072ed07tikrhv6e4ilwcv2q
 title: Growing Knowledge Bases from the Bottom Up
 desc: ''
-updated: 1649116001262
+updated: 1649119380514
 created: 1649116001263
 date: '2022-04-05'
 excerpt: An exploration in expanding knowledge bases with new information
@@ -13,7 +13,8 @@ image:
 publish: true
 ---
 
-![Photo looking up the trunk of a tree](REPLACE:https://www.pexels.com/photo/low-angle-shot-of-a-tree-9773439/)
+
+![Photo looking up the trunk of a tree](https://org-dendron-public-assets.s3.amazonaws.com/images/bottom-0.jpg)
 
 We can sort information in [top-down and bottom-up](https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design) ways. Like peanut butter and jelly, each is great on its own, but when we bring them together—we make something *magic*. 
 
@@ -47,7 +48,8 @@ Let’s explore an example of how we might apply the Amoeba pattern to add new i
 
 Let’s also suppose we already have information about programming in our knowledge base, like the knowledge base shown in A Hierarchy First Approach to Note Taking, reproduced below. 
 
-[[ IMAGE? ]]
+![dendron python hierarhcy](https://org-dendron-public-assets.s3.amazonaws.com/images/bottom-1.png){max-width: 300px}
+
 
 This top-down form allows us to sort information into different *levels of specificity*, while also giving us an *externalized mental model* of our domain. 
 
@@ -117,16 +119,16 @@ Aha! We commonly implement search algorithms using tree data structures. Using t
 
 After creating the note `lang.python.data.tree`, we may even decide that we have obvious groupings, like Binary Search Trees, AVL Trees, and B-trees, and create sub-notes for these. 
 
-[[ IMAGE ]]
+![algo to hierarchy](https://org-dendron-public-assets.s3.amazonaws.com/images/bottom-2.png)
 
 Tags are a common bottom-up structure in knowledge bases that allow us to build distributed groups. If we navigate to the note for `#tree`, we find backlinks to the tagged chapters arranged in a group. 
 
-[[ IMAGE ]]
+![backlinks](https://org-dendron-public-assets.s3.amazonaws.com/images/bottom-3.png)
 
 As we move to integrate these tags into our knowledge base, we return to the problem at hand: we want to implement a search algorithm in Python. We realize the binary search tree is exactly what we need. We create a note with the implementation that we end up using.
 
 ```markdown
-< lang.python.data.tree >
+<!-- lang.python.data.tree -->
 
 ## Summary
 
