@@ -1,15 +1,15 @@
 ---
 id: 072ed07tikrhv6e4ilwcv2q
-title: Growing Knowledge Bases from the Bottom Up
+title: 2022 04 05 Growing Knowledge Bases from the Bottom Up
 desc: ''
 updated: 1649124319769
 created: 1649116001263
+image:
+  url: null
+  alt: Photo looking up the trunk of a tree
 date: '2022-04-05'
 excerpt: An exploration in expanding knowledge bases with new information
-author: John Knowles 
-image:
-  url: 
-  alt: Photo looking up the trunk of a tree
+author: John Knowles
 publish: true
 ---
 
