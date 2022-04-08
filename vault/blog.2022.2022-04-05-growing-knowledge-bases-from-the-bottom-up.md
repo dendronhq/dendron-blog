@@ -1,6 +1,6 @@
 ---
 id: 072ed07tikrhv6e4ilwcv2q
-title: 2022 04 05 Growing Knowledge Bases from the Bottom Up
+title: Growing Knowledge Bases from the Bottom Up
 desc: ''
 updated: 1649124319769
 created: 1649116001263
