@@ -5,7 +5,7 @@ desc: >-
   Dendron offers a set of scalable plaintext solutions to managing your tasks.
   Learn how you can grow your system from checkboxes to depenedency tracking and
   more. 
-updated: 1650340712963
+updated: 1650386323779
 created: 1650330584413
 image:
   url: >-
@@ -19,7 +19,7 @@ excerpt: >-
   needs of the work. In this tutorial, we'll explore how Dendron's scalable
   solution makes task management simple.
 author: John Knowles
-publish: false
+publish: true
 ---
 
 ![page in a journal with a checklist titled "today" and numbered one through four](https://org-dendron-public-assets.s3.amazonaws.com/images/tutorial-task-header.png)
