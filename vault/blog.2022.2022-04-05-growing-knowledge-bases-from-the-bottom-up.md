@@ -1,14 +1,17 @@
 ---
 id: 072ed07tikrhv6e4ilwcv2q
 title: Growing Knowledge Bases from the Bottom Up
-desc: ''
-updated: 1649124319769
+desc: >-
+
+updated: 1650331125305
 created: 1649116001263
 image:
-  url: null
+  url: >-
+  https://org-dendron-public-assets.s3.amazonaws.com/images/bottom-0.jpg
   alt: Photo looking up the trunk of a tree
 date: '2022-04-05'
-excerpt: An exploration in expanding knowledge bases with new information
+excerpt: >-
+An exploration in expanding knowledge bases with new information
 author: John Knowles
 publish: true
 ---
