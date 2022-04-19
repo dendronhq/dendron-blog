@@ -1,11 +1,11 @@
 ---
 id: 1jynrsx70fh3mihhrhikrf8
-title: Plaintext Task Management with VSCode
+title: Plaintext Task Management with Dendron and VSCode
 desc: >-
   Dendron offers a set of scalable plaintext solutions to managing your tasks.
   Learn how you can grow your system from checkboxes to depenedency tracking and
   more. 
-updated: 1650333962580
+updated: 1650340712963
 created: 1650330584413
 image:
   url: >-
