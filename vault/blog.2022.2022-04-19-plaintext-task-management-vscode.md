@@ -30,7 +30,7 @@ Tasks come in all **shapes** and **sizes**.
 
 Sometimes, we simply need a checkbox and a bullet to know what's complete and what's left to-do. Other times, we need to track more complex attributes of our tasks like deadlines, priorities, statuses, assignments, dependencies and more. 
 
-In this tutorial, we'll explore a **simple** and **scalable** solution to task management with [Dendron](https://www.dendron.so/). Dendron is a developer-focused note taking tool for that is open source, local-first, and integrated with Visual Studio Code.
+In this tutorial, we'll explore a **simple** and **scalable** solution to task management with [Dendron](https://www.dendron.so/). Dendron is a developer-focused note taking tool that is open source, local-first, and integrated with Visual Studio Code.
 
 ## Concepts
 
