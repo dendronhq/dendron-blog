@@ -155,7 +155,7 @@ You should see that the `bake-cookies` note has a filled checkbox.
 - [ ] bring cookies to party
 ```
 
-Task notes give we get an up-to-date view of the task's status any place it is linked to. But let's not get ahead of ourselves, we haven't done any baking yet!
+Task notes give an up-to-date view of the task's status in any place they are linked to. But let's not get ahead of ourselves, we haven't done any baking yet!
 
 - Return to `birthday-cookies.bake-cookies` and remove the `x` next to `status` so that it reads: `status: ''`. 
 
