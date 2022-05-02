@@ -1,8 +1,8 @@
 ---
 id: g98s3m6jft4gnb546y7i4xg
-title: 2022 05 02 Self Contained Vaults Release
+title: Early Release of Self Contained Vaults
 desc: ''
-updated: 1651527766161
+updated: 1651530142572
 created: 1651526168935
 excerpt: "Vaults and workspaces stood out as a point of confusion for both new and existing users, but we are solving this with the upcoming release of Self Contained Vaults."
 image:
@@ -10,26 +10,29 @@ image:
     https://org-dendron-public-assets.s3.amazonaws.com/images/blog-self-contained-vaults-banner.jpg
   alt: >-
     A hand writing Self Contained Vaults on a label, surrounded by plant pots and miniature gardening tools.
+author: user.kaan
+date: "2022-05-10"
+publish: false
 ---
 
 Dendron's mission is to help humans organize, find, and work with any amount of
-knowledge. We've shipped many features last year that got us closer to this goal -- some of our favorites include [[note traits|dendron.topic.traits]], [[block references|dendron.topic.note-reference#block-references]],
-[[file links|dendron.topic.links#file-links]], integration with [[other|dendron://dendron.dendron-site/dendron.topic.pod-v2.ref.builtin.google-docs.export]]
-[[tools|dendron://dendron.dendron-site/dendron.topic.pod-v2.ref.builtin.airtable.export]], and [[advanced note refactoring|dendron.ref.commands#header-operations]].
+knowledge. We've shipped many features last year that got us closer to this goal -- some of our favorites include [note traits](https://wiki.dendron.so/notes/bdZhT3nF8Yz3WDzKp7hqh), [block references](https://wiki.dendron.so/notes/f1af56bb-db27-47ae-8406-61a98de6c78c#block-references),
+[file links](https://wiki.dendron.so/notes/3472226a-ff3c-432d-bf5d-10926f39f6c2#file-links), integration with [other](https://wiki.dendron.so/notes/hA02kromgLKegxaG2VHKE)
+[tools](https://wiki.dendron.so/notes/oTW7BFzKIlOd6iQnnNulg), and [advanced note refactoring](https://wiki.dendron.so/notes/eea2b078-1acc-4071-a14e-18299fc28f47#header-operations).
 
 While we've made significant improvements to the note taking process, our
 underlying mechanism for managing notes (vaults and workspaces) stood out as a
 point of confusion for both new and existing users.
 
 As a refresher - a Dendron
-[[Vault|dendron://dendron.dendron-site/dendron.topic.vaults]] is a collection of
+[Vault](https://wiki.dendron.so/notes/6682fca0-65ed-402c-8634-94cd51463cc4#workspace-vault) is a collection of
 notes and assets inside a folder. A workspace is a collection of vaults. Vaults can't function without
 workspaces so sharing a vault still required that the recipient setup their own
 workspace. In addition, Dendron workspaces are related but not equivalent to
 VSCode workspaces but there was enough overlap that it was hard to figure out
 the difference.
 
-We started addressing this issue with [[Workspace Vaults|dendron://dendron.dendron-site/dendron.topic.vaults#workspace-vault]].
+We started addressing this issue with [Workspace Vaults](https://wiki.dendron.so/notes/6682fca0-65ed-402c-8634-94cd51463cc4).
 This made it possible to share Dendron without any additional setup but was a
 special case that required manual configuration. Today, we are introducing self
 contained vaults which removes the distinction between vaults and workspaces and
@@ -37,7 +40,7 @@ radically simplifies the management and sharing of notes in Dendron.
 
 ### Self contained vaults
 
-[[Self Contained Vaults|dendron://dendron.docs/rfc.42-self-contained-vaults]] contain all the information needed to manage, edit, and publish notes without the need for a workspace (in fact, we are deprecating and removing the workspace altogether moving forward).
+[Self Contained Vaults](https://docs.dendron.so/notes/aOOBYTowLEKJDEtLWFiHb) contain all the information needed to manage, edit, and publish notes without the need for a workspace (in fact, we are deprecating and removing the workspace altogether moving forward).
 What this means for you:
 
 - You can copy or sync your vaults across devices and have them **just work** without additional configuration
@@ -68,5 +71,33 @@ We'll then roll this feature out for everyone, and provide a way for existing
 users to migrate their existing setups.
 
 If you'd like to try it out in a new workspace, you can follow the
-[[self contained vaults configuration|dendron.topic.vaults.self-contained#configuration]]
-to enable the feature then create a new workspace. Otherwise stay tuned for when we release a new [[doctor command|dendron.topic.doctor]] which can migrate your vaults automatically.
+[self contained vaults configuration](https://wiki.dendron.so/notes/o4i7a81j778jyh7wql0nacb#configuration)
+to enable the feature then create a new workspace. Otherwise stay tuned for when we release a new [doctor command](https://wiki.dendron.so/notes/ZeC74FYVECsf9bpyngVMU) which can migrate your vaults automatically.
+
+--- 
+
+Enjoy the blog? Subscribe to our newsletter!
+
+<form
+  action="https://buttondown.email/api/emails/embed-subscribe/dendron"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/dendron', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" />
+  <p></p>
+</form>
+
+Newsletters not your thing? You can also follow us elsewhere on the interwebs:
+
+- Join [Dendron on Discord](https://link.dendron.so/discord)
+- Register for [Dendron Events on Luma](https://link.dendron.so/luma)
+- Follow [Dendron on Twitter](https://link.dendron.so/twitter)
+- Checkout [Dendron on GitHub](https://link.dendron.so/github)
+
+* * *
+
+Interested in creating your own knowledge base using markdown, git, and VSCode? Get started with [Dendron](https://wiki.dendron.so/notes/678c77d9-ef2c-4537-97b5-64556d6337f1/) today.
