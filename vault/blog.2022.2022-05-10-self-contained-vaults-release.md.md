@@ -4,14 +4,18 @@ title: Early Release of Self Contained Vaults
 desc: ''
 updated: 1651530142572
 created: 1651526168935
-excerpt: "Vaults and workspaces stood out as a point of confusion for both new and existing users, but we are solving this with the upcoming release of Self Contained Vaults."
 image:
   url: >-
     https://org-dendron-public-assets.s3.amazonaws.com/images/blog-self-contained-vaults-banner.jpg
   alt: >-
-    A hand writing Self Contained Vaults on a label, surrounded by plant pots and miniature gardening tools.
+    A hand writing Self Contained Vaults on a label, surrounded by plant pots
+    and miniature gardening tools.
+excerpt: >-
+  Vaults and workspaces stood out as a point of confusion for both new and
+  existing users, but we are solving this with the upcoming release of Self
+  Contained Vaults.
 author: user.kaan
-date: "2022-05-10"
+date: '2022-05-10'
 publish: false
 ---
 
