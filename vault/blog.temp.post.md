@@ -2,7 +2,7 @@
 id: 5q629xcsik74ffudjdm7t96
 title: Blog Post Template
 desc: ''
-updated: 1650322684097
+updated: 1651529240473
 created: 1650322596199
 image:
   url:
@@ -21,3 +21,5 @@ See [[Growing Knowledge Bases from the Bottom Up|dendron://dendron.blog/blog.202
 <!-- 
 Article here
 -->
+
+![[blog.subscribe]]
