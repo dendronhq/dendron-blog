@@ -2,7 +2,7 @@
 id: g98s3m6jft4gnb546y7i4xg
 title: Early Release of Self Contained Vaults
 desc: ''
-updated: 1651530142572
+updated: 1651827393482
 created: 1651526168935
 image:
   url: >-
@@ -76,7 +76,8 @@ users to migrate their existing setups.
 
 If you'd like to try it out in a new workspace, you can follow the
 [self contained vaults configuration](https://wiki.dendron.so/notes/o4i7a81j778jyh7wql0nacb#configuration)
-to enable the feature then create a new workspace. Otherwise stay tuned for when we release a new [doctor command](https://wiki.dendron.so/notes/ZeC74FYVECsf9bpyngVMU) which can migrate your vaults automatically.
+to enable the feature then create a new workspace. Otherwise follow these instructions to [migrate existing vaults manually](https://wiki.dendron.so/notes/aikv0yamnfkcowlol7qeldy),
+or stay tuned for when we release a new [doctor command](https://wiki.dendron.so/notes/ZeC74FYVECsf9bpyngVMU) which can migrate your vaults automatically.
 
 --- 
 
