@@ -5,7 +5,7 @@ desc: >-
   The five minute journal (5MJ) is a simple but effective way to get started
   with note taking. We'll go over a daily template that you can use to add some
   structure to your days.
-updated: 1641363716244
+updated: 1651941610212
 created: 1640790736919
 image:
   url: >-
@@ -13,9 +13,7 @@ image:
   alt: Journal sitting up against a laptop
 date: '2022-01-05'
 excerpt: >-
-  The five minute journal (5MJ) is a simple but effective way to get started
-  with note taking. We'll go over a daily template that you can use to add some
-  structure to your days.
+  Add some structure to your days using five minute journals (5MJ) schemas, and VSCode
 author: Derek Ardolf
 published: true
 ---
