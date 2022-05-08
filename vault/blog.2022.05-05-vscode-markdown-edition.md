@@ -2,7 +2,7 @@
 id: upyp4ow9fkpwvu50n8wsvnp
 title: 'VSCode - Markdown Edition'
 desc: 'With the latest release, markdown gains programming language like tooling in VSCode'
-updated: 1651951188710
+updated: 1652020609694
 created: 1651943641756
 image:
   url: >-
@@ -13,7 +13,7 @@ date: 2022-05-08
 excerpt: >
     With the latest release, markdown gains programming language like tooling in VSCode 
 author: Kevin S Lin
-publish: false
+publish: true
 ---
 
 ![code editor](https://org-dendron-public-assets.s3.amazonaws.com/images/upyp4ow9fkpwvu50n8wsvnp-pexels-neo-2653362.jpg)
