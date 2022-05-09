@@ -2,7 +2,7 @@
 id: g98s3m6jft4gnb546y7i4xg
 title: Early Release of Self Contained Vaults
 desc: ''
-updated: 1651827393482
+updated: 1652129825746
 created: 1651526168935
 image:
   url: >-
