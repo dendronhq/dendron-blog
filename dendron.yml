@@ -23,7 +23,8 @@ workspace:
     dendronVersion: 0.86.1
     vaults:
         -
-            fsPath: vault
+            fsPath: .
+            name: dendron.blog
     journal:
         dailyDomain: daily
         name: journal
