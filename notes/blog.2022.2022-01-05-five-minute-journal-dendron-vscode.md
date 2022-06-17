@@ -5,7 +5,7 @@ desc: >-
   The five minute journal (5MJ) is a simple but effective way to get started
   with note taking. We'll go over a daily template that you can use to add some
   structure to your days.
-updated: 1651941610212
+updated: 1655505292011
 created: 1640790736919
 image:
   url: >-
@@ -40,7 +40,7 @@ Daily journal notes are special notes meant to easily track your everyday life. 
 
 ### Templates
 
-Templates are notes with pre-outlined content meant for reuse. Templates can either be inserted into an open note with the `Dendron: Insert Note` command, or automatically applied at note creation with [Schemas](https://wiki.dendron.so/notes/c5e5adde-5459-409b-b34d-a0d75cbb1052/). These are meant to reduce friction in the creation of new content, providing standardized outlines to your notes.
+Templates are notes with pre-outlined content meant for reuse. Templates can either be inserted into an open note with the `Dendron: Apply Template` command, or automatically applied at note creation with [Schemas](https://wiki.dendron.so/notes/c5e5adde-5459-409b-b34d-a0d75cbb1052/). These are meant to reduce friction in the creation of new content, providing standardized outlines to your notes.
 
 ### Schemas
 
