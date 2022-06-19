@@ -2,7 +2,7 @@
 id: 5q629xcsik74ffudjdm7t96
 title: Blog Post Template
 desc: ''
-updated: 1651529240473
+updated: 1655678258221
 created: 1650322596199
 image:
   url:
@@ -10,7 +10,7 @@ image:
 date:
 excerpt:
 author:
-publish: false
+published: false
 ---
 
 <!-- Frontmatter -->
