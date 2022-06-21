@@ -108,3 +108,4 @@ publishing:
         editViewMode: tree
         editRepository: https://github.com/dendronhq/dendron-blog
     enablePrettyLinks: true
+    siteBanner: custom

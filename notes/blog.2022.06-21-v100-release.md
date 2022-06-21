@@ -2,7 +2,7 @@
 id: 8jp5brp2m2arrps7a5w9fk9
 title: Dendron v100
 desc: ''
-updated: 1655678902684
+updated: 1655817975371
 created: 1655678177671
 image:
   url: https://ik.imagekit.io/fpjzhqpv1/pexels-malte-luk-1234390_dNRq0_ZwI.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655678748917
@@ -10,7 +10,7 @@ image:
 date: '2022-06-21'
 excerpt: 'Celebrating 100 releases of Dendron'
 author: 'Kevin S Lin'
-published: false
+published: true
 ---
 
 ![Celebrating Dendron's 100th release](https://ik.imagekit.io/fpjzhqpv1/pexels-malte-luk-1234390_dNRq0_ZwI.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655678748917)
