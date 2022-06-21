@@ -2,7 +2,7 @@
 id: 8jp5brp2m2arrps7a5w9fk9
 title: Dendron v100
 desc: ''
-updated: 1655817975371
+updated: 1655825494046
 created: 1655678177671
 image:
   url: https://ik.imagekit.io/fpjzhqpv1/pexels-malte-luk-1234390_dNRq0_ZwI.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655678748917
@@ -12,6 +12,8 @@ excerpt: 'Celebrating 100 releases of Dendron'
 author: 'Kevin S Lin'
 published: true
 ---
+
+> Dendron is launching on product hunt today. If Dendron has been of use to you, please leave feedback on our [launch page](https://www.producthunt.com/posts/dendron-v100) - this would help us out a lot! 🙏
 
 ![Celebrating Dendron's 100th release](https://ik.imagekit.io/fpjzhqpv1/pexels-malte-luk-1234390_dNRq0_ZwI.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655678748917)
 
