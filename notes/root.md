@@ -2,9 +2,11 @@
 id: ZY0iCvsN-LfpCuJTqFgYH
 title: Root
 desc: ''
-updated: 1624123262215
+updated: 1656967935757
 created: 1624123262215
+uri: https://github.com/dendronhq/dendron-blog
 ---
+
 # Welcome to Dendron
 
 This is the root of your dendron vault. 
