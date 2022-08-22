@@ -34,7 +34,7 @@ Feature wise, the following are some areas we've invested in to make common work
 - the [[Help and Feedback|dendron://dendron.dendron-site/dendron.topic.sidebar.help-and-feedback]] panel provides a cheatsheet of useful resources and docs
 - the [[Tip of the Day|dendron://dendron.dendron-site/dendron.topic.sidebar.tip-of-the-day]] panel highlights new features and enhancements
 
-Finally, many of Dendron's core use cases now come with better defaults. For example, [[daily journals|dendron://dendron.dendron-site/dendron.topic.daily-journal-note]] and [[meeting notes|dendron://dendron.dendron-site/dendron.topic.special-notes#meeting-note]] have built-in [[templates|dendron://dendron.dendron-site/dendron.topic.templates]] that get created the first time these commands are invoked. 
+Finally, many of Dendron's core use cases now come with better defaults. For example, [[daily journals|dendron://dendron.dendron-site/dendron.topic.special-notes.daily-journal-note]] and [[meeting notes|dendron://dendron.dendron-site/dendron.topic.special-notes#meeting-note]] have built-in [[templates|dendron://dendron.dendron-site/dendron.topic.templates]] that get created the first time these commands are invoked. 
 
 ### Faster
 
