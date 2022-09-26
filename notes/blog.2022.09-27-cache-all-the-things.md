@@ -1,8 +1,8 @@
 ---
 id: o2qlr31o99tycon4hlhgjhw
-title: Cache All the Things - A PKM workflow to incrementally retain (and find) everything
-desc: ''
-updated: 1664218893270
+title: Cache All the Things 
+desc: 'A PKM workflow to incrementally retain (and find) everything'
+updated: 1664227081996
 created: 1664218532161
 config:
   global:
@@ -185,3 +185,5 @@ This incremental caching of everything represents an escape from the endless cyc
 Imagine how much more effective we could be, as individuals, teams, and as a society, if we could build on top of what we knew instead of spending time forgetting and re-discovering hard-earned knowledge?
 
 And now stop imagining and start caching!
+
+![[blog.subscribe]]
