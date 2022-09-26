@@ -2,7 +2,7 @@
 id: URjjrrJOy0JEJjukmZaaa
 title: Blog
 desc: ''
-updated: 1635291290118
+updated: 1664218971221
 created: 1624123322073
 ---
 
@@ -11,7 +11,7 @@ created: 1624123322073
 
 This is the Dendron Blog. 
 
-Dendron helps developers organize information at scale. 
+Dendron helps developers organize and make use of their own information.
 
 This blog is where we share our learnings and reflections from our journey! 
 
