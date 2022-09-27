@@ -1,9 +1,7 @@
 ---
 id: o2qlr31o99tycon4hlhgjhw
 title: Cache All the Things
-desc: 'A PKM workflow to incrementally retain (and find) everything'
-excerpt: >
-    A PKM workflow to incrementally retain (and find) everything
+desc: A PKM workflow to incrementally retain (and find) everything
 updated: 1664291597593
 created: 1664218532161
 config:
@@ -11,7 +9,10 @@ config:
     enableChildLinks: false
 image:
   alt: Infinite knowledge. Digital Art.
-  url: https://ik.imagekit.io/fpjzhqpv1/DALL_E_2022-09-26_11.32.14_-_infinite_knowledge._digital_art._H_J4OCYaw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664217157407
+  url: >-
+    https://ik.imagekit.io/fpjzhqpv1/DALL_E_2022-09-26_11.32.14_-_infinite_knowledge._digital_art._H_J4OCYaw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664217157407
+excerpt: |
+  A PKM workflow to incrementally retain (and find) everything
 published: true
 date: '2022-09-27'
 ---
