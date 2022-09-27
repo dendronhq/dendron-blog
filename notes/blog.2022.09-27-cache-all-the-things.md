@@ -2,7 +2,7 @@
 id: o2qlr31o99tycon4hlhgjhw
 title: Cache All the Things
 desc: A PKM workflow to incrementally retain (and find) everything
-updated: 1664291597593
+updated: 1664304647578
 created: 1664218532161
 config:
   global:
@@ -107,7 +107,7 @@ If you find yourself continuously going back to the source material because you 
 
 If you continue to expand the note, the note will eventually exceed the limit of a single page (eg. 800 words). At this point, you want to split your notes into smaller notes
 
-> NOTE: The process of splitting of large notes into smaller notes is also known as the [[Amoeba Pattern|dendron://dendron.dendron-site/dendron.guides.workflows.amoeba]]. 
+> NOTE: The process of splitting of large notes into smaller notes is also known as the [amoeba pattern](https://wiki.dendron.so/notes/e780000d-c784-4945-8e42-35218a3ecf10)
 
 > Greg finds himself using grep all the time and he now has to spend time scrolling through his `grep` note to find what he needs. He has a section on snippets that makes up most of the note so he decides to split it off into its own note.
 
