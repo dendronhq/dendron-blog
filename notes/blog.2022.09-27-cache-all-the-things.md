@@ -1,8 +1,10 @@
 ---
 id: o2qlr31o99tycon4hlhgjhw
-title: Cache All the Things 
+title: Cache All the Things
 desc: 'A PKM workflow to incrementally retain (and find) everything'
-updated: 1664287160140
+excerpt: >
+    A PKM workflow to incrementally retain (and find) everything
+updated: 1664291597593
 created: 1664218532161
 config:
   global:
