@@ -2,7 +2,7 @@
 id: o2qlr31o99tycon4hlhgjhw
 title: Cache All the Things
 desc: A PKM workflow to incrementally retain (and find) everything
-updated: 1664313213696
+updated: 1664331758510
 created: 1664218532161
 config:
   global:
@@ -46,7 +46,7 @@ This is a mastery loop - instead of losing your place on every question, you bui
 
 The key to building this particular mastery loop comes from combining the following  PKM workflows:
 
-- a modified version of the [progressive summarization method](https://www.google.com/search?client=firefox-b-1-d&q=progressive+summarization)
+- a modified version of the [progressive summarization method](https://fortelabs.com/blog/progressive-summarization-a-practical-technique-for-designing-discoverable-notes/)
 - [[dendron://dendron.blog/blog.2020.2020-08-24-a-hierarchy-first-approach-to-note-taking]]
 
 Together, they let you **cache all the things!**
