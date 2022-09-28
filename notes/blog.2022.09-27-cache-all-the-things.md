@@ -192,5 +192,3 @@ Imagine how much more effective we could be, as individuals, teams, and as a soc
 And now stop imagining and start caching!
 
 ![[blog.subscribe]]
-
-y
